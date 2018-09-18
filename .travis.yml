@@ -14,5 +14,6 @@ deploy:
     branch: master
 before_script:
   - "npm i"
+  - "npm run build"
 after_success:
   - "npm run deploy"
