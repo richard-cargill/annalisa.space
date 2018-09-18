@@ -1,5 +1,5 @@
 import React from 'react';
-import Panels from '../components/Panels';
+import Panels from '../components/Panels/';
 
 export default class PageTemplate extends React.Component {
   render() {

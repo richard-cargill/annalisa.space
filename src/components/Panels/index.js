@@ -1,10 +1,10 @@
 import React from "react"
 
-import HeroPanel from "../components/HeroPanel.js";
-import PageSelectorPanel from "../components/PageSelectorPanel.js";
-import HeaderPanel from "../components/HeaderPanel.js";
-import ImagePanel from "../components/ImagePanel.js";
-import ContentPanel from "../components/ContentPanel.js";
+import HeroPanel from "./HeroPanel.js";
+import PageSelectorPanel from "./PageSelectorPanel.js";
+import HeaderPanel from "./HeaderPanel.js";
+import ImagePanel from "./ImagePanel.js";
+import ContentPanel from "./ContentPanel.js";
 
 function Panels({type, data}) {
   switch(type) {
