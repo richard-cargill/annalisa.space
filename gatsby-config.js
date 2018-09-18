@@ -1,4 +1,10 @@
-require('dotenv').config();
+const { error } = require('dotenv').config();
+
+if (error) {
+  throw error;
+}
+
+const { SPACE_ID, ACCESS_TOKEN } = process.env;
 
 module.exports = {
   siteMetadata: {
@@ -15,8 +21,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        spaceId: process.env.SPACE_ID,
-        accessToken: process.env.ACCESS_TOKEN
+        spaceId: SPACE_ID,
+        accessToken: ACCESS_TOKEN
       }
     },
     'gatsby-transformer-remark'
