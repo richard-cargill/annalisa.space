@@ -1,8 +1,8 @@
 const { error } = require('dotenv').config();
 
-if (error) {
-  throw error;
-}
+// if (error) {
+//   throw error;
+// }
 
 const { SPACE_ID, ACCESS_TOKEN } = process.env;
 
