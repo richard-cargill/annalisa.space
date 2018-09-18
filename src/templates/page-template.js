@@ -1,16 +1,23 @@
-import React from "react"
+import React from 'react';
+import Panels from '../components/Panels';
 
-export default class ProductTemplate extends React.Component {
+export default class PageTemplate extends React.Component {
   render() {
-    console.log(this.props.data.contentfulPage)
-    const {name} = this.props.data.contentfulPage
+    const {
+      name,
+      panels
+    } = this.props.data.contentfulPage;
+
     return (
-      <div>
-        <h1>{name}</h1>
-      </div>
+      <article>
+        {panels && panels.map(panel => {
+          const { __typename } = panel;
+          return <Panels key={__typename} type={__typename} data={panel} />
+        })}
+      </article>
     )
   }
-}
+};
 
 export const pageQuery = graphql`
 	query PageQuery($slug: String!) {
@@ -62,4 +69,4 @@ export const pageQuery = graphql`
 		  }
 	  }
 	}
-`
+`;
