@@ -1,0 +1,2 @@
+webpackJsonp([21648241874331],{331:function(e,n){e.exports={data:{contentfulPage:{name:"Another cool page 2",slug:"another-cool-page-2",panels:[{__typename:"ContentfulContentPanel",name:"Another page content area",content:{content:"Awesome content area xD  123",childMarkdownRemark:{html:"<p>Awesome content area xD  123</p>"}}}]}},pathContext:{slug:"another-cool-page-2"}}}});
+//# sourceMappingURL=path---another-cool-page-2-75e6a5ee80d74f02a504.js.map

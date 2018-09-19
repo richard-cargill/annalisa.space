@@ -4,13 +4,17 @@
       "path---projects-awesome-project-1-ca666157199800dcd560.js",
       "path---projects-awesome-project-1-ca666157199800dcd560.js.map"
     ],
+    "path---another-cool-page-2": [
+      "path---another-cool-page-2-75e6a5ee80d74f02a504.js",
+      "path---another-cool-page-2-75e6a5ee80d74f02a504.js.map"
+    ],
     "path---": [
-      "path----57f18ca5c394743929c5.js",
-      "path----57f18ca5c394743929c5.js.map"
+      "path----bcf56b1edd3340a4ee00.js",
+      "path----bcf56b1edd3340a4ee00.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-7a40aa5d514091722ccc.js",
-      "component---src-layouts-index-js-7a40aa5d514091722ccc.js.map"
+      "component---src-layouts-index-js-44ffe8231eb8520a5930.js",
+      "component---src-layouts-index-js-44ffe8231eb8520a5930.js.map"
     ],
     "path---index": [
       "path---index-7f9a7332390dc947c24c.js",
@@ -33,8 +37,8 @@
       "path---projects-awesome-project-2-c4817bce8011ae26b115.js.map"
     ],
     "app": [
-      "app-2304b4c887dcb826bb59.js",
-      "app-2304b4c887dcb826bb59.js.map"
+      "app-0b62c56d0f3caaea688a.js",
+      "app-0b62c56d0f3caaea688a.js.map"
     ],
     "component---src-templates-page-template-js": [
       "component---src-templates-page-template-js-981d5828221f1aff87af.js",
