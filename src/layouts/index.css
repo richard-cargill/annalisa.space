@@ -38,6 +38,10 @@
   margin-left: 1rem;
 }
 
+.pageSelector {
+  margin-bottom: 10vh;
+}
+
 .pageSelector__items {
   display: flex;
   flex-wrap: wrap;
@@ -48,6 +52,10 @@
 }
 
 @media only screen and (min-width: 601px) {
+  .pageSelector {
+    margin-bottom: 15vh;
+  }
+
   .pageSelector__item {
     flex-basis: 50%;
   }
@@ -56,6 +64,8 @@
 .footer {
   background-color: #f4f4f4;
   display: flex;
+  padding-top: 5rem;
+  margin-top: 5rem;
 }
 
 .links {
@@ -66,4 +76,17 @@
 
 .links li {
   display: inline;
+}
+
+.hero {
+  margin-top: 15vh;
+  margin-bottom: 13vh;
+}
+
+@media only screen and (min-width: 601px) {
+  .hero {
+    font-size: 150%;
+    margin-top: 20vh;
+    margin-bottom: 18vh;
+  }
 }

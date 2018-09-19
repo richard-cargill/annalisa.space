@@ -32,8 +32,16 @@ export const pageQuery = graphql`
         ... on ContentfulPageSelectorPanel {
           text
           pages {
-          name
-          slug
+            name
+            slug
+            description
+            thumbnail {
+              file {
+                url
+                fileName
+                contentType
+              }
+            }
           }
         }
         ... on ContentfulHeaderPanel {
