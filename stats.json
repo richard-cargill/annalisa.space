@@ -1,24 +1,24 @@
 {
   "assetsByChunkName": {
     "path---projects-awesome-project-1": [
-      "path---projects-awesome-project-1-ca666157199800dcd560.js",
-      "path---projects-awesome-project-1-ca666157199800dcd560.js.map"
+      "path---projects-awesome-project-1-e0f35a9c3dfd0f717bd1.js",
+      "path---projects-awesome-project-1-e0f35a9c3dfd0f717bd1.js.map"
     ],
     "path---projects-another-cool-page-2": [
-      "path---projects-another-cool-page-2-e452bd914970a406ad58.js",
-      "path---projects-another-cool-page-2-e452bd914970a406ad58.js.map"
+      "path---projects-another-cool-page-2-208c11cd831b56b88090.js",
+      "path---projects-another-cool-page-2-208c11cd831b56b88090.js.map"
     ],
     "path---": [
       "path----c0229007ba28e902f61d.js",
       "path----c0229007ba28e902f61d.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-d63dfdba0cb869272286.js",
-      "component---src-layouts-index-js-d63dfdba0cb869272286.js.map"
+      "component---src-layouts-index-js-214936b963f1248d8ae2.js",
+      "component---src-layouts-index-js-214936b963f1248d8ae2.js.map"
     ],
     "path---index": [
-      "path---index-48bb2c56f12dc3c77a8d.js",
-      "path---index-48bb2c56f12dc3c77a8d.js.map"
+      "path---index-b4bce64a4336e78eef31.js",
+      "path---index-b4bce64a4336e78eef31.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-f6662393a31fb18d5e07.js",
@@ -33,8 +33,8 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---projects-awesome-project-2": [
-      "path---projects-awesome-project-2-c4817bce8011ae26b115.js",
-      "path---projects-awesome-project-2-c4817bce8011ae26b115.js.map"
+      "path---projects-awesome-project-2-a1a4e8311b92b357e092.js",
+      "path---projects-awesome-project-2-a1a4e8311b92b357e092.js.map"
     ],
     "app": [
       "app-a35771809c863fd18134.js",
@@ -43,8 +43,8 @@
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
-      "component---src-templates-page-template-js-dcd6c34fddb8c6b91f72.js",
-      "component---src-templates-page-template-js-dcd6c34fddb8c6b91f72.js.map"
+      "component---src-templates-page-template-js-6115c4c03d1feba23922.js",
+      "component---src-templates-page-template-js-6115c4c03d1feba23922.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
