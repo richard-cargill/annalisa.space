@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import Header from '../components/Header.js';
-import Footer from '../components/Footer.js';
+import Header from '../components/header';
+import Footer from '../components/Footer';
 
 const Layout = ({ children, data }) => {
   const title = data.site.siteMetadata.title;

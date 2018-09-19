@@ -18,7 +18,6 @@ before_script:
   - "ls"
   - "ls src"
   - "ls src/components"
-  - "tree"
 script:
   - "ls src/components"
   - "gatsby build --prefix-paths"
