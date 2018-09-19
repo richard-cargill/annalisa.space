@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import Header from '../components/header';
 import Footer from '../components/Footer';
 
-import 'sanitize.css';
+// import 'sanitize.css';
 import './index.css';
 
 const Layout = ({ children, data }) => {
