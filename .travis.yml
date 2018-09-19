@@ -16,7 +16,11 @@ before_script:
   - "npm i"
   - "npm i -g gatsby"
   - "ls"
+  - "ls src"
+  - "ls src/components"
+  - "tree"
 script:
+  - "ls src/components"
   - "gatsby build --prefix-paths"
 after_success:
   - "npm run deploy"
