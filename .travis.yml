@@ -14,7 +14,8 @@ deploy:
     branch: master
 before_script:
   - "npm i"
+  - "npm i -g gatsby"
 script:
-  - "npm run predeploy"
+  - "gatsby build --prefix-paths"
 after_success:
   - "npm run deploy"
