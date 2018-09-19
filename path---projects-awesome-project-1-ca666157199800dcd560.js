@@ -1,2 +1,2 @@
-webpackJsonp([7764506093318],{333:function(e,o){e.exports={data:{contentfulPage:{name:"Aweseome Project 1",slug:"/projects/awesome-project-1/",panels:null}},pathContext:{slug:"/projects/awesome-project-1/"}}}});
+webpackJsonp([7764506093318],{335:function(e,o){e.exports={data:{contentfulPage:{name:"Aweseome Project 1",slug:"/projects/awesome-project-1/",panels:null}},pathContext:{slug:"/projects/awesome-project-1/"}}}});
 //# sourceMappingURL=path---projects-awesome-project-1-ca666157199800dcd560.js.map

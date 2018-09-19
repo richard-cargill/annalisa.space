@@ -9,12 +9,12 @@
       "path---projects-another-cool-page-2-e452bd914970a406ad58.js.map"
     ],
     "path---": [
-      "path----bcf56b1edd3340a4ee00.js",
-      "path----bcf56b1edd3340a4ee00.js.map"
+      "path----c0229007ba28e902f61d.js",
+      "path----c0229007ba28e902f61d.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-44ffe8231eb8520a5930.js",
-      "component---src-layouts-index-js-44ffe8231eb8520a5930.js.map"
+      "component---src-layouts-index-js-d63dfdba0cb869272286.js",
+      "component---src-layouts-index-js-d63dfdba0cb869272286.js.map"
     ],
     "path---index": [
       "path---index-5c14d2cbf1b9267118e2.js",
@@ -38,11 +38,13 @@
     ],
     "app": [
       "app-4af5c05c9ed121c64410.js",
-      "app-4af5c05c9ed121c64410.js.map"
+      "build-js-styles.css",
+      "app-4af5c05c9ed121c64410.js.map",
+      "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
-      "component---src-templates-page-template-js-981d5828221f1aff87af.js",
-      "component---src-templates-page-template-js-981d5828221f1aff87af.js.map"
+      "component---src-templates-page-template-js-c85d4a6b2c9f50f883cd.js",
+      "component---src-templates-page-template-js-c85d4a6b2c9f50f883cd.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
