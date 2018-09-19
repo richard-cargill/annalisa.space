@@ -3,8 +3,8 @@ import Link from 'gatsby-link';
 import Navigation from './Navigation';
 
 const Header = ({ siteTitle }) => (
-  <header>
-    <h1>
+  <header className="header">
+    <h1 className="logo">
       <Link to="/">
         {siteTitle}
       </Link>

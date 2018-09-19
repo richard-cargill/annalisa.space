@@ -5,6 +5,9 @@ import Helmet from 'react-helmet';
 import Header from '../components/header';
 import Footer from '../components/Footer';
 
+import 'sanitize.css';
+import './index.css';
+
 const Layout = ({ children, data }) => {
   const title = data.site.siteMetadata.title;
   return (<div>
@@ -15,8 +18,10 @@ const Layout = ({ children, data }) => {
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={title} />
-    <main>
+    <div className="container">
+      <Header siteTitle={title} />
+    </div>
+    <main className="container">
       {children()}
     </main>
     <Footer />
@@ -35,13 +40,6 @@ export const query = graphql`
       siteMetadata {
         title
       }
-    }
-    allContentfulPage {
-      edges {
-        node {
-          name
-        }
-      }
-    }
+   }
   }
 `;

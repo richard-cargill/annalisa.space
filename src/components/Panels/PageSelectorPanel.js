@@ -2,15 +2,17 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 const PageSelectorPanel = ({ text, pages }) => (
-  <section>
+  <section className="panel pageSelector">
     <h2>{text}</h2>
+    <div className="pageSelector__items">
     {pages.map(page => {
-      return (<div key={page.name}>
+      return (<article className="pageSelector__item" key={page.name}>
         <h3>
           <Link to={page.slug}>{page.name}</Link>
         </h3>
-      </div>);
+      </article>);
     })}
+    </div>
   </section>
 );
 
