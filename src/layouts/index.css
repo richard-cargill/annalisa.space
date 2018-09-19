@@ -90,3 +90,18 @@
     margin-bottom: 18vh;
   }
 }
+
+.paging {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paging__list {
+  margin: 0;
+  padding: 0;
+}
+
+.paging__item {
+  text-decoration: none;
+}
