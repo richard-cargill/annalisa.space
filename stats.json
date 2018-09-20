@@ -8,6 +8,10 @@
       "path---projects-another-cool-page-2-208c11cd831b56b88090.js",
       "path---projects-another-cool-page-2-208c11cd831b56b88090.js.map"
     ],
+    "path---blog": [
+      "path---blog-13a12080638497c5824f.js",
+      "path---blog-13a12080638497c5824f.js.map"
+    ],
     "path---": [
       "path----c0229007ba28e902f61d.js",
       "path----c0229007ba28e902f61d.js.map"
@@ -37,9 +41,9 @@
       "path---projects-awesome-project-2-a1a4e8311b92b357e092.js.map"
     ],
     "app": [
-      "app-a35771809c863fd18134.js",
+      "app-ffda7f9bb6342f2ee21f.js",
       "build-js-styles.css",
-      "app-a35771809c863fd18134.js.map",
+      "app-ffda7f9bb6342f2ee21f.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
