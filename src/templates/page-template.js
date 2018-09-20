@@ -49,7 +49,7 @@ export default class PageTemplate extends React.Component {
             return <Panels key={__typename} type={__typename} data={panel} />
           })}
         </article>
-        {slug !== '/' && <Paging prev={prevIndexObj} next={nextIndexObj} />}
+        {slug.startsWith('/projects') && <Paging prev={prevIndexObj} next={nextIndexObj} />}
       </main>
     );
   }
