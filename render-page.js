@@ -80,7 +80,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _syncRequires2 = _interopRequireDefault(_syncRequires);
 	
-	var _testRequireError = __webpack_require__(354);
+	var _testRequireError = __webpack_require__(355);
 	
 	var _testRequireError2 = _interopRequireDefault(_testRequireError);
 	
@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  Html = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../src/html\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	} catch (err) {
 	  if ((0, _testRequireError2.default)("../src/html", err)) {
-	    Html = __webpack_require__(355);
+	    Html = __webpack_require__(356);
 	  } else {
 	    console.log("\n\nThere was an error requiring \"src/html.js\"\n\n", err, "\n\n");
 	    process.exit();
@@ -213,7 +213,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  var stats = void 0;
 	  try {
-	    stats = __webpack_require__(357);
+	    stats = __webpack_require__(358);
 	  } catch (e) {}
 	  // ignore
 	
@@ -252,7 +252,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  });
 	
 	  // Add the chunk-manifest at the end of body element.
-	  var chunkManifest = __webpack_require__(358);
+	  var chunkManifest = __webpack_require__(359);
 	  postBodyComponents.unshift(_react2.default.createElement("script", {
 	    id: "webpack-manifest",
 	    key: "webpack-manifest",
@@ -46836,7 +46836,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 239 */
 /***/ (function(module, exports) {
 
-	module.exports = [{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-nectar-app.json","path":"/projects/nectar-app/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-mymail-and-nectar.json","path":"/projects/mymail-and-nectar/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-telegraph.json","path":"/projects/telegraph/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-google.json","path":"/projects/google/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-macmillan.json","path":"/projects/macmillan"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"blog.json","path":"/blog/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"index.json","path":"/"},{"componentChunkName":"component---src-pages-404-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"404.json","path":"/404/"},{"componentChunkName":"component---src-pages-404-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"404-html.json","path":"/404.html"}]
+	module.exports = [{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-nectar-web.json","path":"/projects/nectar-web/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-nectar-app.json","path":"/projects/nectar-app/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-mymail-and-nectar.json","path":"/projects/mymail-and-nectar/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-telegraph.json","path":"/projects/telegraph/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-google.json","path":"/projects/google/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"projects-macmillan.json","path":"/projects/macmillan"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"blog.json","path":"/blog/"},{"componentChunkName":"component---src-templates-page-template-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"index.json","path":"/"},{"componentChunkName":"component---src-pages-404-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"404.json","path":"/404/"},{"componentChunkName":"component---src-pages-404-js","layout":"layout---index","layoutComponentChunkName":"component---src-layouts-index-js","jsonName":"404-html.json","path":"/404.html"}]
 
 /***/ }),
 /* 240 */
@@ -46860,15 +46860,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	exports.json = {
 	  "layout-index.json": __webpack_require__(335),
-	  "projects-nectar-app.json": __webpack_require__(345),
-	  "projects-mymail-and-nectar.json": __webpack_require__(346),
-	  "projects-telegraph.json": __webpack_require__(347),
-	  "projects-google.json": __webpack_require__(348),
-	  "projects-macmillan.json": __webpack_require__(349),
-	  "blog.json": __webpack_require__(350),
-	  "index.json": __webpack_require__(351),
-	  "404.json": __webpack_require__(352),
-	  "404-html.json": __webpack_require__(353)
+	  "projects-nectar-web.json": __webpack_require__(345),
+	  "projects-nectar-app.json": __webpack_require__(346),
+	  "projects-mymail-and-nectar.json": __webpack_require__(347),
+	  "projects-telegraph.json": __webpack_require__(348),
+	  "projects-google.json": __webpack_require__(349),
+	  "projects-macmillan.json": __webpack_require__(350),
+	  "blog.json": __webpack_require__(351),
+	  "index.json": __webpack_require__(352),
+	  "404.json": __webpack_require__(353),
+	  "404-html.json": __webpack_require__(354)
 	};
 
 /***/ }),
@@ -49506,49 +49507,49 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 345 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Nectar app","slug":"/projects/nectar-app/","panels":null}},"pathContext":{"slug":"/projects/nectar-app/"}}
+	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Nectar Web","slug":"/projects/nectar-web/","panels":null}},"pathContext":{"slug":"/projects/nectar-web/"}}
 
 /***/ }),
 /* 346 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"MyMail & Nectar","slug":"/projects/mymail-and-nectar/","panels":null}},"pathContext":{"slug":"/projects/mymail-and-nectar/"}}
+	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Nectar app","slug":"/projects/nectar-app/","panels":null}},"pathContext":{"slug":"/projects/nectar-app/"}}
 
 /***/ }),
 /* 347 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Telegraph","slug":"/projects/telegraph/","panels":null}},"pathContext":{"slug":"/projects/telegraph/"}}
+	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"MyMail & Nectar","slug":"/projects/mymail-and-nectar/","panels":null}},"pathContext":{"slug":"/projects/mymail-and-nectar/"}}
 
 /***/ }),
 /* 348 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Google","slug":"/projects/google/","panels":null}},"pathContext":{"slug":"/projects/google/"}}
+	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Telegraph","slug":"/projects/telegraph/","panels":null}},"pathContext":{"slug":"/projects/telegraph/"}}
 
 /***/ }),
 /* 349 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Macmillan","slug":"/projects/macmillan","panels":[{"__typename":"ContentfulContentPanel","name":"Another page content area","content":{"content":"Awesome content area xD  123","childMarkdownRemark":{"html":"<p>Awesome content area xD  123</p>"}}}]}},"pathContext":{"slug":"/projects/macmillan"}}
+	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Google","slug":"/projects/google/","panels":null}},"pathContext":{"slug":"/projects/google/"}}
 
 /***/ }),
 /* 350 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Blog","slug":"/blog/","panels":null}},"pathContext":{"slug":"/blog/"}}
+	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Macmillan","slug":"/projects/macmillan","panels":[{"__typename":"ContentfulContentPanel","name":"Another page content area","content":{"content":"Awesome content area xD  123","childMarkdownRemark":{"html":"<p>Awesome content area xD  123</p>"}}}]}},"pathContext":{"slug":"/projects/macmillan"}}
 
 /***/ }),
 /* 351 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Home Page","slug":"/","panels":[{"__typename":"ContentfulHeroPanel","text":"This is a hero panel for displaying large text at the top of a page"},{"__typename":"ContentfulPageSelectorPanel","text":"This is a page selector it displays selected pages with links to each","pages":[{"name":"Telegraph","slug":"/projects/telegraph/","description":"This project does some awesome stuff with other awesome things","thumbnail":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/6Od9v3wzLOysiMum0Wkmme/094e8d5f2c14f732519a3fb4a05cabf5/cameron-kirby-88711.jpg","fileName":"cameron-kirby-88711.jpg","contentType":"image/jpeg"}}},{"name":"Google","slug":"/projects/google/","description":"This picture is cool and shows cool awesome things that are awesome and cool","thumbnail":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/4NzwDSDlGECGIiokKomsyI/60086c4cf183d8d677ac91cf7dfa6651/denys-nevozhai-100695.jpg","fileName":"denys-nevozhai-100695.jpg","contentType":"image/jpeg"}}},{"name":"Macmillan","slug":"/projects/macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think","thumbnail":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/4shwYI3POEGkw0Eg6kcyaQ/8dff653688d6e1265d0c0cc1eddaff37/felix-russell-saw-112140.jpg","fileName":"felix-russell-saw-112140.jpg","contentType":"image/jpeg"}}},{"name":"MyMail & Nectar","slug":"/projects/mymail-and-nectar/","description":null,"thumbnail":null}]},{"__typename":"ContentfulHeaderPanel","name":"Testing out Header panel","text":"This is a Header Panel component for displaying page headers and large sections of <h1> text","media":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/1GYXCsye7iqu208SwyuQyA/270debbcd5a6bef2c2603bed5fe84565/Sleepy-kitty.jpg","fileName":"Sleepy-kitty.jpg","contentType":"image/jpeg"}}},{"__typename":"ContentfulImagePanel","name":"Random Image","media":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/1GYXCsye7iqu208SwyuQyA/270debbcd5a6bef2c2603bed5fe84565/Sleepy-kitty.jpg","fileName":"Sleepy-kitty.jpg","contentType":"image/jpeg"}}},{"__typename":"ContentfulContentPanel","name":"Home page content","content":{"content":"This is a content panel for displaying large rich text style content\n\n# header 1\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n## header 2\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n### header 3\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","childMarkdownRemark":{"html":"<p>This is a content panel for displaying large rich text style content</p>\n<h1>header 1</h1>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n<h2>header 2</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n<h3>header 3</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"}}}]}},"pathContext":{"slug":"/"}}
+	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Blog","slug":"/blog/","panels":null}},"pathContext":{"slug":"/blog/"}}
 
 /***/ }),
 /* 352 */
 /***/ (function(module, exports) {
 
-	module.exports = {"pathContext":{}}
+	module.exports = {"data":{"contentfulPageSelectorPanel":{"name":"Projects","pages":[{"slug":"/projects/telegraph/","name":"Telegraph","description":"This project does some awesome stuff with other awesome things"},{"slug":"/projects/google/","name":"Google","description":"This picture is cool and shows cool awesome things that are awesome and cool"},{"slug":"/projects/macmillan","name":"Macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think"},{"slug":"/projects/mymail-and-nectar/","name":"MyMail & Nectar","description":null}]},"contentfulPage":{"name":"Home Page","slug":"/","panels":[{"__typename":"ContentfulHeroPanel","text":"This is a hero panel for displaying large text at the top of a page"},{"__typename":"ContentfulPageSelectorPanel","text":"This is a page selector it displays selected pages with links to each","pages":[{"name":"Telegraph","slug":"/projects/telegraph/","description":"This project does some awesome stuff with other awesome things","thumbnail":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/6Od9v3wzLOysiMum0Wkmme/094e8d5f2c14f732519a3fb4a05cabf5/cameron-kirby-88711.jpg","fileName":"cameron-kirby-88711.jpg","contentType":"image/jpeg"}}},{"name":"Google","slug":"/projects/google/","description":"This picture is cool and shows cool awesome things that are awesome and cool","thumbnail":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/4NzwDSDlGECGIiokKomsyI/60086c4cf183d8d677ac91cf7dfa6651/denys-nevozhai-100695.jpg","fileName":"denys-nevozhai-100695.jpg","contentType":"image/jpeg"}}},{"name":"Macmillan","slug":"/projects/macmillan","description":"This guy has cool tattoos which are totally cool and he is totally a guy I think","thumbnail":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/4shwYI3POEGkw0Eg6kcyaQ/8dff653688d6e1265d0c0cc1eddaff37/felix-russell-saw-112140.jpg","fileName":"felix-russell-saw-112140.jpg","contentType":"image/jpeg"}}},{"name":"MyMail & Nectar","slug":"/projects/mymail-and-nectar/","description":null,"thumbnail":null}]},{"__typename":"ContentfulHeaderPanel","name":"Testing out Header panel","text":"This is a Header Panel component for displaying page headers and large sections of <h1> text","media":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/1GYXCsye7iqu208SwyuQyA/270debbcd5a6bef2c2603bed5fe84565/Sleepy-kitty.jpg","fileName":"Sleepy-kitty.jpg","contentType":"image/jpeg"}}},{"__typename":"ContentfulImagePanel","name":"Random Image","media":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/1GYXCsye7iqu208SwyuQyA/270debbcd5a6bef2c2603bed5fe84565/Sleepy-kitty.jpg","fileName":"Sleepy-kitty.jpg","contentType":"image/jpeg"}}},{"__typename":"ContentfulContentPanel","name":"Home page content","content":{"content":"This is a content panel for displaying large rich text style content\n\n# header 1\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n## header 2\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n### header 3\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","childMarkdownRemark":{"html":"<p>This is a content panel for displaying large rich text style content</p>\n<h1>header 1</h1>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n<h2>header 2</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n<h3>header 3</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"}}}]}},"pathContext":{"slug":"/"}}
 
 /***/ }),
 /* 353 */
@@ -49558,6 +49559,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ }),
 /* 354 */
+/***/ (function(module, exports) {
+
+	module.exports = {"pathContext":{}}
+
+/***/ }),
+/* 355 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -49573,7 +49580,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//# sourceMappingURL=test-require-error.js.map
 
 /***/ }),
-/* 355 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -49593,7 +49600,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var stylesStr = void 0;
 	if (true) {
 	  try {
-	    stylesStr = __webpack_require__(356);
+	    stylesStr = __webpack_require__(357);
 	  } catch (e) {
 	    console.log(e);
 	  }
@@ -49649,22 +49656,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	}(_react2.default.Component);
 
 /***/ }),
-/* 356 */
+/* 357 */
 /***/ (function(module, exports) {
 
 	module.exports = ".container{margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem;-ms-flex-preferred-size:100%;flex-basis:100%}@media only screen and (min-width:601px){.container{max-width:80%}}.header{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;min-height:100px}.logo,.nav__list{padding:0;margin:0}.nav__list{list-style:none}.nav__list__item{display:inline;margin-left:1rem}.pageSelector{margin-bottom:10vh}.pageSelector__items{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.pageSelector__item{-ms-flex-preferred-size:100%;flex-basis:100%}@media only screen and (min-width:601px){.pageSelector{margin-bottom:15vh}.pageSelector__item{-ms-flex-preferred-size:50%;flex-basis:50%}}.footer{background-color:#f4f4f4;display:-ms-flexbox;display:flex;padding-top:5rem;margin-top:5rem}.links{list-style:none;margin:0;padding:0}.links li{display:inline}.hero{margin-top:15vh;margin-bottom:13vh}@media only screen and (min-width:601px){.hero{font-size:150%;margin-top:20vh;margin-bottom:18vh}}.paging{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.paging__list{margin:0;padding:0}.paging__item{text-decoration:none}"
 
 /***/ }),
-/* 357 */
-/***/ (function(module, exports) {
-
-	module.exports = {"assetsByChunkName":{"path---projects-macmillan":["path---projects-macmillan-1ef89d7a15e727104566.js","path---projects-macmillan-1ef89d7a15e727104566.js.map"],"path---projects-mymail-and-nectar":["path---projects-mymail-and-nectar-8f963ade7a20ab2a80ee.js","path---projects-mymail-and-nectar-8f963ade7a20ab2a80ee.js.map"],"path---blog":["path---blog-ab5a2dd07dec5bdf98eb.js","path---blog-ab5a2dd07dec5bdf98eb.js.map"],"path---projects-telegraph":["path---projects-telegraph-9cd29f96478375c4ebd1.js","path---projects-telegraph-9cd29f96478375c4ebd1.js.map"],"path---":["path----c0229007ba28e902f61d.js","path----c0229007ba28e902f61d.js.map"],"component---src-layouts-index-js":["component---src-layouts-index-js-a3b71e6f5c192ed8df96.js","component---src-layouts-index-js-a3b71e6f5c192ed8df96.js.map"],"path---index":["path---index-75a6099cfe88e13106fa.js","path---index-75a6099cfe88e13106fa.js.map"],"component---src-pages-404-js":["component---src-pages-404-js-a96b91fc0b0bf1e088b9.js","component---src-pages-404-js-a96b91fc0b0bf1e088b9.js.map"],"path---projects-google":["path---projects-google-d8a2de6125eb07a3b53b.js","path---projects-google-d8a2de6125eb07a3b53b.js.map"],"commons":["commons-4cd39fa88a59713b421c.js","commons-4cd39fa88a59713b421c.js.map"],"path---404-html":["path---404-html-a0e39f21c11f6a62c5ab.js","path---404-html-a0e39f21c11f6a62c5ab.js.map"],"app":["app-d984e8a08cc8c796a1fe.js","build-js-styles.css","app-d984e8a08cc8c796a1fe.js.map","build-js-styles.css.map"],"component---src-templates-page-template-js":["component---src-templates-page-template-js-6115c4c03d1feba23922.js","component---src-templates-page-template-js-6115c4c03d1feba23922.js.map"],"path---projects-nectar-app":["path---projects-nectar-app-12eeb27803ec5aea10fc.js","path---projects-nectar-app-12eeb27803ec5aea10fc.js.map"],"path---404":["path---404-a0e39f21c11f6a62c5ab.js","path---404-a0e39f21c11f6a62c5ab.js.map"]}}
-
-/***/ }),
 /* 358 */
 /***/ (function(module, exports) {
 
-	module.exports = "{\"231608221292675\":\"app-d984e8a08cc8c796a1fe.js\",\"235131596041995\":\"component---src-templates-page-template-js-6115c4c03d1feba23922.js\",\"162898551421021\":\"component---src-pages-404-js-a96b91fc0b0bf1e088b9.js\",\"60335399758886\":\"path----c0229007ba28e902f61d.js\",\"253473097420290\":\"path---projects-nectar-app-12eeb27803ec5aea10fc.js\",\"42533299559841\":\"path---projects-mymail-and-nectar-8f963ade7a20ab2a80ee.js\",\"51898459071786\":\"path---projects-telegraph-9cd29f96478375c4ebd1.js\",\"167882855878725\":\"path---projects-google-d8a2de6125eb07a3b53b.js\",\"26547451046972\":\"path---projects-macmillan-1ef89d7a15e727104566.js\",\"49683490770531\":\"path---blog-ab5a2dd07dec5bdf98eb.js\",\"142629428675168\":\"path---index-75a6099cfe88e13106fa.js\",\"254022195166212\":\"path---404-a0e39f21c11f6a62c5ab.js\",\"178698757827068\":\"path---404-html-a0e39f21c11f6a62c5ab.js\",\"114276838955818\":\"component---src-layouts-index-js-a3b71e6f5c192ed8df96.js\"}"
+	module.exports = {"assetsByChunkName":{"path---projects-macmillan":["path---projects-macmillan-1ef89d7a15e727104566.js","path---projects-macmillan-1ef89d7a15e727104566.js.map"],"path---projects-mymail-and-nectar":["path---projects-mymail-and-nectar-8f963ade7a20ab2a80ee.js","path---projects-mymail-and-nectar-8f963ade7a20ab2a80ee.js.map"],"path---blog":["path---blog-ab5a2dd07dec5bdf98eb.js","path---blog-ab5a2dd07dec5bdf98eb.js.map"],"path---projects-telegraph":["path---projects-telegraph-9cd29f96478375c4ebd1.js","path---projects-telegraph-9cd29f96478375c4ebd1.js.map"],"path---":["path----c0229007ba28e902f61d.js","path----c0229007ba28e902f61d.js.map"],"component---src-layouts-index-js":["component---src-layouts-index-js-a3b71e6f5c192ed8df96.js","component---src-layouts-index-js-a3b71e6f5c192ed8df96.js.map"],"path---index":["path---index-75a6099cfe88e13106fa.js","path---index-75a6099cfe88e13106fa.js.map"],"component---src-pages-404-js":["component---src-pages-404-js-a96b91fc0b0bf1e088b9.js","component---src-pages-404-js-a96b91fc0b0bf1e088b9.js.map"],"path---projects-google":["path---projects-google-d8a2de6125eb07a3b53b.js","path---projects-google-d8a2de6125eb07a3b53b.js.map"],"commons":["commons-4cd39fa88a59713b421c.js","commons-4cd39fa88a59713b421c.js.map"],"path---404-html":["path---404-html-a0e39f21c11f6a62c5ab.js","path---404-html-a0e39f21c11f6a62c5ab.js.map"],"path---projects-nectar-web":["path---projects-nectar-web-da4c2aedbb0975c29534.js","path---projects-nectar-web-da4c2aedbb0975c29534.js.map"],"app":["app-b36f1631a05a1b2e415a.js","build-js-styles.css","app-b36f1631a05a1b2e415a.js.map","build-js-styles.css.map"],"component---src-templates-page-template-js":["component---src-templates-page-template-js-6115c4c03d1feba23922.js","component---src-templates-page-template-js-6115c4c03d1feba23922.js.map"],"path---projects-nectar-app":["path---projects-nectar-app-12eeb27803ec5aea10fc.js","path---projects-nectar-app-12eeb27803ec5aea10fc.js.map"],"path---404":["path---404-a0e39f21c11f6a62c5ab.js","path---404-a0e39f21c11f6a62c5ab.js.map"]}}
+
+/***/ }),
+/* 359 */
+/***/ (function(module, exports) {
+
+	module.exports = "{\"231608221292675\":\"app-b36f1631a05a1b2e415a.js\",\"235131596041995\":\"component---src-templates-page-template-js-6115c4c03d1feba23922.js\",\"162898551421021\":\"component---src-pages-404-js-a96b91fc0b0bf1e088b9.js\",\"60335399758886\":\"path----c0229007ba28e902f61d.js\",\"186919484492709\":\"path---projects-nectar-web-da4c2aedbb0975c29534.js\",\"253473097420290\":\"path---projects-nectar-app-12eeb27803ec5aea10fc.js\",\"42533299559841\":\"path---projects-mymail-and-nectar-8f963ade7a20ab2a80ee.js\",\"51898459071786\":\"path---projects-telegraph-9cd29f96478375c4ebd1.js\",\"167882855878725\":\"path---projects-google-d8a2de6125eb07a3b53b.js\",\"26547451046972\":\"path---projects-macmillan-1ef89d7a15e727104566.js\",\"49683490770531\":\"path---blog-ab5a2dd07dec5bdf98eb.js\",\"142629428675168\":\"path---index-75a6099cfe88e13106fa.js\",\"254022195166212\":\"path---404-a0e39f21c11f6a62c5ab.js\",\"178698757827068\":\"path---404-html-a0e39f21c11f6a62c5ab.js\",\"114276838955818\":\"component---src-layouts-index-js-a3b71e6f5c192ed8df96.js\"}"
 
 /***/ })
 /******/ ])
