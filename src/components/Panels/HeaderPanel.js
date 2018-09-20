@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HeaderPanel = ({ text, media }) => {
-  const url = !mediand
+  const url = !media
     ? 'none'
     : `no-repeat url(${media.file.url}) center center`;
   return (
