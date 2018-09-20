@@ -42537,15 +42537,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var typography = new _typography2.default({
-	  baseFontSize: '18px',
+	  baseFontSize: '21px',
 	  baseLineHeight: 1.5,
 	  headerFontFamily: ['Montserrat', 'sans-serif'],
 	  headerWeight: '700',
-	  bodyFontFamily: ['Montserrat', 'sans-serif'],
-	  bodyWeight: '400',
 	  googleFonts: [{
 	    name: 'Montserrat',
-	    styles: ['400', '700']
+	    styles: ['700']
 	  }]
 	});
 	
@@ -45151,7 +45149,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            )
 	          ),
 	          description && _react2.default.createElement(
-	            'h4',
+	            'p',
 	            null,
 	            description
 	          )
@@ -45248,7 +45246,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var html = _ref.html;
 	  return _react2.default.createElement(
 	    'section',
-	    { className: 'container' },
+	    { className: 'container panel content' },
 	    _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: html } })
 	  );
 	};
@@ -45279,7 +45277,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      next = _ref.next;
 	  return _react2.default.createElement(
 	    'nav',
-	    { className: 'paging', 'aria-label': 'Paging' },
+	    { className: 'paging container', 'aria-label': 'Paging' },
 	    _react2.default.createElement(
 	      _gatsbyLink2.default,
 	      { className: 'paging__item', role: 'menuitem', to: prev.slug },
@@ -45520,19 +45518,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 352 */
 /***/ (function(module, exports) {
 
-	module.exports = ".container{margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem;-ms-flex-preferred-size:100%;flex-basis:100%}@media only screen and (min-width:601px){.container{max-width:80%}}.header{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;min-height:100px}.logo,.nav__list{padding:0;margin:0}.nav__list{list-style:none}.nav__list__item{display:inline;margin-left:1rem}.pageSelector{margin-bottom:10vh}.pageSelector__items{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.pageSelector__item{-ms-flex-preferred-size:100%;flex-basis:100%}@media only screen and (min-width:601px){.pageSelector{margin-bottom:15vh}.pageSelector__item{-ms-flex-preferred-size:50%;flex-basis:50%}}.footer{background-color:#f4f4f4;display:-ms-flexbox;display:flex;padding-top:5rem;margin-top:5rem}.links{list-style:none;margin:0;padding:0}.links li{display:inline}.hero{margin-top:15vh;margin-bottom:13vh}@media only screen and (min-width:601px){.hero{font-size:150%;margin-top:20vh;margin-bottom:18vh}}.paging{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.paging__list{margin:0;padding:0}.paging__item{text-decoration:none}.headerPanel{padding-top:15vh;padding-bottom:15vh}"
+	module.exports = ".container{margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem;-ms-flex-preferred-size:100%;flex-basis:100%}@media only screen and (min-width:601px){.container{max-width:80%}}.header{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;min-height:100px}.logo,.nav__list{padding:0;margin:0}.nav__list{list-style:none}.nav__list__item{display:inline;margin-left:1rem}.pageSelector{margin-bottom:10vh}.pageSelector__items{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.pageSelector__item{-ms-flex-preferred-size:100%;flex-basis:100%}@media only screen and (min-width:601px){.pageSelector{margin-bottom:15vh}.pageSelector__item{-ms-flex-preferred-size:50%;flex-basis:50%}}.footer{background-color:#f4f4f4;display:-ms-flexbox;display:flex;padding-top:5rem;margin-top:5rem}.links{list-style:none;margin:0;padding:0}.links li{display:inline}.hero{margin-top:15vh;margin-bottom:13vh}@media only screen and (min-width:601px){.hero{font-size:150%;margin-top:20vh;margin-bottom:18vh}}.paging{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.paging__list{margin:0;padding:0}.paging__item{text-decoration:none}.headerPanel{padding-top:15vh;padding-bottom:15vh}.content{padding-top:1rem;padding-bottom:1rem}blockquote{position:relative}blockquote:before{content:\"\";position:absolute;left:-16px;left:-1rem;height:100%;width:5px;background-color:#000}"
 
 /***/ }),
 /* 353 */
 /***/ (function(module, exports) {
 
-	module.exports = {"assetsByChunkName":{"path---projects-macmillan":["path---projects-macmillan-32b89f8bb788509d7b1e.js","path---projects-macmillan-32b89f8bb788509d7b1e.js.map"],"path---projects-mymail-and-nectar":["path---projects-mymail-and-nectar-3520cd223f705389048e.js","path---projects-mymail-and-nectar-3520cd223f705389048e.js.map"],"path---blog":["path---blog-cacade74af05cbe9b8cd.js","path---blog-cacade74af05cbe9b8cd.js.map"],"path---projects-telegraph":["path---projects-telegraph-fd6296ccdc9a52d1f2d6.js","path---projects-telegraph-fd6296ccdc9a52d1f2d6.js.map"],"path---":["path----c0229007ba28e902f61d.js","path----c0229007ba28e902f61d.js.map"],"component---src-layouts-index-js":["component---src-layouts-index-js-b1a3b3ddf319034a59c7.js","component---src-layouts-index-js-b1a3b3ddf319034a59c7.js.map"],"path---index":["path---index-58fbdca39feb8671a89c.js","path---index-58fbdca39feb8671a89c.js.map"],"component---src-pages-404-js":["component---src-pages-404-js-a96b91fc0b0bf1e088b9.js","component---src-pages-404-js-a96b91fc0b0bf1e088b9.js.map"],"path---projects-google":["path---projects-google-81430000ec71abc364c7.js","path---projects-google-81430000ec71abc364c7.js.map"],"commons":["commons-4cd39fa88a59713b421c.js","commons-4cd39fa88a59713b421c.js.map"],"path---404-html":["path---404-html-a0e39f21c11f6a62c5ab.js","path---404-html-a0e39f21c11f6a62c5ab.js.map"],"path---projects-nectar-web":["path---projects-nectar-web-691fe5041c1dda01190c.js","path---projects-nectar-web-691fe5041c1dda01190c.js.map"],"app":["app-18af7fbbf10f9c8a273a.js","build-js-styles.css","app-18af7fbbf10f9c8a273a.js.map","build-js-styles.css.map"],"component---src-templates-page-template-js":["component---src-templates-page-template-js-e0265c6da625cb147ed5.js","component---src-templates-page-template-js-e0265c6da625cb147ed5.js.map"],"path---projects-nectar-app":["path---projects-nectar-app-e48d08e5e9d7ab7c9281.js","path---projects-nectar-app-e48d08e5e9d7ab7c9281.js.map"],"path---404":["path---404-a0e39f21c11f6a62c5ab.js","path---404-a0e39f21c11f6a62c5ab.js.map"],"path---about":["path---about-992e4d0f3a85a1659944.js","path---about-992e4d0f3a85a1659944.js.map"]}}
+	module.exports = {"assetsByChunkName":{"path---projects-macmillan":["path---projects-macmillan-32b89f8bb788509d7b1e.js","path---projects-macmillan-32b89f8bb788509d7b1e.js.map"],"path---projects-mymail-and-nectar":["path---projects-mymail-and-nectar-3520cd223f705389048e.js","path---projects-mymail-and-nectar-3520cd223f705389048e.js.map"],"path---blog":["path---blog-cacade74af05cbe9b8cd.js","path---blog-cacade74af05cbe9b8cd.js.map"],"path---projects-telegraph":["path---projects-telegraph-fd6296ccdc9a52d1f2d6.js","path---projects-telegraph-fd6296ccdc9a52d1f2d6.js.map"],"path---":["path----c0229007ba28e902f61d.js","path----c0229007ba28e902f61d.js.map"],"component---src-layouts-index-js":["component---src-layouts-index-js-b1a3b3ddf319034a59c7.js","component---src-layouts-index-js-b1a3b3ddf319034a59c7.js.map"],"path---index":["path---index-58fbdca39feb8671a89c.js","path---index-58fbdca39feb8671a89c.js.map"],"component---src-pages-404-js":["component---src-pages-404-js-a96b91fc0b0bf1e088b9.js","component---src-pages-404-js-a96b91fc0b0bf1e088b9.js.map"],"path---projects-google":["path---projects-google-81430000ec71abc364c7.js","path---projects-google-81430000ec71abc364c7.js.map"],"commons":["commons-4cd39fa88a59713b421c.js","commons-4cd39fa88a59713b421c.js.map"],"path---404-html":["path---404-html-a0e39f21c11f6a62c5ab.js","path---404-html-a0e39f21c11f6a62c5ab.js.map"],"path---projects-nectar-web":["path---projects-nectar-web-691fe5041c1dda01190c.js","path---projects-nectar-web-691fe5041c1dda01190c.js.map"],"app":["app-18af7fbbf10f9c8a273a.js","build-js-styles.css","app-18af7fbbf10f9c8a273a.js.map","build-js-styles.css.map"],"component---src-templates-page-template-js":["component---src-templates-page-template-js-a30fd0a09d32e0c88f95.js","component---src-templates-page-template-js-a30fd0a09d32e0c88f95.js.map"],"path---projects-nectar-app":["path---projects-nectar-app-e48d08e5e9d7ab7c9281.js","path---projects-nectar-app-e48d08e5e9d7ab7c9281.js.map"],"path---404":["path---404-a0e39f21c11f6a62c5ab.js","path---404-a0e39f21c11f6a62c5ab.js.map"],"path---about":["path---about-992e4d0f3a85a1659944.js","path---about-992e4d0f3a85a1659944.js.map"]}}
 
 /***/ }),
 /* 354 */
 /***/ (function(module, exports) {
 
-	module.exports = "{\"231608221292675\":\"app-18af7fbbf10f9c8a273a.js\",\"235131596041995\":\"component---src-templates-page-template-js-e0265c6da625cb147ed5.js\",\"162898551421021\":\"component---src-pages-404-js-a96b91fc0b0bf1e088b9.js\",\"60335399758886\":\"path----c0229007ba28e902f61d.js\",\"26547451046972\":\"path---projects-macmillan-32b89f8bb788509d7b1e.js\",\"142629428675168\":\"path---index-58fbdca39feb8671a89c.js\",\"273950069227526\":\"path---about-992e4d0f3a85a1659944.js\",\"42533299559841\":\"path---projects-mymail-and-nectar-3520cd223f705389048e.js\",\"253473097420290\":\"path---projects-nectar-app-e48d08e5e9d7ab7c9281.js\",\"186919484492709\":\"path---projects-nectar-web-691fe5041c1dda01190c.js\",\"51898459071786\":\"path---projects-telegraph-fd6296ccdc9a52d1f2d6.js\",\"167882855878725\":\"path---projects-google-81430000ec71abc364c7.js\",\"49683490770531\":\"path---blog-cacade74af05cbe9b8cd.js\",\"254022195166212\":\"path---404-a0e39f21c11f6a62c5ab.js\",\"178698757827068\":\"path---404-html-a0e39f21c11f6a62c5ab.js\",\"114276838955818\":\"component---src-layouts-index-js-b1a3b3ddf319034a59c7.js\"}"
+	module.exports = "{\"231608221292675\":\"app-18af7fbbf10f9c8a273a.js\",\"235131596041995\":\"component---src-templates-page-template-js-a30fd0a09d32e0c88f95.js\",\"162898551421021\":\"component---src-pages-404-js-a96b91fc0b0bf1e088b9.js\",\"60335399758886\":\"path----c0229007ba28e902f61d.js\",\"26547451046972\":\"path---projects-macmillan-32b89f8bb788509d7b1e.js\",\"142629428675168\":\"path---index-58fbdca39feb8671a89c.js\",\"273950069227526\":\"path---about-992e4d0f3a85a1659944.js\",\"42533299559841\":\"path---projects-mymail-and-nectar-3520cd223f705389048e.js\",\"253473097420290\":\"path---projects-nectar-app-e48d08e5e9d7ab7c9281.js\",\"186919484492709\":\"path---projects-nectar-web-691fe5041c1dda01190c.js\",\"51898459071786\":\"path---projects-telegraph-fd6296ccdc9a52d1f2d6.js\",\"167882855878725\":\"path---projects-google-81430000ec71abc364c7.js\",\"49683490770531\":\"path---blog-cacade74af05cbe9b8cd.js\",\"254022195166212\":\"path---404-a0e39f21c11f6a62c5ab.js\",\"178698757827068\":\"path---404-html-a0e39f21c11f6a62c5ab.js\",\"114276838955818\":\"component---src-layouts-index-js-b1a3b3ddf319034a59c7.js\"}"
 
 /***/ })
 /******/ ])
