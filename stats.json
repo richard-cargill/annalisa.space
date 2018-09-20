@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "path---projects-macmillan": [
-      "path---projects-macmillan-e1d5feb1b4c9b7a126a5.js",
-      "path---projects-macmillan-e1d5feb1b4c9b7a126a5.js.map"
+      "path---projects-macmillan-1c8cb1b292e2edd39538.js",
+      "path---projects-macmillan-1c8cb1b292e2edd39538.js.map"
     ],
     "path---projects-mymail-and-nectar": [
       "path---projects-mymail-and-nectar-3520cd223f705389048e.js",
@@ -25,8 +25,8 @@
       "component---src-layouts-index-js-a3b71e6f5c192ed8df96.js.map"
     ],
     "path---index": [
-      "path---index-ef8f63da7edf1d6bf690.js",
-      "path---index-ef8f63da7edf1d6bf690.js.map"
+      "path---index-58fbdca39feb8671a89c.js",
+      "path---index-58fbdca39feb8671a89c.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-a96b91fc0b0bf1e088b9.js",
@@ -49,9 +49,9 @@
       "path---projects-nectar-web-691fe5041c1dda01190c.js.map"
     ],
     "app": [
-      "app-deb84dd4e6302e643d6d.js",
+      "app-18af7fbbf10f9c8a273a.js",
       "build-js-styles.css",
-      "app-deb84dd4e6302e643d6d.js.map",
+      "app-18af7fbbf10f9c8a273a.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
