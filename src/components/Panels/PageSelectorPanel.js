@@ -18,7 +18,7 @@ const PageSelectorPanel = ({ text, pages }) => (
         <h3>
           <Link to={slug}>{name}</Link>
         </h3>
-        {description && <h4>{description}</h4>}
+        {description && <p>{description}</p>}
       </article>);
     })}
     </div>

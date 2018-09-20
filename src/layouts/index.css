@@ -110,3 +110,22 @@
   padding-top: 15vh;
   padding-bottom: 15vh;
 }
+
+.content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Tempory, I'll need stylign for this  */
+blockquote {
+  position: relative;
+}
+
+blockquote:before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  height: 100%;
+  width: 5px;
+  background-color: black;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 const Paging = ({prev, next}) => (
-  <nav className="paging" aria-label='Paging'>
+  <nav className="paging container" aria-label='Paging'>
     <Link className="paging__item" role='menuitem' to={prev.slug}>
       <small>Previous</small>
       <h4>{prev.name}</h4>
