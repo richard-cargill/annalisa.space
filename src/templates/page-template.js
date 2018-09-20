@@ -42,7 +42,7 @@ export default class PageTemplate extends React.Component {
     const prevIndexObj = getPrevIndexObj(pages, currentIndex);
 
     return (
-      <main className="container">
+      <main>
         <article>
           {panels && panels.map(panel => {
             const { __typename } = panel;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HeaderPanel = ({ text }) => (
-  <section>
+  <section className='container'>
     <h1>{text}</h1>
   </section>
 );

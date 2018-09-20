@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ImagePanel = ({ src, alt }) => (
-  <section>
+  <section className='container'>
     <img src={src} alt={alt} />
   </section>
 )

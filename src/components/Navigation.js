@@ -5,10 +5,13 @@ const Navigation = () => (
   <nav className="nav" aria-label='Site Navigation'>
     <ul className="nav__list" aria-label='Site Navigation'>
       <li className="nav__list__item">
-        <Link role='menuitem' to='/work/'>Work</Link>
+        <Link role='menuitem' to='/'>Projects</Link>
       </li>
       <li className="nav__list__item">
         <Link role='menuitem' to='/about/'>About</Link>
+      </li>
+      <li className="nav__list__item">
+        <Link role='menuitem' to='/blog/'>Blog</Link>
       </li>
     </ul>
   </nav>
