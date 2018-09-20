@@ -13,7 +13,7 @@ function Panels({type, data}) {
     case 'ContentfulPageSelectorPanel':
       return <PageSelectorPanel text={data.text} pages={data.pages} />;
     case 'ContentfulHeaderPanel':
-      return <HeaderPanel text={data.text} />;
+      return <HeaderPanel text={data.text} media={data.media} />;
     case 'ContentfulImagePanel':
       return <ImagePanel src={data.media.file.url} />;
     case 'ContentfulContentPanel':
