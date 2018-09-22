@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import Password from '../Password';
 
 const PageSelectorPanel = ({ text, pages }) => (
   <section className="panel pageSelector container">
@@ -11,8 +10,7 @@ const PageSelectorPanel = ({ text, pages }) => (
         thumbnail,
         name,
         slug,
-        description,
-        password
+        description
       } = page;
 
       return (<article className="pageSelector__item" key={name}>
@@ -24,7 +22,6 @@ const PageSelectorPanel = ({ text, pages }) => (
           }
         </h3>
         {description && <p>{description}</p>}
-        {password && <Password url={slug} />}
       </article>);
     })}
     </div>

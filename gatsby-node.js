@@ -37,42 +37,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // We want to create a detailed page for each
         // product node. We'll just use the Contentful id for the slug.
         _.each(result.data.allContentfulPage.edges, edge => {
-
-          if (edge.node.password) {
-            const hash = sha1(edge.node.password);
-            const protectedPath = `${hash}${edge.node.slug}`;
-            // Gatsby uses Redux to manage its internal state.
-            // Plugins and sites can use functions like "createPage"
-            // to interact with Gatsby.
-            createPage({
-              // Each page is required to have a `path` as well
-              // as a template component. The `context` is
-              // optional but is often necessary so the template
-              // can query data specific to each page.
-              path: protectedPath,
-              component: path.resolve(`./src/templates/page-template.js`),
-              context: {
-                slug: edge.node.slug,
-              },
-            })
-          } else {
-
-            // Gatsby uses Redux to manage its internal state.
-            // Plugins and sites can use functions like "createPage"
-            // to interact with Gatsby.
-            createPage({
-              // Each page is required to have a `path` as well
-              // as a template component. The `context` is
-              // optional but is often necessary so the template
-              // can query data specific to each page.
-              path: `${edge.node.slug}`,
-              component: path.resolve(`./src/templates/page-template.js`),
-              context: {
-                slug: edge.node.slug,
-              },
-            })
-
-          }
+          // Gatsby uses Redux to manage its internal state.
+          // Plugins and sites can use functions like "createPage"
+          // to interact with Gatsby.
+          createPage({
+            // Each page is required to have a `path` as well
+            // as a template component. The `context` is
+            // optional but is often necessary so the template
+            // can query data specific to each page.
+            path: `${edge.node.slug}`,
+            component: path.resolve(`./src/templates/page-template.js`),
+            context: {
+              slug: edge.node.slug,
+            },
+          })
           resolve()
         })
       }).catch(error => {
