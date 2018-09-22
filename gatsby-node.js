@@ -2,6 +2,7 @@ const _ = require(`lodash`)
 const Promise = require(`bluebird`)
 const path = require(`path`)
 const slash = require(`slash`)
+const sha1 = require(`sha1`)
 
 // Implement the Gatsby API “createPages”. This is
 // called after the Gatsby bootstrap is finished so you have
@@ -21,6 +22,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             edges {
               node {
                 slug
+                password
               }
             }
           }
@@ -35,20 +37,42 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // We want to create a detailed page for each
         // product node. We'll just use the Contentful id for the slug.
         _.each(result.data.allContentfulPage.edges, edge => {
-          // Gatsby uses Redux to manage its internal state.
-          // Plugins and sites can use functions like "createPage"
-          // to interact with Gatsby.
-          createPage({
-            // Each page is required to have a `path` as well
-            // as a template component. The `context` is
-            // optional but is often necessary so the template
-            // can query data specific to each page.
-            path: `${edge.node.slug}`,
-            component: path.resolve(`./src/templates/page-template.js`),
-            context: {
-              slug: edge.node.slug,
-            },
-          })
+
+          if (edge.node.password) {
+            const hash = sha1(edge.node.password);
+            const protectedPath = `${hash}${edge.node.slug}`;
+            // Gatsby uses Redux to manage its internal state.
+            // Plugins and sites can use functions like "createPage"
+            // to interact with Gatsby.
+            createPage({
+              // Each page is required to have a `path` as well
+              // as a template component. The `context` is
+              // optional but is often necessary so the template
+              // can query data specific to each page.
+              path: protectedPath,
+              component: path.resolve(`./src/templates/page-template.js`),
+              context: {
+                slug: edge.node.slug,
+              },
+            })
+          } else {
+
+            // Gatsby uses Redux to manage its internal state.
+            // Plugins and sites can use functions like "createPage"
+            // to interact with Gatsby.
+            createPage({
+              // Each page is required to have a `path` as well
+              // as a template component. The `context` is
+              // optional but is often necessary so the template
+              // can query data specific to each page.
+              path: `${edge.node.slug}`,
+              component: path.resolve(`./src/templates/page-template.js`),
+              context: {
+                slug: edge.node.slug,
+              },
+            })
+
+          }
           resolve()
         })
       }).catch(error => {

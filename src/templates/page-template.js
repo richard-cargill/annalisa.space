@@ -79,6 +79,7 @@ export const pageQuery = graphql`
             name
             slug
             description
+            password
             thumbnail {
               file {
                 url
