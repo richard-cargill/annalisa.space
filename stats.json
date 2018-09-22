@@ -1,5 +1,9 @@
 {
   "assetsByChunkName": {
+    "path---projects-macmillan": [
+      "path---projects-macmillan-32b89f8bb788509d7b1e.js",
+      "path---projects-macmillan-32b89f8bb788509d7b1e.js.map"
+    ],
     "path---projects-mymail-and-nectar": [
       "path---projects-mymail-and-nectar-3520cd223f705389048e.js",
       "path---projects-mymail-and-nectar-3520cd223f705389048e.js.map"
@@ -15,10 +19,6 @@
     "path---": [
       "path----c0229007ba28e902f61d.js",
       "path----c0229007ba28e902f61d.js.map"
-    ],
-    "path---5-baa-61-e-4-c-9-b-93-f-3-f-0682250-b-6-cf-8331-b-7-ee-68-fd-8-projects-macmillan": [
-      "path---5-baa-61-e-4-c-9-b-93-f-3-f-0682250-b-6-cf-8331-b-7-ee-68-fd-8-projects-macmillan-32b89f8bb788509d7b1e.js",
-      "path---5-baa-61-e-4-c-9-b-93-f-3-f-0682250-b-6-cf-8331-b-7-ee-68-fd-8-projects-macmillan-32b89f8bb788509d7b1e.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-066e3a4870e5d01e26bc.js",
@@ -37,8 +37,8 @@
       "path---projects-google-81430000ec71abc364c7.js.map"
     ],
     "commons": [
-      "commons-5f1ea9554f2f9764cb67.js",
-      "commons-5f1ea9554f2f9764cb67.js.map"
+      "commons-32f4de0dbb39ae50425f.js",
+      "commons-32f4de0dbb39ae50425f.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -49,14 +49,14 @@
       "path---projects-nectar-web-691fe5041c1dda01190c.js.map"
     ],
     "app": [
-      "app-e8c55ac988f0303bb5c8.js",
+      "app-7e5cb53ad82367982850.js",
       "build-js-styles.css",
-      "app-e8c55ac988f0303bb5c8.js.map",
+      "app-7e5cb53ad82367982850.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
-      "component---src-templates-page-template-js-3848d252e34537f00f7e.js",
-      "component---src-templates-page-template-js-3848d252e34537f00f7e.js.map"
+      "component---src-templates-page-template-js-e8880da75661b9c51c46.js",
+      "component---src-templates-page-template-js-e8880da75661b9c51c46.js.map"
     ],
     "path---projects-nectar-app": [
       "path---projects-nectar-app-e48d08e5e9d7ab7c9281.js",
