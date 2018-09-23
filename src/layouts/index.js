@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 // import 'sanitize.css';
 import './index.css';
 
-const Layout = ({ children, data }) => {
+const Layout = ({ children, data, match }) => {
   const title = data.site.siteMetadata.title;
   return (<div>
     <Helmet

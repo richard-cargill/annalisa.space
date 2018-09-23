@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 const Header = ({ siteTitle }) => (
   <header className="header">
     <h1 className="logo">
-      <Link to="/">
+      <Link className="logo__a" to="/">
         {siteTitle}
       </Link>
     </h1>

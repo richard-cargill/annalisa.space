@@ -6,9 +6,15 @@
   flex-basis: 100%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 600px) {
   .container {
-    max-width: 80%;
+    max-width: 90%;
+  }
+
+  .limit-width,
+  .panel {
+    max-width: 1024px;
+    width: 90%;
   }
 }
 
@@ -22,20 +28,34 @@
 .logo {
   padding: 0;
   margin: 0;
+  color: hsla(0,0%,0%,0.8);
+}
+
+.logo__a {
+  color: currentColor;
+  text-decoration: none;
 }
 
 .nav__list {
   padding: 0;
   margin: 0;
   list-style: none;
+  font-family: sans-serif;
+  color: hsla(0,0%,0%,0.8);
 }
 
 .nav__list__item {
   display: inline;
+  margin-left: 1rem;
 }
 
-.nav__list__item {
-  margin-left: 1rem;
+.nav__list__a {
+ text-decoration: none;
+ color: currentColor;
+}
+
+.nav__list__a.is-active {
+  border-bottom: 3px solid currentColor;
 }
 
 .pageSelector {
@@ -45,19 +65,56 @@
 .pageSelector__items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .pageSelector__item {
   flex-basis: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid hsla(0,0%,0%,0.8);
+  border-radius: 5px;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: hsla(0,0%,0%,0.8);
+  transition: all .25s linear;
 }
 
-@media only screen and (min-width: 601px) {
+.pageSelector__item:hover {
+  background-color: hsla(0,0%,0%,0.8);
+  color: white;
+  transform: scale(1.05);
+}
+
+.pageSelector__a {
+  color: currentColor;
+  font-size: 75%;
+  text-decoration: none;
+}
+
+.pageSelector__content {
+  text-overflow: ellipsis;
+  max-height: 3rem;
+  font-family: sans-serif;
+}
+
+@media only screen and (min-width: 600px) {
   .pageSelector {
     margin-bottom: 15vh;
   }
 
   .pageSelector__item {
     flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .pageSelector__item {
+    flex-basis: 30%;
   }
 }
 
@@ -83,7 +140,7 @@
   margin-bottom: 13vh;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 600px) {
   .hero {
     font-size: 150%;
     margin-top: 20vh;
@@ -127,5 +184,6 @@ blockquote:before {
   left: -1rem;
   height: 100%;
   width: 5px;
-  background-color: black;
+  background-color: hsla(0,0%,0%,0.8);
 }
+
