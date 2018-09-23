@@ -16,10 +16,7 @@ const PageSelectorPanel = ({ text, pages }) => (
       return (<article className="pageSelector__item" key={name}>
         {thumbnail && <img src={thumbnail.file.url} /> }
         <h3>
-          {password
-            ? (<span>{name}</span>)
-            : (<Link to={slug}>{name}</Link>)
-          }
+            <Link to={slug}>{name}</Link>
         </h3>
         {description && <p>{description}</p>}
       </article>);
