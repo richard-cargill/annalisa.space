@@ -1,7 +1,7 @@
 import React from 'react';
 import Panels from '../components/Panels/';
 import Paging from '../components/Paging';
-import SelectorPanel from '../components/panels/SelectorPanel';
+import SelectorPanel from '../components/Panels/SelectorPanel';
 
 function currentPageIndexOf(pagesArray, slug) {
   return pagesArray.findIndex(page => page.slug === slug);
