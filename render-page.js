@@ -46941,9 +46941,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	var Layout = function Layout(_ref) {
 	  var children = _ref.children,
 	      data = _ref.data,
-	      match = _ref.match;
+	      location = _ref.location;
 	
 	  var title = data.site.siteMetadata.title;
+	  console.log(location.pathname);
 	  return _react2.default.createElement(
 	    'div',
 	    null,
@@ -46957,7 +46958,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          position: 'relative',
 	          overflow: 'hidden'
 	        } },
-	      _react2.default.createElement(_reactTwo2.default, { type: 'svg' }),
+	      location.pathname === '/' && _react2.default.createElement(_reactTwo2.default, { type: 'svg' }),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'container' },
@@ -49012,7 +49013,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      _react2.default.createElement(
 	        'h3',
 	        null,
-	        'Get in touch'
+	        'GET IN TOUCH'
 	      ),
 	      _react2.default.createElement(
 	        'p',
@@ -49109,7 +49110,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var SCREEN_WIDTH = window.innerWidth;
+	var isClient = typeof window !== 'undefined';
+	var SCREEN_WIDTH = isClient ? window.innerWidth : 1000;
 	var SCREEN_HEIGHT = 2000;
 	var MIN_RADIUS = 10;
 	var MAX_RADIUS = 40;
@@ -60117,13 +60119,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 361 */
 /***/ (function(module, exports) {
 
-	module.exports = {"assetsByChunkName":{"path---projects-macmillan":["path---projects-macmillan-32b89f8bb788509d7b1e.js","path---projects-macmillan-32b89f8bb788509d7b1e.js.map"],"path---projects-mymail-and-nectar":["path---projects-mymail-and-nectar-3520cd223f705389048e.js","path---projects-mymail-and-nectar-3520cd223f705389048e.js.map"],"path---blog":["path---blog-cacade74af05cbe9b8cd.js","path---blog-cacade74af05cbe9b8cd.js.map"],"path---projects-telegraph":["path---projects-telegraph-fd6296ccdc9a52d1f2d6.js","path---projects-telegraph-fd6296ccdc9a52d1f2d6.js.map"],"path---":["path----c0229007ba28e902f61d.js","path----c0229007ba28e902f61d.js.map"],"component---src-layouts-index-js":["component---src-layouts-index-js-89989fe14b51aef0585b.js","component---src-layouts-index-js-89989fe14b51aef0585b.js.map"],"path---index":["path---index-34f553430973c1a229b1.js","path---index-34f553430973c1a229b1.js.map"],"component---src-pages-404-js":["component---src-pages-404-js-a96b91fc0b0bf1e088b9.js","component---src-pages-404-js-a96b91fc0b0bf1e088b9.js.map"],"path---projects-google":["path---projects-google-81430000ec71abc364c7.js","path---projects-google-81430000ec71abc364c7.js.map"],"commons":["commons-4cd39fa88a59713b421c.js","commons-4cd39fa88a59713b421c.js.map"],"path---404-html":["path---404-html-a0e39f21c11f6a62c5ab.js","path---404-html-a0e39f21c11f6a62c5ab.js.map"],"path---projects-nectar-web":["path---projects-nectar-web-691fe5041c1dda01190c.js","path---projects-nectar-web-691fe5041c1dda01190c.js.map"],"app":["app-d8bc619536eb5a0db6b9.js","build-js-styles.css","app-d8bc619536eb5a0db6b9.js.map","build-js-styles.css.map"],"component---src-templates-page-template-js":["component---src-templates-page-template-js-7baca35881b4aa534894.js","component---src-templates-page-template-js-7baca35881b4aa534894.js.map"],"path---projects-nectar-app":["path---projects-nectar-app-e48d08e5e9d7ab7c9281.js","path---projects-nectar-app-e48d08e5e9d7ab7c9281.js.map"],"path---404":["path---404-a0e39f21c11f6a62c5ab.js","path---404-a0e39f21c11f6a62c5ab.js.map"],"path---about":["path---about-1814247d11d86dd8ca12.js","path---about-1814247d11d86dd8ca12.js.map"]}}
+	module.exports = {"assetsByChunkName":{"path---projects-macmillan":["path---projects-macmillan-32b89f8bb788509d7b1e.js","path---projects-macmillan-32b89f8bb788509d7b1e.js.map"],"path---projects-mymail-and-nectar":["path---projects-mymail-and-nectar-3520cd223f705389048e.js","path---projects-mymail-and-nectar-3520cd223f705389048e.js.map"],"path---blog":["path---blog-cacade74af05cbe9b8cd.js","path---blog-cacade74af05cbe9b8cd.js.map"],"path---projects-telegraph":["path---projects-telegraph-fd6296ccdc9a52d1f2d6.js","path---projects-telegraph-fd6296ccdc9a52d1f2d6.js.map"],"path---":["path----c0229007ba28e902f61d.js","path----c0229007ba28e902f61d.js.map"],"component---src-layouts-index-js":["component---src-layouts-index-js-a99ab7cc347973376201.js","component---src-layouts-index-js-a99ab7cc347973376201.js.map"],"path---index":["path---index-34f553430973c1a229b1.js","path---index-34f553430973c1a229b1.js.map"],"component---src-pages-404-js":["component---src-pages-404-js-a96b91fc0b0bf1e088b9.js","component---src-pages-404-js-a96b91fc0b0bf1e088b9.js.map"],"path---projects-google":["path---projects-google-81430000ec71abc364c7.js","path---projects-google-81430000ec71abc364c7.js.map"],"commons":["commons-4cd39fa88a59713b421c.js","commons-4cd39fa88a59713b421c.js.map"],"path---404-html":["path---404-html-a0e39f21c11f6a62c5ab.js","path---404-html-a0e39f21c11f6a62c5ab.js.map"],"path---projects-nectar-web":["path---projects-nectar-web-691fe5041c1dda01190c.js","path---projects-nectar-web-691fe5041c1dda01190c.js.map"],"app":["app-d8bc619536eb5a0db6b9.js","build-js-styles.css","app-d8bc619536eb5a0db6b9.js.map","build-js-styles.css.map"],"component---src-templates-page-template-js":["component---src-templates-page-template-js-7baca35881b4aa534894.js","component---src-templates-page-template-js-7baca35881b4aa534894.js.map"],"path---projects-nectar-app":["path---projects-nectar-app-e48d08e5e9d7ab7c9281.js","path---projects-nectar-app-e48d08e5e9d7ab7c9281.js.map"],"path---404":["path---404-a0e39f21c11f6a62c5ab.js","path---404-a0e39f21c11f6a62c5ab.js.map"],"path---about":["path---about-1814247d11d86dd8ca12.js","path---about-1814247d11d86dd8ca12.js.map"]}}
 
 /***/ }),
 /* 362 */
 /***/ (function(module, exports) {
 
-	module.exports = "{\"231608221292675\":\"app-d8bc619536eb5a0db6b9.js\",\"235131596041995\":\"component---src-templates-page-template-js-7baca35881b4aa534894.js\",\"162898551421021\":\"component---src-pages-404-js-a96b91fc0b0bf1e088b9.js\",\"60335399758886\":\"path----c0229007ba28e902f61d.js\",\"142629428675168\":\"path---index-34f553430973c1a229b1.js\",\"273950069227526\":\"path---about-1814247d11d86dd8ca12.js\",\"26547451046972\":\"path---projects-macmillan-32b89f8bb788509d7b1e.js\",\"42533299559841\":\"path---projects-mymail-and-nectar-3520cd223f705389048e.js\",\"253473097420290\":\"path---projects-nectar-app-e48d08e5e9d7ab7c9281.js\",\"186919484492709\":\"path---projects-nectar-web-691fe5041c1dda01190c.js\",\"51898459071786\":\"path---projects-telegraph-fd6296ccdc9a52d1f2d6.js\",\"167882855878725\":\"path---projects-google-81430000ec71abc364c7.js\",\"49683490770531\":\"path---blog-cacade74af05cbe9b8cd.js\",\"254022195166212\":\"path---404-a0e39f21c11f6a62c5ab.js\",\"178698757827068\":\"path---404-html-a0e39f21c11f6a62c5ab.js\",\"114276838955818\":\"component---src-layouts-index-js-89989fe14b51aef0585b.js\"}"
+	module.exports = "{\"231608221292675\":\"app-d8bc619536eb5a0db6b9.js\",\"235131596041995\":\"component---src-templates-page-template-js-7baca35881b4aa534894.js\",\"162898551421021\":\"component---src-pages-404-js-a96b91fc0b0bf1e088b9.js\",\"60335399758886\":\"path----c0229007ba28e902f61d.js\",\"142629428675168\":\"path---index-34f553430973c1a229b1.js\",\"273950069227526\":\"path---about-1814247d11d86dd8ca12.js\",\"26547451046972\":\"path---projects-macmillan-32b89f8bb788509d7b1e.js\",\"42533299559841\":\"path---projects-mymail-and-nectar-3520cd223f705389048e.js\",\"253473097420290\":\"path---projects-nectar-app-e48d08e5e9d7ab7c9281.js\",\"186919484492709\":\"path---projects-nectar-web-691fe5041c1dda01190c.js\",\"51898459071786\":\"path---projects-telegraph-fd6296ccdc9a52d1f2d6.js\",\"167882855878725\":\"path---projects-google-81430000ec71abc364c7.js\",\"49683490770531\":\"path---blog-cacade74af05cbe9b8cd.js\",\"254022195166212\":\"path---404-a0e39f21c11f6a62c5ab.js\",\"178698757827068\":\"path---404-html-a0e39f21c11f6a62c5ab.js\",\"114276838955818\":\"component---src-layouts-index-js-a99ab7cc347973376201.js\"}"
 
 /***/ })
 /******/ ])
