@@ -2,7 +2,8 @@ import React from "react";
 import _ from 'lodash';
 import Two from "two.js";
 
-var SCREEN_WIDTH = window.innerWidth;
+const isClient = typeof window !== 'undefined'
+var SCREEN_WIDTH = isClient ? window.innerWidth : 1000;
 var SCREEN_HEIGHT = 2000;
 var MIN_RADIUS = 10;
 var MAX_RADIUS = 40;
