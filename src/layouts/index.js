@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 
 import Header from '../components/header';
 import Footer from '../components/Footer';
+import TwoTest from '../components/react-two'
 
 // import 'sanitize.css';
 import './index.css';
@@ -18,6 +19,7 @@ const Layout = ({ children, data, match }) => {
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
+    <TwoTest type="svg" />
     <div className="container">
       <Header siteTitle={title} />
     </div>

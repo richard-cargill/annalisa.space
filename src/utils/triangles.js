@@ -6,7 +6,7 @@ $(function() {
   var MIN_SPEED = 0.2;
   var MAX_SPEED = 1;
   var N = 75;
-  var COLORS = [
+  var COLORS = 
     '#d33682',
     '#268bd2',
     '#a3d783',
