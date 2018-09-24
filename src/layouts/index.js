@@ -9,8 +9,9 @@ import TwoTest from '../components/react-two'
 // import 'sanitize.css';
 import './index.css';
 
-const Layout = ({ children, data, match }) => {
+const Layout = ({ children, data, location }) => {
   const title = data.site.siteMetadata.title;
+  console.log(location.pathname)
   return (<div>
     <Helmet
       title={title}
@@ -23,7 +24,7 @@ const Layout = ({ children, data, match }) => {
       position: 'relative',
       overflow: 'hidden'
     }}>
-      <TwoTest type="svg" />
+    {location.pathname === '/' && <TwoTest type="svg" /> }
       <div className="container">
         <Header siteTitle={title} />
       </div>
