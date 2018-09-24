@@ -4,14 +4,12 @@ import Helmet from 'react-helmet';
 
 import Header from '../components/header';
 import Footer from '../components/Footer';
-import TwoTest from '../components/react-two'
 
-// import 'sanitize.css';
 import './index.css';
 
 const Layout = ({ children, data, location }) => {
   const title = data.site.siteMetadata.title;
-  console.log(location.pathname)
+
   return (<div>
     <Helmet
       title={title}
@@ -24,7 +22,6 @@ const Layout = ({ children, data, location }) => {
       position: 'relative',
       overflow: 'hidden'
     }}>
-    {location.pathname === '/' && <TwoTest type="svg" /> }
       <div className="container">
         <Header siteTitle={title} />
       </div>
