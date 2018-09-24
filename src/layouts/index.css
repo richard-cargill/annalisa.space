@@ -71,6 +71,7 @@
 }
 
 .pageSelector__item {
+  background-color: white;
   flex-basis: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -122,7 +123,6 @@
   background-color: #f4f4f4;
   display: flex;
   padding-top: 5rem;
-  margin-top: 5rem;
 }
 
 .links {

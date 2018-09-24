@@ -19,11 +19,16 @@ const Layout = ({ children, data, match }) => {
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <TwoTest type="svg" />
-    <div className="container">
-      <Header siteTitle={title} />
+    <div style={{
+      position: 'relative',
+      overflow: 'hidden'
+    }}>
+      <TwoTest type="svg" />
+      <div className="container">
+        <Header siteTitle={title} />
+      </div>
+      {children()}
     </div>
-    {children()}
     <Footer />
   </div>)
 };
