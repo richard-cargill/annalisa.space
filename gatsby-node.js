@@ -2,6 +2,7 @@ const _ = require(`lodash`)
 const Promise = require(`bluebird`)
 const path = require(`path`)
 const slash = require(`slash`)
+const sha1 = require(`sha1`)
 
 // Implement the Gatsby API “createPages”. This is
 // called after the Gatsby bootstrap is finished so you have
@@ -21,6 +22,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             edges {
               node {
                 slug
+                password
               }
             }
           }

@@ -4,23 +4,24 @@ import Link from 'gatsby-link';
 const Footer = () => (
   <footer className="footer" aria-label='Footer'>
     <div className="container">
-      <h3>Get in touch</h3>
-      <p>Have any suggestion or itnerested in working together on a project?</p>
-      <p>Go ahead, I'd love to connect with you.</p>
-      <a href='mailto:random@random.com'>Send an email</a>
+      <h6>GET IN TOUCH</h6>
+      <p>Have any suggestion or itnerested in working together on a project? <br/>
+      Go ahead, I'd love to connect with you.</p>
+
+      <a className="button" href='mailto:random@random.com'>Send me an email</a>
 
       <ul className="links">
         <li>
-          <Link to='/about/'>About me</Link>
+          <Link className='link__a' to='/about/'>About me</Link>
         </li>
         <li>
-          <Link to='/'>Dribble</Link>
+          <Link className='link__a' to='/'>Dribble</Link>
         </li>
         <li>
-          <Link to='/'>LinkedIn</Link>
+          <Link className='link__a' to='/'>LinkedIn</Link>
         </li>
         <li>
-          <Link to='/'>Medium</Link>
+          <Link className='link__a' to='/'>Medium</Link>
         </li>
       </ul>
 

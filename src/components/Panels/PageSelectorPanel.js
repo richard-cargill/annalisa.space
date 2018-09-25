@@ -1,24 +1,31 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+function truncateTextAt(text, length) {
+  if (text.length > length) {
+    return text.substring(0, length) + '...';
+  } else {
+    return text;
+  }
+}
+
 const PageSelectorPanel = ({ text, pages }) => (
   <section className="panel pageSelector container">
-    <h2>{text}</h2>
     <div className="pageSelector__items">
     {pages.map(page => {
       const {
-        thumbnail,
         name,
         slug,
         description
       } = page;
 
       return (<article className="pageSelector__item" key={name}>
-        {thumbnail && <img src={thumbnail.file.url} /> }
-        <h3>
-          <Link to={slug}>{name}</Link>
-        </h3>
-        {description && <p>{description}</p>}
+        <Link className="pageSelector__a" to={slug}>
+          <h3 className="pageSelector__title">
+            {name}
+          </h3>
+          {description && <p className="pageSelector__content">{truncateTextAt(description, 100)}</p>}
+        </Link>
       </article>);
     })}
     </div>
