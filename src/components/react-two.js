@@ -1,6 +1,6 @@
 import React from "react";
 import _ from 'lodash';
-import Two from "two.js";
+import Script from 'react-load-script';
 
 const isClient = typeof window !== 'undefined'
 var SCREEN_WIDTH = isClient ? window.innerWidth : 1000;
@@ -76,7 +76,6 @@ class TwoRotation extends React.Component {
   componentWillMount() {
     const stage = this.stage;
     const two = new Two({
-      type: Two.Types[this.props.type],
       width: this.state.width,
       height: 2000,
     });
@@ -127,4 +126,33 @@ class TwoRotation extends React.Component {
   }
 }
 
-export default TwoRotation;
+class TwoWrapper extends React.Component {
+	constructor(props) {
+    super(props);
+    this.state = { scriptLoaded: false };
+  }
+
+  handleScriptCreate() {
+	  this.setState({ scriptLoaded: false })
+	}
+
+	handleScriptLoad() {
+	  this.setState({ scriptLoaded: true })
+	}
+
+	render() {
+    return (
+    <div>
+      <Script
+        url="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.7.0-alpha.1/two.min.js"
+        onCreate={this.handleScriptCreate.bind(this)}
+        onLoad={this.handleScriptLoad.bind(this)}
+      />
+
+      {this.state.scriptLoaded && <TwoRotation />}
+    </div>
+    )
+  }
+}
+
+export default TwoWrapper;

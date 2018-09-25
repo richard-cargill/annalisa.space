@@ -19,6 +19,7 @@
     "gh-pages": "^2.0.0",
     "lodash": "^4.17.11",
     "react-helmet": "^5.2.0",
+    "react-load-script": "^0.0.6",
     "react-typography": "^0.16.13",
     "sha1": "^1.1.1",
     "slash": "^2.0.0",
