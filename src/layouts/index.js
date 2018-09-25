@@ -5,11 +5,11 @@ import Helmet from 'react-helmet';
 import Header from '../components/header';
 import Footer from '../components/Footer';
 
-// import 'sanitize.css';
 import './index.css';
 
-const Layout = ({ children, data }) => {
+const Layout = ({ children, data, location }) => {
   const title = data.site.siteMetadata.title;
+
   return (<div>
     <Helmet
       title={title}
@@ -18,10 +18,15 @@ const Layout = ({ children, data }) => {
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <div className="container">
-      <Header siteTitle={title} />
+    <div style={{
+      position: 'relative',
+      overflow: 'hidden'
+    }}>
+      <div className="container">
+        <Header siteTitle={title} />
+      </div>
+      {children()}
     </div>
-    {children()}
     <Footer />
   </div>)
 };
