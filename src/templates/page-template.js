@@ -2,6 +2,7 @@ import React from 'react';
 import Panels from '../components/Panels/';
 import Paging from '../components/Paging';
 import SelectorPanel from '../components/Panels/SelectorPanel';
+import TwoRotation from '../components/react-two';
 
 function currentPageIndexOf(pagesArray, slug) {
   return pagesArray.findIndex(page => page.slug === slug);
@@ -43,6 +44,8 @@ export default class PageTemplate extends React.Component {
     const prevIndexObj = getPrevIndexObj(pages, currentIndex);
 
     return (
+      <div>
+      {slug === "/" && <TwoRotation />}
       <main>
         <article>
           {panels && panels.map(panel => {
@@ -53,6 +56,7 @@ export default class PageTemplate extends React.Component {
         {slug === '/' && <div className="background-alt"><SelectorPanel /></div>}
         {slug.startsWith('/projects') && <Paging prev={prevIndexObj} next={nextIndexObj} />}
       </main>
+      </div>
     );
   }
 };
