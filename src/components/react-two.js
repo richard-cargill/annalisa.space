@@ -116,6 +116,7 @@ class TwoRotation extends React.Component {
         <div
           ref={c => this.stage = c}
           style={{
+            top: '-100px',
             height: 100 + '%',
             position: 'absolute',
             zIndex: '-1'
