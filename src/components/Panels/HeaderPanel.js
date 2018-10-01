@@ -5,10 +5,10 @@ const HeaderPanel = ({ text, media }) => {
     ? 'none'
     : `no-repeat url(${media.file.url}) center center`;
   return (
-    <section className='panel headerPanel' style={{
+    <section className='headerPanel' style={{
       background: url
     }}>
-      <div className='container'>
+      <div className='panel container'>
         <h1>{text}</h1>
       </div>
     </section>

@@ -45,17 +45,17 @@ export default class PageTemplate extends React.Component {
 
     return (
       <div>
-      {slug === "/" && <TwoRotation />}
-      <main>
-        <article>
-          {panels && panels.map(panel => {
-            const { __typename } = panel;
-            return <Panels key={__typename} type={__typename} data={panel} />
-          })}
-        </article>
-        {slug === '/' && <div className="background-alt"><SelectorPanel /></div>}
-        {slug.startsWith('/projects') && <Paging prev={prevIndexObj} next={nextIndexObj} />}
-      </main>
+        {slug === "/" && <TwoRotation />}
+        <main>
+          <article>
+            {panels && panels.map(panel => {
+              const { __typename } = panel;
+              return <Panels key={__typename} type={__typename} data={panel} />
+            })}
+          </article>
+          {slug === '/' && <div className="background-alt"><SelectorPanel /></div>}
+          {slug.startsWith('/projects') && <Paging prev={prevIndexObj} next={nextIndexObj} />}
+        </main>
       </div>
     );
   }
@@ -78,6 +78,7 @@ export const pageQuery = graphql`
         __typename
         ... on ContentfulHeroPanel {
           text
+          description
         }
         ... on ContentfulPageSelectorPanel {
           text
@@ -125,7 +126,7 @@ export const pageQuery = graphql`
             }
           }
         }
-		  }
-	  }
-	}
+      }
+    }
+  }
 `;

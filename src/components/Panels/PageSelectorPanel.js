@@ -1,13 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-function truncateTextAt(text, length) {
-  if (text.length > length) {
-    return text.substring(0, length) + '...';
-  } else {
-    return text;
-  }
-}
+import truncateTextAt from '../../utils/truncateTextAt.js';
 
 const PageSelectorPanel = ({ text, pages }) => (
   <section className="panel pageSelector container">

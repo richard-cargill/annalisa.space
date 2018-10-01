@@ -1,3 +1,7 @@
+a {
+  color: black;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +32,7 @@
 .logo {
   padding: 0;
   margin: 0;
-  color: hsla(0,0%,0%,0.8);
+  color: black;
 }
 
 .logo__a {
@@ -41,7 +45,7 @@
   margin: 0;
   list-style: none;
   font-family: sans-serif;
-  color: hsla(0,0%,0%,0.8);
+  color: black;
 }
 
 .nav__list__item {
@@ -50,6 +54,7 @@
 }
 
 .nav__list__a {
+  font-size: 14px;
   text-decoration: none;
   color: currentColor;
   border-bottom: 3px solid transparent;
@@ -76,7 +81,7 @@
 
 .selectorPanel__items {
   display: flex;
-  font-size: 75%;
+  /* font-size: 75%; */
   margin-left: -1rem;
   margin-right: -1rem;
   justify-content: space-between;
@@ -94,6 +99,8 @@
 }
 
 .selectorPanel__header {
+  font-size: 16px;
+  text-transform: capitalize;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
@@ -113,32 +120,37 @@
 .pageSelector__item {
   background-color: white;
   flex-basis: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border: 1px solid hsla(0,0%,0%,0.8);
+  padding: 1rem;
+  border: 1px solid black;
   border-radius: 5px;
   min-height: 45vh;
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
-  color: hsla(0,0%,0%,0.8);
+  color: #4a4a4a;
   transition: all .25s linear;
 }
 
 .pageSelector__item:hover {
-  background-color: hsla(0,0%,0%,0.8);
+  background-color: black;
   color: white;
   transform: scale(1.05);
 }
 
+.pageSelector__title {
+  font-size: 22px;
+  color: currentColor;
+}
+
 .pageSelector__a {
   color: currentColor;
-  font-size: 75%;
   text-decoration: none;
 }
 
 .pageSelector__content {
   font-family: sans-serif;
+  color: #9b9b9b;
+  font-size: 16px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -154,7 +166,7 @@
 }
 
 .footer {
-  font-size: 75%;
+  /* font-size: 75%; */
   font-family: sans-serif;
   text-align: center;
   display: flex;
@@ -162,7 +174,12 @@
   padding-bottom: 1rem;
 }
 
+.footer__content {
+  font-size: 16px;
+}
+
 .links {
+  font-size: 16px;
   list-style: none;
   margin-top: 0;
   margin-right: 0;
@@ -181,14 +198,14 @@
 }
 
 .link__a {
-  color: hsla(0,0%,0%,0.8);
+  color: black;
   text-decoration: none;
   transition: border-color .25s linear;
   border-bottom: 2px solid transparent;
 }
 
 .link__a:hover {
-  border-bottom: 2px solid hsla(0,0%,0%,0.8);
+  border-bottom: 2px solid black;
 }
 
 .hero {
@@ -196,19 +213,30 @@
   margin-bottom: 13vh;
 }
 
+.hero__title {
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.hero__content {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
 @media only screen and (min-width: 600px) {
   .hero {
-    font-size: 150%;
+    /* font-size: 150%; */
     margin-top: 20vh;
     margin-bottom: 18vh;
   }
 }
 
 .button {
-  font-family: sans-serif;
-  color: hsla(0,0%,0%,0.8);
+  font-size: 12px;
+  color: black;
   display: inline-block;
-  border: 1px solid hsla(0,0%,0%,0.8);
+  border: 1px solid black;
   border-radius: 5px;
   padding: .75rem 1.5rem;
   margin-bottom: 1.5rem;
@@ -219,7 +247,7 @@
 
 .button:hover {
   color: white;
-  background-color: hsla(0,0%,0%,0.8);
+  background-color: black;
 }
 
 .paging {
@@ -234,12 +262,17 @@
 }
 
 .paging__item {
+  color: currentColor;
   text-decoration: none;
+}
+
+.paging__item + .paging__item {
+  text-align: right;
 }
 
 .headerPanel {
   padding-top: 15vh;
-  padding-bottom: 15vh;
+  padding-bottom: calc(15vh - 1rem);
 }
 
 .content {
@@ -258,6 +291,6 @@ blockquote:before {
   left: -1rem;
   height: 100%;
   width: 5px;
-  background-color: hsla(0,0%,0%,0.8);
+  background-color: black;
 }
 

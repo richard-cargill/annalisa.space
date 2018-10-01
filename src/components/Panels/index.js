@@ -9,7 +9,7 @@ import ContentPanel from "./ContentPanel.js";
 function Panels({type, data}) {
   switch(type) {
     case 'ContentfulHeroPanel':
-      return <HeroPanel text={data.text} />;
+      return <HeroPanel text={data.text} description={data.description} />;
     case 'ContentfulPageSelectorPanel':
       return <PageSelectorPanel text={data.text} pages={data.pages} />;
     case 'ContentfulHeaderPanel':
