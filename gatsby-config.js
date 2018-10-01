@@ -9,7 +9,7 @@ const { SPACE_ID, ACCESS_TOKEN } = process.env;
 
 module.exports = {
   siteMetadata: {
-    title: 'Site logo',
+    title: 'Annalisa Valente',
   },
   pathPrefix: `/annalisa.space`,
   plugins: [

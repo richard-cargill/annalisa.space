@@ -6,7 +6,7 @@ import truncateTextAt from '../../utils/truncateTextAt.js';
 const PageSelectorPanel = ({ text, pages }) => (
   <section className="panel pageSelector container">
     <div className="pageSelector__items">
-    {pages.map(page => {
+    {pages.map((page, i) => {
       const {
         name,
         slug,

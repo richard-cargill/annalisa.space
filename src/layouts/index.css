@@ -30,6 +30,7 @@ a {
 }
 
 .logo {
+  font-size: 24px;
   padding: 0;
   margin: 0;
   color: black;
@@ -121,20 +122,76 @@ a {
   background-color: white;
   flex-basis: 100%;
   padding: 1rem;
-  border: 1px solid black;
+  border: .5px solid black;
   border-radius: 5px;
-  min-height: 45vh;
+  min-height: 330px;
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
   color: #4a4a4a;
-  transition: all .25s linear;
+  transition: background-color .25s ease-in-out,
+    transform .25s ease-in-out;
 }
 
 .pageSelector__item:hover {
-  background-color: black;
   color: white;
-  transform: scale(1.05);
+  transform: scale(1.02);
+}
+
+.pageSelector__item:hover * {
+  color: white;
+}
+
+.pageSelector__item:nth-child(4):hover * {
+  color: black;
+}
+
+.pageSelector__item:nth-child(1) {
+  border-color: #00b68d;
+}
+
+.pageSelector__item:nth-child(1):hover {
+  background-color: #00b68d;
+}
+
+.pageSelector__item:nth-child(2) {
+  border-color: #c51162;
+}
+
+.pageSelector__item:nth-child(2):hover {
+  background-color: #c51162;
+}
+
+.pageSelector__item:nth-child(3) {
+  border-color: #ff0266;
+}
+
+.pageSelector__item:nth-child(3):hover {
+  background-color: #ff0266;
+}
+
+.pageSelector__item:nth-child(4) {
+  border-color: #ffde03;
+}
+
+.pageSelector__item:nth-child(4):hover {
+  background-color: #ffde03;
+}
+
+.pageSelector__item:nth-child(5):hover {
+  background-color: #0336ff;
+}
+
+.pageSelector__item:nth-child(5) {
+  border-color: #0336ff;
+}
+
+.pageSelector__item:nth-child(6) {
+  border-color: #3601b0;
+}
+
+.pageSelector__item:nth-child(6):hover {
+  background-color: #3601b0;
 }
 
 .pageSelector__title {
@@ -221,6 +278,7 @@ a {
 
 .hero__content {
   font-family: 'Roboto', sans-serif;
+  color: #9b9b9b;
   font-size: 16px;
 }
 
