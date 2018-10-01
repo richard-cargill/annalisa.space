@@ -53,9 +53,9 @@
       "path---projects-nectar-web-983bc739b60d709fdd9c.js.map"
     ],
     "app": [
-      "app-227c4a47e422feaa3d14.js",
+      "app-cd929dd264f3142cafa2.js",
       "build-js-styles.css",
-      "app-227c4a47e422feaa3d14.js.map",
+      "app-cd929dd264f3142cafa2.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
@@ -71,8 +71,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---about": [
-      "path---about-e9fe4356c99fd48e5e8f.js",
-      "path---about-e9fe4356c99fd48e5e8f.js.map"
+      "path---about-313e3640fcedcedc6718.js",
+      "path---about-313e3640fcedcedc6718.js.map"
     ]
   }
 }
