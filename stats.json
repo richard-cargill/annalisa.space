@@ -1,28 +1,28 @@
 {
   "assetsByChunkName": {
     "path---projects-nectar": [
-      "path---projects-nectar-16e5a761fc4019c353f6.js",
-      "path---projects-nectar-16e5a761fc4019c353f6.js.map"
+      "path---projects-nectar-daf4bf8fc1c307752c7a.js",
+      "path---projects-nectar-daf4bf8fc1c307752c7a.js.map"
     ],
     "path---projects-macmillan": [
-      "path---projects-macmillan-4e43c1edfaf37f3b84c3.js",
-      "path---projects-macmillan-4e43c1edfaf37f3b84c3.js.map"
+      "path---projects-macmillan-5c1bbb830f8e863787ca.js",
+      "path---projects-macmillan-5c1bbb830f8e863787ca.js.map"
     ],
     "path---hackathon": [
-      "path---hackathon-7d66176cc69c6a8df8b1.js",
-      "path---hackathon-7d66176cc69c6a8df8b1.js.map"
+      "path---hackathon-184452e3f7e5fd4812c3.js",
+      "path---hackathon-184452e3f7e5fd4812c3.js.map"
     ],
     "path---projects-mymail-and-nectar": [
-      "path---projects-mymail-and-nectar-452e13153ea952a38c63.js",
-      "path---projects-mymail-and-nectar-452e13153ea952a38c63.js.map"
+      "path---projects-mymail-and-nectar-eb543b43c3b632aad60e.js",
+      "path---projects-mymail-and-nectar-eb543b43c3b632aad60e.js.map"
     ],
     "path---blog": [
-      "path---blog-ea6a0271d582da4146fe.js",
-      "path---blog-ea6a0271d582da4146fe.js.map"
+      "path---blog-d6f652ca776aa159ff7e.js",
+      "path---blog-d6f652ca776aa159ff7e.js.map"
     ],
     "path---projects-telegraph": [
-      "path---projects-telegraph-70c4cf9a4f5bded8a587.js",
-      "path---projects-telegraph-70c4cf9a4f5bded8a587.js.map"
+      "path---projects-telegraph-2efad7ca46481f6619bc.js",
+      "path---projects-telegraph-2efad7ca46481f6619bc.js.map"
     ],
     "path---": [
       "path----8614db882db442986586.js",
@@ -33,16 +33,16 @@
       "component---src-layouts-index-js-9c488266c0a0b84db766.js.map"
     ],
     "path---index": [
-      "path---index-2c2d73248dec3f5c33a8.js",
-      "path---index-2c2d73248dec3f5c33a8.js.map"
+      "path---index-3987f4e198d91558478d.js",
+      "path---index-3987f4e198d91558478d.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-a96b91fc0b0bf1e088b9.js",
       "component---src-pages-404-js-a96b91fc0b0bf1e088b9.js.map"
     ],
     "path---projects-google": [
-      "path---projects-google-c8074407657a82b5dc3d.js",
-      "path---projects-google-c8074407657a82b5dc3d.js.map"
+      "path---projects-google-47016128e9b94711832c.js",
+      "path---projects-google-47016128e9b94711832c.js.map"
     ],
     "commons": [
       "commons-4cd39fa88a59713b421c.js",
@@ -52,14 +52,14 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
-    "path---projects-nectar-web": [
-      "path---projects-nectar-web-6429e091aa1287a4f60d.js",
-      "path---projects-nectar-web-6429e091aa1287a4f60d.js.map"
+    "path---projects-face-name": [
+      "path---projects-face-name-ef74c88053a53bf97550.js",
+      "path---projects-face-name-ef74c88053a53bf97550.js.map"
     ],
     "app": [
-      "app-9fb663e55551ef86c226.js",
+      "app-98ba01f535d379e5a75c.js",
       "build-js-styles.css",
-      "app-9fb663e55551ef86c226.js.map",
+      "app-98ba01f535d379e5a75c.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
@@ -71,8 +71,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---about": [
-      "path---about-ab6533f837f3d0f9c47c.js",
-      "path---about-ab6533f837f3d0f9c47c.js.map"
+      "path---about-0eacf1c346b9f0449145.js",
+      "path---about-0eacf1c346b9f0449145.js.map"
     ]
   }
 }
