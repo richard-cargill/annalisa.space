@@ -53,7 +53,6 @@ export default class PageTemplate extends React.Component {
               return <Panels key={__typename} type={__typename} data={panel} />
             })}
           </article>
-          {slug === '/' && <div className="background-alt"><SelectorPanel /></div>}
           {slug.startsWith('/projects') && <Paging prev={prevIndexObj} next={nextIndexObj} />}
         </main>
       </div>
@@ -82,18 +81,13 @@ export const pageQuery = graphql`
         }
         ... on ContentfulPageSelectorPanel {
           text
+          pagesToDisplay
           pages {
             name
             slug
             description
             password
-            thumbnail {
-              file {
-                url
-                fileName
-                contentType
-              }
-            }
+            tags
           }
         }
         ... on ContentfulHeaderPanel {
@@ -124,6 +118,14 @@ export const pageQuery = graphql`
             childMarkdownRemark {
               html
             }
+          }
+        }
+        ... on ContentfulSelectorPanel {
+          text
+          pages {
+            name
+            slug
+            description
           }
         }
       }

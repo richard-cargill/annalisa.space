@@ -1,27 +1,35 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import truncateTextAt from '../../utils/truncateTextAt.js';
 
-const SelectorPanel = () => (
-  <section className='container panel selectorPanel'>
-    <h4 className="selectorPanel__header">EXPLORATIONS AND SIDE PROJECTS</h4>
-    <div className="selectorPanel__items">
-      <div className="selectorPanel__item">
-  <div>
-        <h4 className="pageSelector__title">Blog</h4>
-        <p className="pageSelector__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...</p>
-        <Link to="#" className="button">Learn more</Link>
-  </div>
-      </div>
-      <div className="selectorPanel__item">
-  <div>
-        <h4 className="pageSelector__title">Blog</h4>
-        <p className="pageSelector__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore ...</p>
-        <Link to="#" className="button">Learn more</Link>
-  </div>
-      </div>
+const SelectorPanel = ({text, pages}) => {
+  return (
+    <div className="background-alt">
+      <section className='container panel selectorPanel'>
+        <h4 className="selectorPanel__header">{text}</h4>
+
+        <div className="selectorPanel__items">
+          {pages && pages.map((page, i) => {
+            const {
+              name,
+              description,
+              slug
+            } = page;
+
+            return (
+              <div key={i} className="selectorPanel__item">
+                <div>
+                  <h4 className="pageSelector__title">{name}</h4>
+                  <p className="pageSelector__content">{truncateTextAt(description, 100)}</p>
+                  <Link to={slug} className="button">Learn more</Link>
+                </div>
+              </div>);
+          })}
+        </div>
+      </section>
     </div>
-  </section>
-);
+  );
+};
 
 export default SelectorPanel;
 

@@ -45,7 +45,7 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   color: black;
 }
 
@@ -59,20 +59,20 @@ a {
   text-decoration: none;
   color: currentColor;
   border-bottom: 3px solid transparent;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   transition: border-color .25s linear;
 }
 
 .nav__list__a:hover {
-  border-bottom: 3px solid currentColor;
+  border-bottom: 3px solid #756cdf;
 }
 
 .nav__list__a.is-active {
-  border-bottom: 3px solid currentColor;
+  border-bottom: 3px solid #756cdf;
 }
 
 .background-alt {
-  background-color: #f4f4f4;
+  background-color: #f5faff;
 }
 
 .selectorPanel {
@@ -199,13 +199,18 @@ a {
   color: currentColor;
 }
 
+.pageSelector__tags {
+  font-size: 22px;
+  color: #9b9b9b;
+}
+
 .pageSelector__a {
   color: currentColor;
   text-decoration: none;
 }
 
 .pageSelector__content {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   color: #9b9b9b;
   font-size: 16px;
 }
@@ -224,7 +229,7 @@ a {
 
 .footer {
   /* font-size: 75%; */
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   text-align: center;
   display: flex;
   padding-top: 5rem;
@@ -292,10 +297,10 @@ a {
 
 .button {
   font-size: 12px;
-  color: black;
+  color: #756cdf;
   display: inline-block;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1px solid #756cdf;
+  border-radius: 3px;
   padding: .75rem 1.5rem;
   margin-bottom: 1.5rem;
   text-decoration: none;
@@ -305,7 +310,7 @@ a {
 
 .button:hover {
   color: white;
-  background-color: black;
+  background-color: #756cdf;
 }
 
 .paging {
@@ -352,3 +357,10 @@ blockquote:before {
   background-color: black;
 }
 
+.float-right {
+  float: right;
+}
+
+.is-hidden {
+  display: none;
+}
