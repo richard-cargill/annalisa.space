@@ -6,7 +6,7 @@ const typography = new Typography({
   headerFontFamily: ['Roboto', 'sans-serif'],
   headerWeight: '400',
   bodyFontFamily: ['Roboto', 'sans-serif'],
-  bodyWeight: '500',
+  bodyWeight: '400',
   googleFonts: [
     {
       name: 'Montserrat',
