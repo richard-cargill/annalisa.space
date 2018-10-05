@@ -25,17 +25,20 @@ export default class PageSelectorPanel extends Component {
             const { name, slug, description, tags } = page
 
             const isHidden = i >= pagesToDisplay ? 'is-hidden' : ''
+            const selectorClassName = `pageSelector__item ${isHidden}`
 
             return (
-              <article className={`pageSelector__item ${isHidden}`} key={name}>
+              <article className={selectorClassName} key={name}>
                 <Link className="pageSelector__a" to={slug}>
-                  <h3 className="pageSelector__title">{name}</h3>
-                  {description && (
-                    <p className="pageSelector__content">
-                      {truncateTextAt(description, 100)}
-                    </p>
-                  )}
-                  {tags && <p className="pageSelector__tags">{tags}</p>}
+                  <div className="pageSelector__center">
+                    <h3 className="pageSelector__title">{name}</h3>
+                    {description && (
+                      <p className="pageSelector__content">
+                        {truncateTextAt(description, 100)}
+                      </p>
+                    )}
+                    {tags && <p className="pageSelector__tags">{tags}</p>}
+                  </div>
                 </Link>
               </article>
             )
