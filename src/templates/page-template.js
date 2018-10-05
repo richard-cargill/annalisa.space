@@ -2,7 +2,7 @@ import React from 'react'
 import Panels from '../components/Panels/'
 import Paging from '../components/Paging'
 import SelectorPanel from '../components/Panels/SelectorPanel'
-import Triangles from '../components/react-two'
+import Triangles from '../components/Triangles'
 
 import currentPageIndexOf from '../utils/currentPageIndexOf'
 import getNextIndexObj from '../utils/getNextIndexObj'

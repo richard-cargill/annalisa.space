@@ -3,14 +3,14 @@ import _ from 'lodash'
 import Script from 'react-load-script'
 
 const isClient = typeof window !== 'undefined'
-var SCREEN_WIDTH = isClient ? window.innerWidth : 1000
-var SCREEN_HEIGHT = 2000
-var MIN_RADIUS = 10
-var MAX_RADIUS = 40
-var MIN_SPEED = 0.2
-var MAX_SPEED = 1
-var N = 75
-var COLORS = [
+const SCREEN_WIDTH = isClient ? window.innerWidth : 1000
+const SCREEN_HEIGHT = 2000
+const MIN_RADIUS = 10
+const MAX_RADIUS = 40
+const MIN_SPEED = 0.7
+const MAX_SPEED = 1.5
+const N = 75
+const COLORS = [
   '#d33682',
   '#268bd2',
   '#a3d783',
@@ -29,13 +29,13 @@ function coinFlip(head, tails) {
 }
 
 function makeRandomPath(two) {
-  var x = randomBetween(0, SCREEN_WIDTH)
-  var y = randomBetween(0, SCREEN_HEIGHT)
-  var radius = randomBetween(MIN_RADIUS, MAX_RADIUS)
-  var color = _.sample(COLORS)
-  var opacity = randomBetween(0.6, 1)
+  const x = randomBetween(0, SCREEN_WIDTH)
+  const y = randomBetween(0, SCREEN_HEIGHT)
+  const radius = randomBetween(MIN_RADIUS, MAX_RADIUS)
+  const color = _.sample(COLORS)
+  const opacity = randomBetween(0.1, 0.5)
 
-  var path = two.makePolygon(x, y, radius, 3)
+  const path = two.makePolygon(x, y, radius, 3)
   path.noFill()
   path.stroke = color
   path.linewidth = 0.75
@@ -54,7 +54,7 @@ function rotateShape(shape) {
 }
 
 function translateShape(shape) {
-  var translation = new Two.Vector(shape.direction * shape.speed, 0)
+  const translation = new Two.Vector(shape.direction * shape.speed, 0)
   shape.path.translation.addSelf(translation)
 
   if (shape.path.translation.x > SCREEN_WIDTH + MAX_RADIUS) {
@@ -88,10 +88,10 @@ class TwoRotation extends React.Component {
   componentDidMount() {
     this.setState({ width: SCREEN_WIDTH })
     const two = this.two
-    var shapes = []
+    const shapes = []
     const stage = this.stage
 
-    for (var i = 0; i < N; i++) {
+    for (let i = 0; i < N; i++) {
       shapes.push({
         path: makeRandomPath(two),
         direction: coinFlip(1, -1),
@@ -111,12 +111,12 @@ class TwoRotation extends React.Component {
   }
 
   componentWillUnmount() {
-    this.two.unbind('resize', this.resize)
+    this.two.unbind('update')
   }
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <div
           ref={c => (this.stage = c)}
           style={{
@@ -126,7 +126,7 @@ class TwoRotation extends React.Component {
             zIndex: '-1',
           }}
         />
-      </div>
+      </React.Fragment>
     )
   }
 }
@@ -147,7 +147,7 @@ class TwoWrapper extends React.Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Script
           url="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.7.0-alpha.1/two.min.js"
           onCreate={this.handleScriptCreate.bind(this)}
@@ -155,7 +155,7 @@ class TwoWrapper extends React.Component {
         />
 
         {this.state.scriptLoaded && <TwoRotation />}
-      </div>
+      </React.Fragment>
     )
   }
 }
