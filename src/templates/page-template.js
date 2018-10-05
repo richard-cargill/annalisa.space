@@ -63,15 +63,12 @@ export default class PageTemplate extends React.Component {
 export const pageQuery = graphql`
 	query PageQuery($slug: String!) {
     contentfulPageSelectorPanel {
-      name
       pages {
         slug
-        name
         description
       }
     }
 		contentfulPage(slug: {eq : $slug}) {
-      name
       slug
 			panels {
         __typename
@@ -83,15 +80,12 @@ export const pageQuery = graphql`
           text
           pagesToDisplay
           pages {
-            name
             slug
             description
-            password
             tags
           }
         }
         ... on ContentfulHeaderPanel {
-          name
           text
           media {
             file {
@@ -102,7 +96,6 @@ export const pageQuery = graphql`
           }
         }
         ... on ContentfulImagePanel {
-          name
           media {
             file {
               url
@@ -112,7 +105,6 @@ export const pageQuery = graphql`
           }
         }
         ... on ContentfulContentPanel {
-          name
           content {
             content
             childMarkdownRemark {
@@ -123,7 +115,6 @@ export const pageQuery = graphql`
         ... on ContentfulSelectorPanel {
           text
           pages {
-            name
             slug
             description
           }
