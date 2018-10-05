@@ -1,48 +1,48 @@
 {
   "assetsByChunkName": {
     "path---projects-nectar": [
-      "path---projects-nectar-f79f0144d4be71e435d0.js",
-      "path---projects-nectar-f79f0144d4be71e435d0.js.map"
+      "path---projects-nectar-4cb6dfefa90af37b8ab3.js",
+      "path---projects-nectar-4cb6dfefa90af37b8ab3.js.map"
     ],
     "path---projects-macmillan": [
-      "path---projects-macmillan-a9799eb6f9f861523b7a.js",
-      "path---projects-macmillan-a9799eb6f9f861523b7a.js.map"
+      "path---projects-macmillan-c2e663e2f625e88631a9.js",
+      "path---projects-macmillan-c2e663e2f625e88631a9.js.map"
     ],
     "path---hackathon": [
-      "path---hackathon-38b580bbc77dc57020a4.js",
-      "path---hackathon-38b580bbc77dc57020a4.js.map"
+      "path---hackathon-8707e48e312a462c69c0.js",
+      "path---hackathon-8707e48e312a462c69c0.js.map"
     ],
     "path---projects-mymail-and-nectar": [
-      "path---projects-mymail-and-nectar-592147812a40c5989cdb.js",
-      "path---projects-mymail-and-nectar-592147812a40c5989cdb.js.map"
+      "path---projects-mymail-and-nectar-ee964659fb70243e2d16.js",
+      "path---projects-mymail-and-nectar-ee964659fb70243e2d16.js.map"
     ],
     "path---blog": [
-      "path---blog-c591e22ca5b5e5cdd2f9.js",
-      "path---blog-c591e22ca5b5e5cdd2f9.js.map"
+      "path---blog-d12fbc0e5376d738a76c.js",
+      "path---blog-d12fbc0e5376d738a76c.js.map"
     ],
     "path---": [
       "path----8614db882db442986586.js",
       "path----8614db882db442986586.js.map"
     ],
     "path---the-telegraph-puzzle": [
-      "path---the-telegraph-puzzle-258413b08c3be023d3eb.js",
-      "path---the-telegraph-puzzle-258413b08c3be023d3eb.js.map"
+      "path---the-telegraph-puzzle-fc53039253fa6692e5a7.js",
+      "path---the-telegraph-puzzle-fc53039253fa6692e5a7.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-9810a46b9e617a918717.js",
       "component---src-layouts-index-js-9810a46b9e617a918717.js.map"
     ],
     "path---index": [
-      "path---index-5c5a9da47b09c39ade49.js",
-      "path---index-5c5a9da47b09c39ade49.js.map"
+      "path---index-3c158b71e0b9cf367721.js",
+      "path---index-3c158b71e0b9cf367721.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-a96b91fc0b0bf1e088b9.js",
       "component---src-pages-404-js-a96b91fc0b0bf1e088b9.js.map"
     ],
     "path---projects-google": [
-      "path---projects-google-e5a8fccbde0c28c66953.js",
-      "path---projects-google-e5a8fccbde0c28c66953.js.map"
+      "path---projects-google-07c1285920d11585c051.js",
+      "path---projects-google-07c1285920d11585c051.js.map"
     ],
     "commons": [
       "commons-4cd39fa88a59713b421c.js",
@@ -53,12 +53,12 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---projects-face-name": [
-      "path---projects-face-name-1120a558037989816c89.js",
-      "path---projects-face-name-1120a558037989816c89.js.map"
+      "path---projects-face-name-cf875d83da66dd9fa4a4.js",
+      "path---projects-face-name-cf875d83da66dd9fa4a4.js.map"
     ],
     "path---projects-thetelegraph": [
-      "path---projects-thetelegraph-16b4e28a224cf7277ba1.js",
-      "path---projects-thetelegraph-16b4e28a224cf7277ba1.js.map"
+      "path---projects-thetelegraph-b5b322b05f54b3f987d0.js",
+      "path---projects-thetelegraph-b5b322b05f54b3f987d0.js.map"
     ],
     "app": [
       "app-c5ef80e71aed8cf7ee0e.js",
@@ -75,8 +75,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---about": [
-      "path---about-3723e0f4205ba1490747.js",
-      "path---about-3723e0f4205ba1490747.js.map"
+      "path---about-29627a4a492fbe377e1e.js",
+      "path---about-29627a4a492fbe377e1e.js.map"
     ]
   }
 }
