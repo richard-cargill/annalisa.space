@@ -18,4 +18,4 @@ deploy:
 before_script:
   - "npm i"
 after_success:
-  - "npm run deploy"
+  - "npm run predeploy"
