@@ -355,6 +355,15 @@ a {
   padding-bottom: 1rem;
 }
 
+.imagePanel {
+  display: flex;
+}
+
+.imagePanel__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 blockquote {
   position: relative;
 }
