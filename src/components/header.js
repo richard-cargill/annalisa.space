@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import Navigation from './Navigation';
+import React from 'react'
+import Link from 'gatsby-link'
+import Navigation from './Navigation'
 import logo from '../images/annalisa-valente-logo.svg'
 
 const Header = ({ siteTitle }) => (
@@ -12,6 +12,6 @@ const Header = ({ siteTitle }) => (
     </h1>
     <Navigation />
   </header>
-);
+)
 
-export default Header;
+export default Header

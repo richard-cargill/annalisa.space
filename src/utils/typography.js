@@ -1,4 +1,4 @@
-import Typography from 'typography';
+import Typography from 'typography'
 
 const typography = new Typography({
   baseFontSize: '21px',
@@ -10,13 +10,13 @@ const typography = new Typography({
   googleFonts: [
     {
       name: 'Montserrat',
-      styles: ['700']
+      styles: ['700'],
     },
     {
       name: 'Roboto',
-      styles: ['500', '400']
-    }
-  ]
-});
+      styles: ['500', '400'],
+    },
+  ],
+})
 
-export default typography;
+export default typography

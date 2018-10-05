@@ -36,8 +36,7 @@
     "develop": "gatsby develop",
     "predeploy": "gatsby build --prefix-paths",
     "deploy": "gh-pages -d public",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "format": "prettier --write 'src/**/*.js'"
   },
   "devDependencies": {
     "prettier": "^1.13.7"

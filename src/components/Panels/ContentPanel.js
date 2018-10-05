@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 const ContentPanel = ({ html }) => (
-  <section className='container panel content'>
-    <div dangerouslySetInnerHTML={{__html: html}} />
+  <section className="container panel content">
+    <div dangerouslySetInnerHTML={{ __html: html }} />
   </section>
-);
+)
 
-export default ContentPanel;
+export default ContentPanel

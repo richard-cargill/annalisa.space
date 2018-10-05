@@ -1,41 +1,45 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
 
-import Header from '../components/header';
-import Footer from '../components/Footer';
+import Header from '../components/header'
+import Footer from '../components/Footer'
 
-import './index.css';
+import './index.css'
 
 const Layout = ({ children, data, location }) => {
-  const title = data.site.siteMetadata.title;
+  const title = data.site.siteMetadata.title
 
-  return (<div>
-    <Helmet
-      title={title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <div style={{
-      position: 'relative',
-      overflow: 'hidden'
-    }}>
-      <div className="container">
-        <Header siteTitle={title} />
+  return (
+    <div>
+      <Helmet
+        title={title}
+        meta={[
+          { name: 'description', content: 'Sample' },
+          { name: 'keywords', content: 'sample, something' },
+        ]}
+      />
+      <div
+        style={{
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+      >
+        <div className="container">
+          <Header siteTitle={title} />
+        </div>
+        {children()}
       </div>
-      {children()}
+      <Footer />
     </div>
-    <Footer />
-  </div>)
-};
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.func,
-};
+}
 
-export default Layout;
+export default Layout
 
 export const query = graphql`
   query SiteTitleQuery {
@@ -45,4 +49,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
