@@ -11,7 +11,7 @@ const Layout = ({ children, data, location }) => {
   const title = data.site.siteMetadata.title
 
   return (
-    <div>
+    <React.Fragment>
       <Helmet
         title={title}
         meta={[
@@ -31,7 +31,7 @@ const Layout = ({ children, data, location }) => {
         {children()}
       </div>
       <Footer />
-    </div>
+    </React.Fragment>
   )
 }
 
