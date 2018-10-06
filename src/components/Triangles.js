@@ -5,8 +5,8 @@ import Script from 'react-load-script'
 const isClient = typeof window !== 'undefined'
 const SCREEN_WIDTH = isClient ? window.innerWidth : 1000
 const SCREEN_HEIGHT = 2000
-const MIN_RADIUS = 10
-const MAX_RADIUS = 40
+const MIN_RADIUS = 7
+const MAX_RADIUS = 30
 const MIN_SPEED = 0.7
 const MAX_SPEED = 1.5
 const N = 75
@@ -69,24 +69,53 @@ function translateShape(shape) {
   }
 }
 
-class TwoRotation extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { width: SCREEN_WIDTH }
+function getWindowWidth () {
+  const isClient = typeof window !== 'undefined'
+  return isClient ? window.innerWidth : 1000
+}
+
+function getElemHeight (el) {
+  const isClient = typeof document !== 'undefined'
+  const queryEl = document.querySelector(el)
+
+  return isClient && queryEl !== null
+    ? queryEl.offsetHeight : 1000
+}
+
+class Triangles extends React.Component {
+  state = {
+    width: 0,
+    height: 0
   }
 
-  componentWillMount() {
+  _handleWindowResize = () => {
+    const width = getWindowWidth()
+    const height = getElemHeight('#get-height')
+
+    this.setState({width, height})
+
+    this.two.renderer.setSize(width, height)
+  }
+
+  componentWillMount = () => {
     const stage = this.stage
+
+    const width = getWindowWidth()
+    const height = getElemHeight('#get-height')
+
     const two = new Two({
-      width: this.state.width,
-      height: 2000,
+      width,
+      height
     })
 
+    this.setState({width, height})
+
     this.two = two
+
+    window.addEventListener('resize', this._handleWindowResize);
   }
 
-  componentDidMount() {
-    this.setState({ width: SCREEN_WIDTH })
+  componentDidMount = () => {
     const two = this.two
     const shapes = []
     const stage = this.stage
@@ -99,9 +128,8 @@ class TwoRotation extends React.Component {
       })
     }
 
-    two.appendTo(this.stage)
-
     two
+      .appendTo(this.stage)
       .bind('update', function(frameCount) {
         _.each(shapes, function(shape, i) {
           moveShape(shape)
@@ -110,8 +138,9 @@ class TwoRotation extends React.Component {
       .play()
   }
 
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     this.two.unbind('update')
+    window.addEventListener('resize', this._handleWindowResize);
   }
 
   render() {
@@ -121,7 +150,7 @@ class TwoRotation extends React.Component {
           ref={c => (this.stage = c)}
           style={{
             top: '-100px',
-            height: 100 + '%',
+            height: 'calc(100% + 100px)',
             position: 'absolute',
             zIndex: '-1',
           }}
@@ -131,17 +160,14 @@ class TwoRotation extends React.Component {
   }
 }
 
-class TwoWrapper extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { scriptLoaded: false }
-  }
+class TriangleLoader extends React.Component {
+  state = { scriptLoaded: false }
 
-  handleScriptCreate() {
+  handleScriptCreate = () => {
     this.setState({ scriptLoaded: false })
   }
 
-  handleScriptLoad() {
+  handleScriptLoad = () => {
     this.setState({ scriptLoaded: true })
   }
 
@@ -150,14 +176,14 @@ class TwoWrapper extends React.Component {
       <React.Fragment>
         <Script
           url="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.7.0-alpha.1/two.min.js"
-          onCreate={this.handleScriptCreate.bind(this)}
-          onLoad={this.handleScriptLoad.bind(this)}
+          onCreate={this.handleScriptCreate}
+          onLoad={this.handleScriptLoad}
         />
 
-        {this.state.scriptLoaded && <TwoRotation />}
+        {this.state.scriptLoaded && <Triangles />}
       </React.Fragment>
     )
   }
 }
 
-export default TwoWrapper
+export default TriangleLoader

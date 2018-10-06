@@ -20,11 +20,11 @@ const Layout = ({ children, data, location }) => {
         ]}
       />
       <div
+        id="get-height"
         style={{
           position: 'relative',
           overflow: 'hidden',
-        }}
-      >
+        }}>
         <div className="container">
           <Header siteTitle={title} />
         </div>
