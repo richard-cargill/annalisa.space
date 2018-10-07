@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import Footer from '../components/Footer'
 
-import _ from 'lodash'
+const isClient = typeof window !== 'undefined'
 
 import './index.css'
 
@@ -14,6 +14,7 @@ function normaliseSlug (slug) {
 }
 
 function pageNameFromPathname (pathname) {
+  pathname = pathname.replace('/annalisa.space/', '/')
   if (pathname !== '/') {
     return normaliseSlug(pathname) + 'page'
   } else {

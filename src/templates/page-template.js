@@ -30,8 +30,6 @@ export default class PageTemplate extends React.Component {
     const nextIndexObj = getNextIndexObj(pages, currentIndex)
     const prevIndexObj = getPrevIndexObj(pages, currentIndex)
 
-
-
     return (
       <React.Fragment>
         {slug === '/' && <Triangles />}
