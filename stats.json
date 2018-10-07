@@ -1,48 +1,48 @@
 {
   "assetsByChunkName": {
     "path---projects-nectar": [
-      "path---projects-nectar-4cb6dfefa90af37b8ab3.js",
-      "path---projects-nectar-4cb6dfefa90af37b8ab3.js.map"
+      "path---projects-nectar-049113d3e56fe6fd9a07.js",
+      "path---projects-nectar-049113d3e56fe6fd9a07.js.map"
     ],
     "path---projects-macmillan": [
-      "path---projects-macmillan-c2e663e2f625e88631a9.js",
-      "path---projects-macmillan-c2e663e2f625e88631a9.js.map"
+      "path---projects-macmillan-2a22b8ee8db7302c9f64.js",
+      "path---projects-macmillan-2a22b8ee8db7302c9f64.js.map"
     ],
     "path---hackathon": [
-      "path---hackathon-8707e48e312a462c69c0.js",
-      "path---hackathon-8707e48e312a462c69c0.js.map"
+      "path---hackathon-ad14d31fd3eba3ad004c.js",
+      "path---hackathon-ad14d31fd3eba3ad004c.js.map"
     ],
     "path---projects-mymail-and-nectar": [
-      "path---projects-mymail-and-nectar-ee964659fb70243e2d16.js",
-      "path---projects-mymail-and-nectar-ee964659fb70243e2d16.js.map"
+      "path---projects-mymail-and-nectar-1c7174ce3abf436eab4c.js",
+      "path---projects-mymail-and-nectar-1c7174ce3abf436eab4c.js.map"
     ],
     "path---blog": [
-      "path---blog-d12fbc0e5376d738a76c.js",
-      "path---blog-d12fbc0e5376d738a76c.js.map"
+      "path---blog-161a2adf2259cb5b55c0.js",
+      "path---blog-161a2adf2259cb5b55c0.js.map"
     ],
     "path---": [
       "path----8614db882db442986586.js",
       "path----8614db882db442986586.js.map"
     ],
     "path---the-telegraph-puzzle": [
-      "path---the-telegraph-puzzle-fc53039253fa6692e5a7.js",
-      "path---the-telegraph-puzzle-fc53039253fa6692e5a7.js.map"
+      "path---the-telegraph-puzzle-66d6f013a6ebd9622489.js",
+      "path---the-telegraph-puzzle-66d6f013a6ebd9622489.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-dab9cc9abeef9ebc06d0.js",
       "component---src-layouts-index-js-dab9cc9abeef9ebc06d0.js.map"
     ],
     "path---index": [
-      "path---index-e90d6e77de9206f4e92f.js",
-      "path---index-e90d6e77de9206f4e92f.js.map"
+      "path---index-de8a505f32e49ef2929d.js",
+      "path---index-de8a505f32e49ef2929d.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js",
       "component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js.map"
     ],
     "path---projects-google": [
-      "path---projects-google-07c1285920d11585c051.js",
-      "path---projects-google-07c1285920d11585c051.js.map"
+      "path---projects-google-5e9174266c0151d081db.js",
+      "path---projects-google-5e9174266c0151d081db.js.map"
     ],
     "commons": [
       "commons-d395c4bcddd05e16c042.js",
@@ -53,12 +53,12 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---projects-face-name": [
-      "path---projects-face-name-cf875d83da66dd9fa4a4.js",
-      "path---projects-face-name-cf875d83da66dd9fa4a4.js.map"
+      "path---projects-face-name-ce339bb7051653da4405.js",
+      "path---projects-face-name-ce339bb7051653da4405.js.map"
     ],
     "path---projects-thetelegraph": [
-      "path---projects-thetelegraph-b5b322b05f54b3f987d0.js",
-      "path---projects-thetelegraph-b5b322b05f54b3f987d0.js.map"
+      "path---projects-thetelegraph-15bd2cd2a53aaa32f520.js",
+      "path---projects-thetelegraph-15bd2cd2a53aaa32f520.js.map"
     ],
     "app": [
       "app-ca80728a2b08cb02436a.js",
@@ -67,16 +67,16 @@
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
-      "component---src-templates-page-template-js-d80879f21ef4aaac8deb.js",
-      "component---src-templates-page-template-js-d80879f21ef4aaac8deb.js.map"
+      "component---src-templates-page-template-js-d2500f153c9cea8ed248.js",
+      "component---src-templates-page-template-js-d2500f153c9cea8ed248.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---about": [
-      "path---about-7bdc450534a7ba4a3c22.js",
-      "path---about-7bdc450534a7ba4a3c22.js.map"
+      "path---about-d83b80991924bfe6cf34.js",
+      "path---about-d83b80991924bfe6cf34.js.map"
     ]
   }
 }
