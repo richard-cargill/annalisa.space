@@ -1,4 +1,5 @@
 import React from 'react'
+import {navigateTo} from 'gatsby-link'
 import Panels from '../components/Panels/'
 import Paging from '../components/Paging'
 import SelectorPanel from '../components/Panels/SelectorPanel'
@@ -9,12 +10,16 @@ import getNextIndexObj from '../utils/getNextIndexObj'
 import getPrevIndexObj from '../utils/getPrevIndexObj'
 
 const PageTemplate = ({ data }) => {
-  const { name, slug, panels } = data.contentfulPage
+  const { name, slug, panels, password } = data.contentfulPage
 
   const { pages } = data.contentfulPageSelectorPanel
   const currentIndex = currentPageIndexOf(pages, slug)
   const nextIndexObj = getNextIndexObj(pages, currentIndex)
   const prevIndexObj = getPrevIndexObj(pages, currentIndex)
+
+  const authPass = localStorage.getItem('p__')
+
+  if (password && !authPass) navigateTo('/')
 
   return (
     <React.Fragment>
@@ -49,6 +54,7 @@ export const pageQuery = graphql`
     }
     contentfulPage(slug: { eq: $slug }) {
       slug
+      password
       panels {
         __typename
         ... on ContentfulHeroPanel {
@@ -64,6 +70,7 @@ export const pageQuery = graphql`
             slug
             description
             tags
+            password
           }
         }
         ... on ContentfulHeaderPanel {
@@ -100,6 +107,7 @@ export const pageQuery = graphql`
             name
             slug
             description
+            password
           }
         }
       }

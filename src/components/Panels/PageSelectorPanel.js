@@ -1,9 +1,17 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import Link, {navigateTo} from 'gatsby-link'
 
 import truncateTextAt from '../../utils/truncateTextAt.js'
 
 export default class PageSelectorPanel extends Component {
+  state = {
+    showLogin: false,
+    password: false,
+    input: '',
+    href: '',
+    incorrectPassword: false
+  }
+
   handleClick = () => {
     const hiddenElems = this.elems.querySelectorAll('.is-hidden')
     if (hiddenElems) {
@@ -11,9 +19,48 @@ export default class PageSelectorPanel extends Component {
     }
   }
 
+  onClick = (e, password, href) => {
+    if (password) {
+      e.preventDefault()
+      this.setState({showLogin: true, password, href: href})
+    } else {
+      this.setState({showLogin: false, password: false, href: ''})
+    }
+  }
+
+  onChange = (e) => {
+    const password = this.state.password
+    const value = e.target.value
+    this.setState({input: value})
+  }
+
+  onKeyPress = (e) => {
+    const {password, href} = this.state
+    const value = e.target.value
+    if(e.key === 'Enter') {
+      const truthey = !!(value === password)
+      if(truthey) {
+        navigateTo(href)
+        this.setState({incorrectPassword: false})
+        localStorage.setItem('p__', true);
+      } else {
+        this.setState({incorrectPassword: true})
+      }
+    }
+  }
+
+  close = (e) => {
+    this.setState({showLogin: false, password: false, href: ''})
+  }
+
+  stopProp = (e) => {
+    e.stopPropagation()
+  }
+
   render() {
     const { text, pages, pagesToDisplay } = this.props
     const showLoadMoreButton = pagesToDisplay < pages.length
+    const {showLogin, input, incorrectPassword} = this.state
 
     return (
       <section
@@ -22,16 +69,17 @@ export default class PageSelectorPanel extends Component {
       >
         <div className="pageSelector__items">
           {pages.map((page, i) => {
-            const { name, slug, description, tags } = page
+            const { title, name, slug, description, tags, password } = page
 
             const isHidden = i >= pagesToDisplay ? 'is-hidden' : ''
             const selectorClassName = `pageSelector__item ${isHidden}`
+            const pageTitle = title ? title : name
 
             return (
               <article className={selectorClassName} key={name}>
-                <Link className="pageSelector__a" to={slug}>
+                <Link onClick={e => this.onClick(e, password, slug)} className="pageSelector__a" to={slug}>
                   <div className="pageSelector__center">
-                    <h3 className="pageSelector__title">{name}</h3>
+                    <h3 className="pageSelector__title">{pageTitle}</h3>
                     {description && (
                       <p className="pageSelector__content">
                         {truncateTextAt(description, 100)}
@@ -50,6 +98,9 @@ export default class PageSelectorPanel extends Component {
               </button>
             </div>
           )}
+          {showLogin && (<div onClick={this.close} className="passwordPanel">
+            <input style={{border: incorrectPassword ? '1px solid red' : 0 }} onKeyPress={this.onKeyPress} onClick={this.stopProp} onChange={this.onChange} className="password" type="password" value={input} placeholder="Enter password" />
+            </div>)}
         </div>
       </section>
     )
