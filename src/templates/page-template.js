@@ -11,40 +11,48 @@ import getPrevIndexObj from '../utils/getPrevIndexObj'
 
 const isClient = typeof window !== 'undefined'
 
-const PageTemplate = ({ data }) => {
-  const { name, slug, panels, password } = data.contentfulPage
+export default class PageTemplate extends React.Component {
+  componentDidMount() {
+    const data = this.props.data
+    const { name, slug, panels, password } = data.contentfulPage
 
-  const { pages } = data.contentfulPageSelectorPanel
-  const currentIndex = currentPageIndexOf(pages, slug)
-  const nextIndexObj = getNextIndexObj(pages, currentIndex)
-  const prevIndexObj = getPrevIndexObj(pages, currentIndex)
+    const authPass = (isClient) ? localStorage.getItem('p__') : false
 
-  const authPass = (isClient) ? localStorage.getItem('p__') : false
+    if (password && !authPass && isClient) navigateTo('/')
+  }
 
-  if (password && !authPass) navigateTo('/')
+  render()  {
+    const data = this.props.data
+    const { name, slug, panels, password } = data.contentfulPage
 
-  return (
-    <React.Fragment>
-      {slug === '/' && <Triangles />}
-      <main>
-        <article>
-          {panels &&
-            panels.map(panel => {
-              const { __typename } = panel
-              return (
-                <Panels key={__typename} type={__typename} data={panel} />
-              )
-            })}
-        </article>
-        {slug.startsWith('/projects') && (
-          <Paging prev={prevIndexObj} next={nextIndexObj} />
-        )}
-      </main>
-    </React.Fragment>
-  )
+    const { pages } = data.contentfulPageSelectorPanel
+    const currentIndex = currentPageIndexOf(pages, slug)
+    const nextIndexObj = getNextIndexObj(pages, currentIndex)
+    const prevIndexObj = getPrevIndexObj(pages, currentIndex)
+
+
+
+    return (
+      <React.Fragment>
+        {slug === '/' && <Triangles />}
+        <main>
+          <article>
+            {panels &&
+              panels.map(panel => {
+                const { __typename } = panel
+                return (
+                  <Panels key={__typename} type={__typename} data={panel} />
+                )
+              })}
+          </article>
+          {slug.startsWith('/projects') && (
+            <Paging prev={prevIndexObj} next={nextIndexObj} />
+          )}
+        </main>
+      </React.Fragment>
+    )
+  }
 }
-
-export default PageTemplate
 
 export const pageQuery = graphql`
   query PageQuery($slug: String!) {

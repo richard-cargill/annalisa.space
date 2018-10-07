@@ -21,7 +21,8 @@ export default class PageSelectorPanel extends Component {
   }
 
   onClick = (e, password, href) => {
-    if (password) {
+    const authPass = (isClient) ? localStorage.getItem('p__') : false
+    if (password && !authPass) {
       e.preventDefault()
       this.setState({showLogin: true, password, href: href})
     } else {
