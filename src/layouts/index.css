@@ -339,11 +339,20 @@ a {
   text-decoration: none;
   transition: all .25s linear;
   line-height: 1;
+  position: relative;
 }
 
 .button:hover {
   color: white;
   background-color: #756cdf;
+}
+
+.icon {
+  font-size: 150%;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 
 .paging {

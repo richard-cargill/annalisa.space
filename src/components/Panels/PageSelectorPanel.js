@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Link, {navigateTo} from 'gatsby-link'
 
 import truncateTextAt from '../../utils/truncateTextAt.js'
+const isClient = typeof window !== 'undefined'
 
 export default class PageSelectorPanel extends Component {
   state = {
@@ -42,7 +43,7 @@ export default class PageSelectorPanel extends Component {
       if(truthey) {
         navigateTo(href)
         this.setState({incorrectPassword: false})
-        localStorage.setItem('p__', true);
+        if(isClient) localStorage.setItem('p__', true);
       } else {
         this.setState({incorrectPassword: true})
       }
@@ -95,6 +96,7 @@ export default class PageSelectorPanel extends Component {
             <div style={{ width: '100%' }}>
               <button onClick={this.handleClick} className="button float-right">
                 Load more
+                <span className="icon">&darr;</span>
               </button>
             </div>
           )}

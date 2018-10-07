@@ -9,6 +9,8 @@ import currentPageIndexOf from '../utils/currentPageIndexOf'
 import getNextIndexObj from '../utils/getNextIndexObj'
 import getPrevIndexObj from '../utils/getPrevIndexObj'
 
+const isClient = typeof window !== 'undefined'
+
 const PageTemplate = ({ data }) => {
   const { name, slug, panels, password } = data.contentfulPage
 
@@ -17,7 +19,7 @@ const PageTemplate = ({ data }) => {
   const nextIndexObj = getNextIndexObj(pages, currentIndex)
   const prevIndexObj = getPrevIndexObj(pages, currentIndex)
 
-  const authPass = localStorage.getItem('p__')
+  const authPass = (isClient) ? localStorage.getItem('p__') : false
 
   if (password && !authPass) navigateTo('/')
 
