@@ -5,8 +5,8 @@
       "path---projects-nectar-611cf2ffe509149c8870.js.map"
     ],
     "path---projects-macmillan": [
-      "path---projects-macmillan-b1c0045ca7c3d3ce344a.js",
-      "path---projects-macmillan-b1c0045ca7c3d3ce344a.js.map"
+      "path---projects-macmillan-b3869a7e6507c013b561.js",
+      "path---projects-macmillan-b3869a7e6507c013b561.js.map"
     ],
     "path---projects-the-telegraph-puzzle": [
       "path---projects-the-telegraph-puzzle-371340132712c3c3f200.js",
@@ -29,8 +29,8 @@
       "path----8614db882db442986586.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-dab9cc9abeef9ebc06d0.js",
-      "component---src-layouts-index-js-dab9cc9abeef9ebc06d0.js.map"
+      "component---src-layouts-index-js-f18c75c6ab7dbd6cceaa.js",
+      "component---src-layouts-index-js-f18c75c6ab7dbd6cceaa.js.map"
     ],
     "path---index": [
       "path---index-01bc9c35bcb4b027ea2a.js",
@@ -67,16 +67,16 @@
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
-      "component---src-templates-page-template-js-9ca18b6545f54c783d61.js",
-      "component---src-templates-page-template-js-9ca18b6545f54c783d61.js.map"
+      "component---src-templates-page-template-js-4a75e885d0863947e16d.js",
+      "component---src-templates-page-template-js-4a75e885d0863947e16d.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---about": [
-      "path---about-2a676c4a1c450ceba87f.js",
-      "path---about-2a676c4a1c450ceba87f.js.map"
+      "path---about-cb995179b7a3dd4158f3.js",
+      "path---about-cb995179b7a3dd4158f3.js.map"
     ]
   }
 }
