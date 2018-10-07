@@ -39,6 +39,7 @@ export default class PageSelectorPanel extends Component {
   onKeyPress = (e) => {
     const {password, href} = this.state
     const value = e.target.value
+
     if(e.key === 'Enter') {
       const truthey = !!(value === password)
       if(truthey) {
@@ -94,7 +95,7 @@ export default class PageSelectorPanel extends Component {
             )
           })}
           {showLoadMoreButton && (
-            <div style={{ width: '100%' }}>
+            <div style={{ width: '100%'}}>
               <button onClick={this.handleClick} className="button float-right">
                 Load more
                 <span className="icon">&darr;</span>

@@ -1,6 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
 import Script from 'react-load-script'
+import COLORS from '../utils/palette'
 
 const isClient = typeof window !== 'undefined'
 const SCREEN_WIDTH = isClient ? window.innerWidth : 1000
@@ -10,15 +11,6 @@ const MAX_RADIUS = 40
 const MIN_SPEED = 0.7
 const MAX_SPEED = 1.5
 const N = 75
-const COLORS = [
-  '#d33682',
-  '#268bd2',
-  '#a3d783',
-  '#2aa198',
-  '#b58900',
-  '#859900',
-  '#dc322f',
-]
 
 function randomBetween(min, max) {
   return min + (max - min) * Math.random()
