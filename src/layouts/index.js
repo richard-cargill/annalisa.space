@@ -5,7 +5,21 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import Footer from '../components/Footer'
 
+import _ from 'lodash'
+
 import './index.css'
+
+function normaliseSlug (slug) {
+  return slug.slice(1).replace(/\//gi, '-')
+}
+
+function pageNameFromPathname (pathname) {
+  if (pathname !== '/') {
+    return normaliseSlug(pathname) + 'page'
+  } else {
+    return 'home-page'
+  }
+}
 
 const Layout = ({ children, data, location }) => {
   const title = data.site.siteMetadata.title
@@ -24,6 +38,7 @@ const Layout = ({ children, data, location }) => {
           position: 'relative',
           overflow: 'hidden',
         }}
+        className={pageNameFromPathname(location.pathname)}
       >
         <div className="container">
           <Header siteTitle={title} />

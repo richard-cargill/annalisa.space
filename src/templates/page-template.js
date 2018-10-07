@@ -88,17 +88,15 @@ export const pageQuery = graphql`
           media {
             file {
               url
-              fileName
-              contentType
             }
           }
         }
         ... on ContentfulImagePanel {
+          fullWidth
           media {
+            description
             file {
               url
-              fileName
-              contentType
             }
           }
         }
