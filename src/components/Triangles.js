@@ -36,7 +36,11 @@ export default class PixiLoader extends React.Component {
           url="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.2/pixi.min.js"
           onCreate={this.handleScriptCreate}
           onLoad={this.handleScriptLoad} />
-        {this.state.scriptLoaded && <Triangles>{children}</Triangles>}
+
+        {this.state.scriptLoaded
+            ? (<Triangles>{children}</Triangles>)
+            : (<React.Fragment>{children}</React.Fragment>)
+        }
       </React.Fragment>
     )
   }
