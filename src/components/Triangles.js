@@ -1,5 +1,6 @@
 import React from 'react'
-import * as PIXI from 'pixi.js'
+// import * as PIXI from 'pixi.js'
+import Script from 'react-load-script'
 
 import logo from '../images/annalisa-valente-logo.svg'
 import COLORS from '../utils/palette'
@@ -14,7 +15,34 @@ function coinFlip(head, tails) {
   return Math.random() > 0.5 ? head : tails
 }
 
-export default class Triangles extends React.Component {
+export default class PixiLoader extends React.Component {
+  state = {
+    scriptLoaded: false
+  }
+
+  handleScriptCreate = () => {
+    this.setState({ scriptLoaded: false })
+  }
+
+  handleScriptLoad = () => {
+    this.setState({ scriptLoaded: true })
+  }
+
+  render() {
+    const {children} = this.props
+    return (
+      <React.Fragment>
+        <Script
+          url="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.8.2/pixi.min.js"
+          onCreate={this.handleScriptCreate}
+          onLoad={this.handleScriptLoad} />
+        {this.state.scriptLoaded && <Triangles>{children}</Triangles>}
+      </React.Fragment>
+    )
+  }
+}
+
+class Triangles extends React.Component {
   state = {
     width: 0,
     height: 0,
