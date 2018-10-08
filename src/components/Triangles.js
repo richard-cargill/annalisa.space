@@ -1,16 +1,10 @@
 import React from 'react'
-import _ from 'lodash'
-import Script from 'react-load-script'
+import * as PIXI from 'pixi.js'
+
+import logo from '../images/annalisa-valente-logo.svg'
 import COLORS from '../utils/palette'
 
 const isClient = typeof window !== 'undefined'
-const SCREEN_WIDTH = isClient ? window.innerWidth : 1000
-const SCREEN_HEIGHT = 2000
-const MIN_RADIUS = 10
-const MAX_RADIUS = 40
-const MIN_SPEED = 0.7
-const MAX_SPEED = 1.5
-const N = 75
 
 function randomBetween(min, max) {
   return min + (max - min) * Math.random()
@@ -20,136 +14,103 @@ function coinFlip(head, tails) {
   return Math.random() > 0.5 ? head : tails
 }
 
-function makeRandomPath(two) {
-  const x = randomBetween(0, SCREEN_WIDTH)
-  const y = randomBetween(0, SCREEN_HEIGHT)
-  const radius = randomBetween(MIN_RADIUS, MAX_RADIUS)
-  const color = _.sample(COLORS)
-  const opacity = randomBetween(0.1, 0.5)
-
-  const path = two.makePolygon(x, y, radius, 3)
-  path.noFill()
-  path.stroke = color
-  path.linewidth = 0.75
-  path.opacity = opacity
-
-  return path
-}
-
-function moveShape(shape) {
-  rotateShape(shape)
-  translateShape(shape)
-}
-
-function rotateShape(shape) {
-  shape.path.rotation += shape.speed * 0.01
-}
-
-function translateShape(shape) {
-  const translation = new Two.Vector(shape.direction * shape.speed, 0)
-  shape.path.translation.addSelf(translation)
-
-  if (shape.path.translation.x > SCREEN_WIDTH + MAX_RADIUS) {
-    shape.path.translation.set(-MAX_RADIUS, shape.path.translation.y)
+export default class Triangles extends React.Component {
+  state = {
+    width: 0,
+    height: 0,
+    triangles: [],
+    numberOfTriangles: 75
   }
 
-  if (shape.path.translation.x < -MAX_RADIUS) {
-    shape.path.translation.set(
-      SCREEN_WIDTH + MAX_RADIUS,
-      shape.path.translation.y
-    )
-  }
-}
+  setupTriangles = () => {
+    const {numberOfTriangles} = this.state
+    const {app} = this
+    const triangles = []
 
-class TwoRotation extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { width: SCREEN_WIDTH }
+    for(let i = 0; i < numberOfTriangles; i++) {
+      const triangle = PIXI.Sprite.fromImage(logo)
+      const scale = randomBetween(0.25, 1.75)
+      triangle.anchor.set(0.5)
+      triangle.scale.set(0.8 + Math.random() * 0.3)
+      triangle.x = Math.random() * app.screen.width
+      triangle.y = Math.random() * app.screen.height
+      triangle.direction = coinFlip(-1, 1)
+      triangle.turningSpeed = Math.random() - 0.8
+      triangle.movementSpeed = randomBetween(0.5, 1)
+      triangle.rotationSpeed = randomBetween(0.5, 1)
+      triangle.scale.x = scale
+      triangle.scale.y = scale
+      triangle.alpha = 0.5
+
+      triangles.push(triangle)
+      app.stage.addChild(triangle)
+    }
+
+    this.setState({triangles})
+
+    const boundsPadding = 100
+    const bounds = new PIXI.Rectangle(-boundsPadding,
+                                      -boundsPadding,
+                                      app.screen.width + boundsPadding * 2,
+                                      app.screen.height + boundsPadding * 2)
+
+    app.ticker.add((delta) => {
+      for (let i = 0; i < triangles.length; i++) {
+        const triangle = triangles[i]
+
+        triangle.x += (triangle.direction) * triangle.movementSpeed
+
+        triangle.rotation += triangle.rotationSpeed * 0.05
+
+        if(triangle.x < bounds.x) {
+          triangle.x += bounds.width
+        }
+        else if (triangle.x > bounds.x + bounds.width) {
+          triangle.x -= bounds.width
+        }
+
+        if (triangle.y < bounds.y) {
+          triangle.y += bounds.height
+        }
+        else if (triangle.y > bounds.y + bounds.height) {
+          triangle.u -= bounds.height
+        }
+      }
+    })
+  }
+
+  _handleWindowResize = () => {
+    const {app, stage} = this
+    const width = isClient ? window.innerWidth : 0
+    const height = isClient ? stage.offsetHeight : 0
+    this.setState({width, height})
+
+    app.renderer.resize(width, height)
   }
 
   componentWillMount() {
-    const stage = this.stage
-    const two = new Two({
-      width: this.state.width,
-      height: 2000,
-    })
+    this.app = new PIXI.Application({transparent: true})
 
-    this.two = two
+    window.addEventListener('resize', this._handleWindowResize)
   }
 
   componentDidMount() {
-    this.setState({ width: SCREEN_WIDTH })
-    const two = this.two
-    const shapes = []
-    const stage = this.stage
+    const {app, stage} = this
+    const width = isClient ? window.innerWidth : 0
+    const height = isClient ? stage.offsetHeight : 0
 
-    for (let i = 0; i < N; i++) {
-      shapes.push({
-        path: makeRandomPath(two),
-        direction: coinFlip(1, -1),
-        speed: randomBetween(MIN_SPEED, MAX_SPEED),
-      })
-    }
+    stage.appendChild(app.view)
+    app.renderer.resize(width, height)
 
-    two.appendTo(this.stage)
-
-    two
-      .bind('update', function(frameCount) {
-        _.each(shapes, function(shape, i) {
-          moveShape(shape)
-        })
-      })
-      .play()
-  }
-
-  componentWillUnmount() {
-    this.two.unbind('update')
+    this.setupTriangles()
   }
 
   render() {
+    const {children} = this.props
+
     return (
-      <React.Fragment>
-        <div
-          ref={c => (this.stage = c)}
-          style={{
-            top: '-100px',
-            height: 100 + '%',
-            position: 'absolute',
-            zIndex: '-1',
-          }}
-        />
-      </React.Fragment>
+      <div className="triangles" ref={c => (this.stage = c)}>{children}</div>
     )
   }
 }
 
-class TwoWrapper extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { scriptLoaded: false }
-  }
-
-  handleScriptCreate() {
-    this.setState({ scriptLoaded: false })
-  }
-
-  handleScriptLoad() {
-    this.setState({ scriptLoaded: true })
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <Script
-          url="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.7.0-alpha.1/two.min.js"
-          onCreate={this.handleScriptCreate.bind(this)}
-          onLoad={this.handleScriptLoad.bind(this)}
-        />
-
-        {this.state.scriptLoaded && <TwoRotation />}
-      </React.Fragment>
-    )
-  }
-}
-
-export default TwoWrapper

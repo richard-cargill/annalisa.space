@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import Footer from '../components/Footer'
+import Triangles from '../components/Triangles'
 
 const isClient = typeof window !== 'undefined'
 
@@ -41,10 +42,12 @@ const Layout = ({ children, data, location }) => {
         }}
         className={pageNameFromPathname(location.pathname)}
       >
-        <div className="container">
-          <Header siteTitle={title} />
-        </div>
-        {children()}
+        <Triangles>
+          <div className="container">
+            <Header siteTitle={title} />
+          </div>
+          {children()}
+        </Triangles>
       </div>
       <Footer />
     </React.Fragment>
