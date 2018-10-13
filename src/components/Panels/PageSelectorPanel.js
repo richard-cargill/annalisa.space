@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Link, {navigateTo} from 'gatsby-link'
+import AnimateIn from '../AnimateIn.js'
 
 import truncateTextAt from '../../utils/truncateTextAt.js'
 const isClient = typeof window !== 'undefined'
@@ -79,7 +80,7 @@ export default class PageSelectorPanel extends Component {
             const pageTitle = title ? title : name
 
             return (
-              <article className={selectorClassName} key={name}>
+              <AnimateIn tag="article" className={selectorClassName} key={name}>
                 <Link onClick={e => this.onClick(e, password, slug)} className="pageSelector__a" to={slug}>
                   <div className="pageSelector__center">
                     <h3 className="pageSelector__title">{pageTitle}</h3>
@@ -91,7 +92,7 @@ export default class PageSelectorPanel extends Component {
                     {tags && <p className="pageSelector__tags">{tags}</p>}
                   </div>
                 </Link>
-              </article>
+              </AnimateIn>
             )
           })}
           {showLoadMoreButton && (
