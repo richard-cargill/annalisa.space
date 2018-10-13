@@ -36,12 +36,7 @@ const Layout = ({ children, data, location }) => {
         ]}
       />
       <div
-        style={{
-          position: 'relative',
-          overflow: 'hidden',
-        }}
-        className={pageNameFromPathname(location.pathname)}
-      >
+        className={pageNameFromPathname(location.pathname)}>
         <Triangles>
           <div className="container">
             <Header siteTitle={title} />

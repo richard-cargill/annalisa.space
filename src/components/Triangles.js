@@ -2,7 +2,7 @@ import React from 'react'
 // import * as PIXI from 'pixi.js'
 import Script from 'react-load-script'
 
-import logo from '../images/annalisa-valente-logo.svg'
+import logo from '../images/triangle.svg'
 import COLORS from '../utils/palette'
 
 const isClient = typeof window !== 'undefined'
@@ -61,18 +61,19 @@ class Triangles extends React.Component {
 
     for(let i = 0; i < numberOfTriangles; i++) {
       const triangle = PIXI.Sprite.fromImage(logo)
-      const scale = randomBetween(0.25, 1.75)
-      triangle.anchor.set(0.5)
+      const scale = randomBetween(1, 3)
+      // const scale = 1
+      triangle.anchor.set(0.51)
       triangle.scale.set(0.8 + Math.random() * 0.3)
       triangle.x = Math.random() * app.screen.width
       triangle.y = Math.random() * app.screen.height
       triangle.direction = coinFlip(-1, 1)
       triangle.turningSpeed = Math.random() - 0.8
       triangle.movementSpeed = randomBetween(0.5, 1)
-      triangle.rotationSpeed = randomBetween(0.5, 1)
+      triangle.rotationSpeed = randomBetween(0.5, 0.9)
       triangle.scale.x = scale
       triangle.scale.y = scale
-      triangle.alpha = 0.5
+      triangle.alpha = 0.75
 
       triangles.push(triangle)
       app.stage.addChild(triangle)
@@ -90,9 +91,9 @@ class Triangles extends React.Component {
       for (let i = 0; i < triangles.length; i++) {
         const triangle = triangles[i]
 
-        triangle.x += (triangle.direction) * triangle.movementSpeed
+        triangle.x += (triangle.direction) * triangle.movementSpeed * 1.5
 
-        triangle.rotation += triangle.rotationSpeed * 0.05
+        triangle.rotation += triangle.rotationSpeed * 0.025 * delta
 
         if(triangle.x < bounds.x) {
           triangle.x += bounds.width
@@ -100,20 +101,13 @@ class Triangles extends React.Component {
         else if (triangle.x > bounds.x + bounds.width) {
           triangle.x -= bounds.width
         }
-
-        if (triangle.y < bounds.y) {
-          triangle.y += bounds.height
-        }
-        else if (triangle.y > bounds.y + bounds.height) {
-          triangle.u -= bounds.height
-        }
       }
     })
   }
 
   _handleWindowResize = () => {
     const {app, stage} = this
-    const width = isClient ? window.innerWidth : 0
+    const width = isClient ? window.innerWidth - 15 : 0
     const height = isClient ? stage.offsetHeight : 0
     this.setState({width, height})
 
@@ -121,7 +115,7 @@ class Triangles extends React.Component {
   }
 
   componentWillMount() {
-    this.app = new PIXI.Application({transparent: true})
+    this.app = new PIXI.Application({antialias: true, transparent: true})
 
     window.addEventListener('resize', this._handleWindowResize)
   }
