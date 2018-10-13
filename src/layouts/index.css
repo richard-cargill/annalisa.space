@@ -161,22 +161,43 @@ a {
   min-height: 330px;
   margin-bottom: 1.5rem;
   color: #263238;
-  transition: background-color .25s ease-in-out,
-  transform .25s ease-in-out;
-  box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
-  will-change: auto;
+  /* transition: background-color .25s ease-in-out: */
+  position: relative;
+
+  &:before {
+    content: '';
+    transition: transform 0.25s ease-in-out;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+  }
 }
 
 .pageSelector__item:hover {
   color: white;
+
+  &:before {
+    transform: scale(1.05);
+  }
 }
 
 .pageSelector__item:hover * {
   color: white;
+  transition: color 0.1s ease-in-out;
 }
 
 .pageSelector__item:nth-child(1) {
   border-color: #009688;
+
+  &:before {
+    background-color: #009688;
+  }
 }
 
 .pageSelector__item:nth-child(1):hover {
@@ -185,6 +206,9 @@ a {
 
 .pageSelector__item:nth-child(2) {
   border-color: #c51162;
+  &:before {
+    background-color: #c51162;
+  }
 }
 
 .pageSelector__item:nth-child(2):hover {
@@ -193,6 +217,9 @@ a {
 
 .pageSelector__item:nth-child(3) {
   border-color: #ff0266;
+  &:before {
+    background-color: #ff0266;
+  }
 }
 
 .pageSelector__item:nth-child(3):hover {
@@ -201,6 +228,9 @@ a {
 
 .pageSelector__item:nth-child(4) {
   border-color: #ef5a09;
+  &:before {
+    background-color: #ef5a09;
+  }
 }
 
 .pageSelector__item:nth-child(4):hover {
@@ -213,10 +243,16 @@ a {
 
 .pageSelector__item:nth-child(5) {
   border-color: #0336ff;
+  &:before {
+    background-color: #0336ff;
+  }
 }
 
 .pageSelector__item:nth-child(6) {
   border-color: #3601b0;
+  &:before {
+    background-color: #3601b0;
+  }
 }
 
 .pageSelector__item:nth-child(6):hover {
@@ -225,6 +261,9 @@ a {
 
 .pageSelector__item:nth-child(7) {
   border-color: #9e60a9;
+  &:before {
+    background-color: #9e60a9;
+  }
 }
 
 .pageSelector__item:nth-child(7):hover {
@@ -233,6 +272,9 @@ a {
 
 .pageSelector__item:nth-child(8) {
   border-color: #1e88e5;
+  &:before {
+    background-color: #1e88e5;
+  }
 }
 
 .pageSelector__item:nth-child(8):hover {
@@ -240,7 +282,10 @@ a {
 }
 
 .pageSelector__item:nth-child(9) {
-  border-color: #016256
+  border-color: #016256;
+  &:before {
+    background-color: #016256;
+  }
 }
 
 .pageSelector__item:nth-child(9):hover {
@@ -248,7 +293,10 @@ a {
 }
 
 .pageSelector__item:nth-child(10) {
-  border-color: #3e2723
+  border-color: #3e2723;
+  &:before {
+    background-color: #3e2723;
+  }
 }
 
 .pageSelector__item:nth-child(10):hover {
@@ -257,6 +305,9 @@ a {
 
 .pageSelector__item:nth-child(11) {
   border-color: #e1002c;
+  &:before {
+    background-color: #e1002c;
+  }
 }
 
 .pageSelector__item:nth-child(11):hover {
@@ -265,6 +316,9 @@ a {
 
 .pageSelector__item:nth-child(12) {
   border-color: #5c6bc0;
+  &:before {
+    background-color: #5c6bc0;
+  }
 }
 
 .pageSelector__item:nth-child(12):hover {
