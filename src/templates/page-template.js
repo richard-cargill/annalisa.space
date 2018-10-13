@@ -23,6 +23,7 @@ export default class PageTemplate extends React.Component {
 
   render()  {
     const data = this.props.data
+    const {transition} = this.props
     const { name, slug, panels, password } = data.contentfulPage
 
     const { pages } = data.contentfulPageSelectorPanel
@@ -31,7 +32,7 @@ export default class PageTemplate extends React.Component {
     const prevIndexObj = getPrevIndexObj(pages, currentIndex)
 
     return (
-      <React.Fragment>
+      <div style={transition && transition.style}>
         {slug === '/' && <Triangles />}
         <main>
           <article>
@@ -47,7 +48,7 @@ export default class PageTemplate extends React.Component {
             <Paging prev={prevIndexObj} next={nextIndexObj} />
           )}
         </main>
-      </React.Fragment>
+      </div>
     )
   }
 }
