@@ -463,6 +463,8 @@ a {
   transition: all .25s linear;
   line-height: 1;
   position: relative;
+  min-width: 140px;
+  text-align: center;
 }
 
 .button:hover {
@@ -470,12 +472,19 @@ a {
   background-color: #756cdf;
 }
 
-.icon {
-  font-size: 150%;
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
+.button--with-icon {
+  text-align: left;
+  padding: .75rem;
+
+  &:after {
+    content: '\2193';
+    position: absolute;
+    right: .75rem;
+    font-size: 150%;
+    vertical-align: middle;
+    transform: translateY(-50%);
+    top: 50%;
+  }
 }
 
 .paging {

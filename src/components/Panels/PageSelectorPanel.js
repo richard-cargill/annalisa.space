@@ -97,9 +97,8 @@ export default class PageSelectorPanel extends Component {
           })}
           {showLoadMoreButton && (
             <div style={{ width: '100%'}}>
-              <button onClick={this.handleClick} className="button float-right">
+              <button onClick={this.handleClick} className="button float-right button--with-icon">
                 Load more
-                <span className="icon">&darr;</span>
               </button>
             </div>
           )}
