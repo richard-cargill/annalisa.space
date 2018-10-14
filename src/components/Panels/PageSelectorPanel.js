@@ -86,7 +86,7 @@ export default class PageSelectorPanel extends Component {
                     <h3 className="pageSelector__title">{pageTitle}</h3>
                     {description && (
                       <p className="pageSelector__content">
-                        {truncateTextAt(description, 70)}
+                        {truncateTextAt(description, 75)}
                       </p>
                     )}
                     {tags && <p className="pageSelector__tags">{tags}</p>}
