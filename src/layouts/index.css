@@ -77,7 +77,7 @@ a {
   font-size: 14px;
   text-decoration: none;
   color: currentColor;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
   padding-bottom: 2px;
   transition: border-color .25s linear;
 }

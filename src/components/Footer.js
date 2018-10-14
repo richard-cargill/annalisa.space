@@ -22,23 +22,23 @@ const Footer = () => (
           </Link>
         </li>
         <li>
-          <Link className="link__a" to="/">
+          <a className="link__a" title="External link to Dribbble"  target="_blank" href="https://dribbble.com/annalisa_valente">
             Dribbble
-          </Link>
+          </a>
         </li>
         <li>
-          <Link className="link__a" to="/">
+          <a className="link__a" title="External link to LinkedIn" target="_blank" href="https://www.linkedin.com/in/annalisavalente/">
             LinkedIn
-          </Link>
+          </a>
         </li>
         <li>
-          <Link className="link__a" to="/">
+          <a className="link__a" title="External link to Medium" target="_blank" href="https://blog.prototypr.io/@d_art_h_vader">
             Medium
-          </Link>
+          </a>
         </li>
       </ul>
 
-      <span className="footer__content">&copy; 2018 - Copyright</span>
+      <span className="footer__content">&copy; 2018 Annalisa Valente</span>
     </div>
   </footer>
 )

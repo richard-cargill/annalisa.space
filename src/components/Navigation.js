@@ -26,14 +26,15 @@ const Navigation = () => (
         </Link>
       </li>
       <li className="nav__list__item">
-        <Link
+        <a
           activeClassName="is-active"
           className="nav__list__a"
           role="menuitem"
-          to="/blog/"
+          href="https://blog.prototypr.io/@d_art_h_vader"
+          target="_blank"
         >
           Blog
-        </Link>
+        </a>
       </li>
     </ul>
   </nav>
