@@ -6,7 +6,7 @@ const Footer = () => (
     <div className="container">
       <h6>GET IN TOUCH</h6>
       <p className="footer__content">
-        Have any suggestion or itnerested in working together on a project?{' '}
+        Have any suggestion or interested in working together on a project?
         <br />
         Go ahead, I'd love to connect with you.
       </p>
