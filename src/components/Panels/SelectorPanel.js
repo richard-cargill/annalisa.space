@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import AnimateIn from '../AnimateIn.js'
 import truncateTextAt from '../../utils/truncateTextAt.js'
 
 const SelectorPanel = ({ text, pages }) => {
@@ -15,7 +14,7 @@ const SelectorPanel = ({ text, pages }) => {
               const { name, description, slug } = page
 
               return (
-                <AnimateIn tag="div" key={i} className="selectorPanel__item">
+                <div key={i} className="selectorPanel__item">
                   <div>
                     <h4 className="pageSelector__title">{name}</h4>
                     <p className="pageSelector__content">
@@ -25,7 +24,7 @@ const SelectorPanel = ({ text, pages }) => {
                       Learn more
                     </Link>
                   </div>
-                </AnimateIn>
+                </div>
               )
             })}
         </div>
