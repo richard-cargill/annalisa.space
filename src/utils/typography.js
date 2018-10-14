@@ -1,21 +1,19 @@
 import Typography from 'typography'
 
+const systemFontStack = ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue','sans-serif'];
+
 const typography = new Typography({
   baseFontSize: '21px',
   baseLineHeight: 1.5,
-  headerFontFamily: ['Roboto', 'sans-serif'],
+  headerFontFamily: systemFontStack,
   headerWeight: '400',
-  bodyFontFamily: ['Roboto', 'sans-serif'],
+  bodyFontFamily: systemFontStack,
   bodyWeight: '400',
   googleFonts: [
     {
       name: 'Montserrat',
       styles: ['700'],
-    },
-    {
-      name: 'Roboto',
-      styles: ['500', '400'],
-    },
+    }
   ],
 })
 
