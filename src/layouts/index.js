@@ -2,9 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
-import Footer from '../components/Footer'
-
 const isClient = typeof window !== 'undefined'
 
 import './index.css'
@@ -41,12 +38,8 @@ const Layout = ({ children, data, location }) => {
         }}
         className={pageNameFromPathname(location.pathname)}
       >
-        <div className="container">
-          <Header siteTitle={title} />
-        </div>
         {children()}
       </div>
-      <Footer />
     </React.Fragment>
   )
 }

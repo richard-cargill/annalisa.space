@@ -33,10 +33,6 @@ a {
   }
 }
 
-.about-page {
-  font-size: 16px;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -364,6 +360,7 @@ a {
 
 .pageSelector__title {
   font-size: 20px;
+  font-weight: 400;
   color: currentColor;
 }
 
@@ -407,7 +404,16 @@ a {
   }
 }
 
+.loader {
+  width: 100vw;
+  background-color: #756cdf;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+
 .footer {
+  background-color: white;
   text-align: center;
   display: flex;
   padding-top: 5rem;
@@ -533,8 +539,11 @@ a {
   padding-bottom: calc(15vh - 1rem);
 }
 
+.about-page .content {
+  font-size: 16px;
+}
+
 .content {
-  letter-spacing: -.003em;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
