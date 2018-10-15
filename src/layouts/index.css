@@ -33,6 +33,10 @@ a {
   }
 }
 
+.about-page {
+  font-size: 16px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -83,11 +87,11 @@ a {
 }
 
 .nav__list__a:hover {
-  border-bottom: 3px solid #756cdf;
+  border-bottom: 2px solid #756cdf;
 }
 
 .nav__list__a.is-active {
-  border-bottom: 3px solid #756cdf;
+  border-bottom: 2px solid #756cdf;
 }
 
 .background-alt {
@@ -113,34 +117,35 @@ a {
   opacity: 1;
 }
 
-.animate:nth-child(3n + 1) {
-  transition-delay: 0s;
-}
+@media only screen and (min-width: 600px) {
+  .animate:nth-child(3n + 1) {
+    transition-delay: 0s;
+  }
 
-.animate:nth-child(3n + 2) {
-  transition-delay: .25s;
-}
+  .animate:nth-child(3n + 2) {
+    transition-delay: .25s;
+  }
 
-.animate:nth-child(3n + 3) {
-  transition-delay: .5s;
-}
+  .animate:nth-child(3n + 3) {
+    transition-delay: .5s;
+  }
 
-.in:nth-child(3n + 4) {
-  transition-delay: .75s;
-}
+  .in:nth-child(3n + 4) {
+    transition-delay: .75s;
+  }
 
-.in:nth-child(3n + 5) {
-  transition-delay: 1s;
-}
+  .in:nth-child(3n + 5) {
+    transition-delay: 1s;
+  }
 
-.in:nth-child(3n + 6) {
-  transition-delay: 1.25s;
-}
+  .in:nth-child(3n + 6) {
+    transition-delay: 1.25s;
+  }
 
-.in:nth-child(6) + .in {
-  transition-delay: 0s;
+  .in:nth-child(6) + .in {
+    transition-delay: 0s;
+  }
 }
-
 .selectorPanel__items {
   display: flex;
   margin-left: -1rem;
@@ -446,7 +451,6 @@ a {
 .hero {
   margin-top: 13vh;
   margin-bottom: 12vh;
-  max-height: 130px;
 }
 
 .hero__title {
@@ -461,6 +465,7 @@ a {
 
 @media only screen and (min-width: 600px) {
   .hero {
+    max-height: 130px;
     margin-top: 20vh;
     margin-bottom: 18vh;
   }
@@ -534,6 +539,20 @@ a {
   padding-bottom: 1rem;
 }
 
+.content a {
+  text-decoration: none;
+  border-bottom: 2px solid #756cdf;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  font-weight: 600;
+}
+
 .imagePanel__img {
   margin-left: auto;
   margin-right: auto;
@@ -564,15 +583,7 @@ a {
 
 blockquote {
   position: relative;
-}
-
-blockquote:before {
-  content: '';
-  position: absolute;
-  left: -1rem;
-  height: 100%;
-  width: 5px;
-  background-color: #263238;
+  font-style: italic;
 }
 
 .float-right {

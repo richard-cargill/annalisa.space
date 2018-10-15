@@ -2,11 +2,14 @@ import Typography from 'typography'
 
 const systemFontStack = ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue','sans-serif'];
 
+const serifFontStack = ['Georgia' ,' Cambria','Times New Roman','Times','serif'];
+
 const typography = new Typography({
   baseFontSize: '21px',
-  baseLineHeight: 1.5,
+  baseLineHeight: 1.4,
   headerFontFamily: systemFontStack,
-  headerWeight: '400',
+  headerWeight: '600',
+  scaleRatio: 1.3,
   bodyFontFamily: systemFontStack,
   bodyWeight: '400',
   googleFonts: [
