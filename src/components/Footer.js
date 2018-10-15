@@ -38,7 +38,7 @@ const Footer = () => (
         </li>
       </ul>
 
-      <span className="footer__content">&copy; 2018 Annalisa Valente</span>
+      <span className="footer__content">2018 Made with ❤ by A. Valente & R. Cargill</span>
     </div>
   </footer>
 )
