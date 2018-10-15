@@ -22995,8 +22995,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var systemFontStack = ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', 'sans-serif'];
 	
-	var serifFontStack = ['Georgia', ' Cambria', 'Times New Roman', 'Times', 'serif'];
-	
 	var typography = new _typography2.default({
 	  baseFontSize: '21px',
 	  baseLineHeight: 1.4,
@@ -23146,12 +23144,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	
 	exports.components = {
-	  "component---src-templates-page-template-js": preferDefault(__webpack_require__(173)),
+	  "component---src-templates-page-template-js": preferDefault(__webpack_require__(81)),
 	  "component---src-pages-404-js": preferDefault(__webpack_require__(191))
 	};
 	
 	exports.json = {
-	  "layout-index.json": __webpack_require__(172),
+	  "layout-index.json": __webpack_require__(80),
 	  "projects-nectar.json": __webpack_require__(192),
 	  "projects-mymail-and-nectar.json": __webpack_require__(193),
 	  "projects-face-name.json": __webpack_require__(194),
@@ -23185,7 +23183,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _index2 = _interopRequireDefault(_index);
 	
-	var _layoutIndex = __webpack_require__(172);
+	var _layoutIndex = __webpack_require__(80);
 	
 	var _layoutIndex2 = _interopRequireDefault(_layoutIndex);
 	
@@ -23218,15 +23216,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 	
-	var _header = __webpack_require__(79);
-	
-	var _header2 = _interopRequireDefault(_header);
-	
-	var _Footer = __webpack_require__(170);
-	
-	var _Footer2 = _interopRequireDefault(_Footer);
-	
-	__webpack_require__(171);
+	__webpack_require__(79);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -23268,14 +23258,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 	        className: pageNameFromPathname(location.pathname)
 	      },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'container' },
-	        _react2.default.createElement(_header2.default, { siteTitle: title })
-	      ),
 	      children()
-	    ),
-	    _react2.default.createElement(_Footer2.default, null)
+	    )
 	  );
 	};
 	
@@ -23288,53 +23272,151 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ }),
 /* 79 */
+/***/ (function(module, exports) {
+
+	// empty (null-loader)
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports) {
+
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}}},"layoutContext":{}}
+
+/***/ }),
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
+	exports.pageQuery = undefined;
 	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _gatsbyLink = __webpack_require__(80);
+	var _gatsbyLink = __webpack_require__(82);
 	
-	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
+	var _Panels = __webpack_require__(170);
 	
-	var _Navigation = __webpack_require__(168);
+	var _Panels2 = _interopRequireDefault(_Panels);
 	
-	var _Navigation2 = _interopRequireDefault(_Navigation);
+	var _Paging = __webpack_require__(180);
 	
-	var _annalisaValenteLogo = __webpack_require__(169);
+	var _Paging2 = _interopRequireDefault(_Paging);
 	
-	var _annalisaValenteLogo2 = _interopRequireDefault(_annalisaValenteLogo);
+	var _SelectorPanel = __webpack_require__(179);
+	
+	var _SelectorPanel2 = _interopRequireDefault(_SelectorPanel);
+	
+	var _Triangles = __webpack_require__(181);
+	
+	var _Triangles2 = _interopRequireDefault(_Triangles);
+	
+	var _header = __webpack_require__(184);
+	
+	var _header2 = _interopRequireDefault(_header);
+	
+	var _Footer = __webpack_require__(187);
+	
+	var _Footer2 = _interopRequireDefault(_Footer);
+	
+	var _currentPageIndexOf = __webpack_require__(188);
+	
+	var _currentPageIndexOf2 = _interopRequireDefault(_currentPageIndexOf);
+	
+	var _getNextIndexObj = __webpack_require__(189);
+	
+	var _getNextIndexObj2 = _interopRequireDefault(_getNextIndexObj);
+	
+	var _getPrevIndexObj = __webpack_require__(190);
+	
+	var _getPrevIndexObj2 = _interopRequireDefault(_getPrevIndexObj);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var Header = function Header(_ref) {
-	  var siteTitle = _ref.siteTitle;
-	  return _react2.default.createElement(
-	    'header',
-	    { className: 'header' },
-	    _react2.default.createElement(
-	      'h1',
-	      { className: 'logo' },
-	      _react2.default.createElement(
-	        _gatsbyLink2.default,
-	        { className: 'logo__a', to: '/' },
-	        _react2.default.createElement('img', { className: 'logo__img', src: _annalisaValenteLogo2.default, alt: siteTitle })
-	      )
-	    ),
-	    _react2.default.createElement(_Navigation2.default, null)
-	  );
-	};
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	exports.default = Header;
-	module.exports = exports['default'];
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var isClient = typeof window !== 'undefined';
+	
+	var PageTemplate = function (_React$Component) {
+	  _inherits(PageTemplate, _React$Component);
+	
+	  function PageTemplate() {
+	    _classCallCheck(this, PageTemplate);
+	
+	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	  }
+	
+	  PageTemplate.prototype.componentDidMount = function componentDidMount() {
+	    var data = this.props.data;
+	    var _data$contentfulPage = data.contentfulPage,
+	        name = _data$contentfulPage.name,
+	        slug = _data$contentfulPage.slug,
+	        panels = _data$contentfulPage.panels,
+	        password = _data$contentfulPage.password;
+	
+	
+	    var authPass = isClient ? localStorage.getItem('p__') : false;
+	
+	    if (password && !authPass && isClient) (0, _gatsbyLink.navigateTo)('/');
+	  };
+	
+	  PageTemplate.prototype.render = function render() {
+	    var data = this.props.data;
+	    var title = data.site.siteMetadata.title;
+	    var transition = this.props.transition;
+	    var _data$contentfulPage2 = data.contentfulPage,
+	        name = _data$contentfulPage2.name,
+	        slug = _data$contentfulPage2.slug,
+	        panels = _data$contentfulPage2.panels,
+	        password = _data$contentfulPage2.password;
+	    var pages = data.contentfulPageSelectorPanel.pages;
+	
+	    var currentIndex = (0, _currentPageIndexOf2.default)(pages, slug);
+	    var nextIndexObj = (0, _getNextIndexObj2.default)(pages, currentIndex);
+	    var prevIndexObj = (0, _getPrevIndexObj2.default)(pages, currentIndex);
+	
+	    return _react2.default.createElement(
+	      _react2.default.Fragment,
+	      null,
+	      _react2.default.createElement('div', { className: 'loader', style: transition && transition.style }),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'container' },
+	        _react2.default.createElement(_header2.default, { siteTitle: title })
+	      ),
+	      slug === '/' && _react2.default.createElement(_Triangles2.default, null),
+	      _react2.default.createElement(
+	        'main',
+	        null,
+	        _react2.default.createElement(
+	          'article',
+	          null,
+	          panels && panels.map(function (panel) {
+	            var __typename = panel.__typename;
+	
+	            return _react2.default.createElement(_Panels2.default, { key: __typename, type: __typename, data: panel });
+	          })
+	        ),
+	        slug.startsWith('/projects') && _react2.default.createElement(_Paging2.default, { prev: prevIndexObj, next: nextIndexObj })
+	      ),
+	      _react2.default.createElement(_Footer2.default, null)
+	    );
+	  };
+	
+	  return PageTemplate;
+	}(_react2.default.Component);
+	
+	exports.default = PageTemplate;
+	var pageQuery = exports.pageQuery = '** extracted graphql fragment **';
 
 /***/ }),
-/* 80 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -23342,27 +23424,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.__esModule = true;
 	exports.navigateTo = exports.replace = exports.push = undefined;
 	
-	var _extends2 = __webpack_require__(81);
+	var _extends2 = __webpack_require__(83);
 	
 	var _extends3 = _interopRequireDefault(_extends2);
 	
-	var _keys = __webpack_require__(120);
+	var _keys = __webpack_require__(122);
 	
 	var _keys2 = _interopRequireDefault(_keys);
 	
-	var _objectWithoutProperties2 = __webpack_require__(124);
+	var _objectWithoutProperties2 = __webpack_require__(126);
 	
 	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
 	
-	var _classCallCheck2 = __webpack_require__(125);
+	var _classCallCheck2 = __webpack_require__(127);
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _possibleConstructorReturn2 = __webpack_require__(126);
+	var _possibleConstructorReturn2 = __webpack_require__(128);
 	
 	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 	
-	var _inherits2 = __webpack_require__(160);
+	var _inherits2 = __webpack_require__(162);
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
@@ -23580,14 +23662,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	var navigateTo = exports.navigateTo = push;
 
 /***/ }),
-/* 81 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	exports.__esModule = true;
 	
-	var _assign = __webpack_require__(82);
+	var _assign = __webpack_require__(84);
 	
 	var _assign2 = _interopRequireDefault(_assign);
 	
@@ -23608,38 +23690,38 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(83), __esModule: true };
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	__webpack_require__(84);
-	module.exports = __webpack_require__(87).Object.assign;
-
-
-/***/ }),
 /* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	// 19.1.3.1 Object.assign(target, source)
-	var $export = __webpack_require__(85);
-	
-	$export($export.S + $export.F, 'Object', { assign: __webpack_require__(101) });
-
+	module.exports = { "default": __webpack_require__(85), __esModule: true };
 
 /***/ }),
 /* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var global = __webpack_require__(86);
-	var core = __webpack_require__(87);
-	var ctx = __webpack_require__(88);
-	var hide = __webpack_require__(90);
-	var has = __webpack_require__(100);
+	__webpack_require__(86);
+	module.exports = __webpack_require__(89).Object.assign;
+
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// 19.1.3.1 Object.assign(target, source)
+	var $export = __webpack_require__(87);
+	
+	$export($export.S + $export.F, 'Object', { assign: __webpack_require__(103) });
+
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var global = __webpack_require__(88);
+	var core = __webpack_require__(89);
+	var ctx = __webpack_require__(90);
+	var hide = __webpack_require__(92);
+	var has = __webpack_require__(102);
 	var PROTOTYPE = 'prototype';
 	
 	var $export = function (type, name, source) {
@@ -23700,7 +23782,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 86 */
+/* 88 */
 /***/ (function(module, exports) {
 
 	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
@@ -23712,7 +23794,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 87 */
+/* 89 */
 /***/ (function(module, exports) {
 
 	var core = module.exports = { version: '2.5.7' };
@@ -23720,11 +23802,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 88 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// optional / simple context binding
-	var aFunction = __webpack_require__(89);
+	var aFunction = __webpack_require__(91);
 	module.exports = function (fn, that, length) {
 	  aFunction(fn);
 	  if (that === undefined) return fn;
@@ -23746,7 +23828,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 89 */
+/* 91 */
 /***/ (function(module, exports) {
 
 	module.exports = function (it) {
@@ -23756,12 +23838,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 90 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var dP = __webpack_require__(91);
-	var createDesc = __webpack_require__(99);
-	module.exports = __webpack_require__(95) ? function (object, key, value) {
+	var dP = __webpack_require__(93);
+	var createDesc = __webpack_require__(101);
+	module.exports = __webpack_require__(97) ? function (object, key, value) {
 	  return dP.f(object, key, createDesc(1, value));
 	} : function (object, key, value) {
 	  object[key] = value;
@@ -23770,15 +23852,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 91 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var anObject = __webpack_require__(92);
-	var IE8_DOM_DEFINE = __webpack_require__(94);
-	var toPrimitive = __webpack_require__(98);
+	var anObject = __webpack_require__(94);
+	var IE8_DOM_DEFINE = __webpack_require__(96);
+	var toPrimitive = __webpack_require__(100);
 	var dP = Object.defineProperty;
 	
-	exports.f = __webpack_require__(95) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
+	exports.f = __webpack_require__(97) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
 	  anObject(O);
 	  P = toPrimitive(P, true);
 	  anObject(Attributes);
@@ -23792,10 +23874,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 92 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(93);
+	var isObject = __webpack_require__(95);
 	module.exports = function (it) {
 	  if (!isObject(it)) throw TypeError(it + ' is not an object!');
 	  return it;
@@ -23803,7 +23885,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 93 */
+/* 95 */
 /***/ (function(module, exports) {
 
 	module.exports = function (it) {
@@ -23812,26 +23894,26 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 94 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = !__webpack_require__(95) && !__webpack_require__(96)(function () {
-	  return Object.defineProperty(__webpack_require__(97)('div'), 'a', { get: function () { return 7; } }).a != 7;
+	module.exports = !__webpack_require__(97) && !__webpack_require__(98)(function () {
+	  return Object.defineProperty(__webpack_require__(99)('div'), 'a', { get: function () { return 7; } }).a != 7;
 	});
 
 
 /***/ }),
-/* 95 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// Thank's IE8 for his funny defineProperty
-	module.exports = !__webpack_require__(96)(function () {
+	module.exports = !__webpack_require__(98)(function () {
 	  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 	});
 
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, exports) {
 
 	module.exports = function (exec) {
@@ -23844,11 +23926,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var isObject = __webpack_require__(93);
-	var document = __webpack_require__(86).document;
+	var isObject = __webpack_require__(95);
+	var document = __webpack_require__(88).document;
 	// typeof document.createElement is 'object' in old IE
 	var is = isObject(document) && isObject(document.createElement);
 	module.exports = function (it) {
@@ -23857,11 +23939,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// 7.1.1 ToPrimitive(input [, PreferredType])
-	var isObject = __webpack_require__(93);
+	var isObject = __webpack_require__(95);
 	// instead of the ES6 spec version, we didn't implement @@toPrimitive case
 	// and the second argument - flag - preferred type is a string
 	module.exports = function (it, S) {
@@ -23875,7 +23957,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ (function(module, exports) {
 
 	module.exports = function (bitmap, value) {
@@ -23889,7 +23971,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ (function(module, exports) {
 
 	var hasOwnProperty = {}.hasOwnProperty;
@@ -23899,20 +23981,20 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	// 19.1.2.1 Object.assign(target, source, ...)
-	var getKeys = __webpack_require__(102);
-	var gOPS = __webpack_require__(117);
-	var pIE = __webpack_require__(118);
-	var toObject = __webpack_require__(119);
-	var IObject = __webpack_require__(105);
+	var getKeys = __webpack_require__(104);
+	var gOPS = __webpack_require__(119);
+	var pIE = __webpack_require__(120);
+	var toObject = __webpack_require__(121);
+	var IObject = __webpack_require__(107);
 	var $assign = Object.assign;
 	
 	// should work with symbols and should have deterministic property order (V8 bug)
-	module.exports = !$assign || __webpack_require__(96)(function () {
+	module.exports = !$assign || __webpack_require__(98)(function () {
 	  var A = {};
 	  var B = {};
 	  // eslint-disable-next-line no-undef
@@ -23939,12 +24021,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-	var $keys = __webpack_require__(103);
-	var enumBugKeys = __webpack_require__(116);
+	var $keys = __webpack_require__(105);
+	var enumBugKeys = __webpack_require__(118);
 	
 	module.exports = Object.keys || function keys(O) {
 	  return $keys(O, enumBugKeys);
@@ -23952,13 +24034,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var has = __webpack_require__(100);
-	var toIObject = __webpack_require__(104);
-	var arrayIndexOf = __webpack_require__(108)(false);
-	var IE_PROTO = __webpack_require__(112)('IE_PROTO');
+	var has = __webpack_require__(102);
+	var toIObject = __webpack_require__(106);
+	var arrayIndexOf = __webpack_require__(110)(false);
+	var IE_PROTO = __webpack_require__(114)('IE_PROTO');
 	
 	module.exports = function (object, names) {
 	  var O = toIObject(object);
@@ -23975,23 +24057,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// to indexed object, toObject with fallback for non-array-like ES3 strings
-	var IObject = __webpack_require__(105);
-	var defined = __webpack_require__(107);
+	var IObject = __webpack_require__(107);
+	var defined = __webpack_require__(109);
 	module.exports = function (it) {
 	  return IObject(defined(it));
 	};
 
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
-	var cof = __webpack_require__(106);
+	var cof = __webpack_require__(108);
 	// eslint-disable-next-line no-prototype-builtins
 	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 	  return cof(it) == 'String' ? it.split('') : Object(it);
@@ -23999,7 +24081,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports) {
 
 	var toString = {}.toString;
@@ -24010,7 +24092,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports) {
 
 	// 7.2.1 RequireObjectCoercible(argument)
@@ -24021,14 +24103,14 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// false -> Array#indexOf
 	// true  -> Array#includes
-	var toIObject = __webpack_require__(104);
-	var toLength = __webpack_require__(109);
-	var toAbsoluteIndex = __webpack_require__(111);
+	var toIObject = __webpack_require__(106);
+	var toLength = __webpack_require__(111);
+	var toAbsoluteIndex = __webpack_require__(113);
 	module.exports = function (IS_INCLUDES) {
 	  return function ($this, el, fromIndex) {
 	    var O = toIObject($this);
@@ -24050,11 +24132,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// 7.1.15 ToLength
-	var toInteger = __webpack_require__(110);
+	var toInteger = __webpack_require__(112);
 	var min = Math.min;
 	module.exports = function (it) {
 	  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -24062,7 +24144,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports) {
 
 	// 7.1.4 ToInteger
@@ -24074,10 +24156,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var toInteger = __webpack_require__(110);
+	var toInteger = __webpack_require__(112);
 	var max = Math.max;
 	var min = Math.min;
 	module.exports = function (index, length) {
@@ -24087,22 +24169,22 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var shared = __webpack_require__(113)('keys');
-	var uid = __webpack_require__(115);
+	var shared = __webpack_require__(115)('keys');
+	var uid = __webpack_require__(117);
 	module.exports = function (key) {
 	  return shared[key] || (shared[key] = uid(key));
 	};
 
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var core = __webpack_require__(87);
-	var global = __webpack_require__(86);
+	var core = __webpack_require__(89);
+	var global = __webpack_require__(88);
 	var SHARED = '__core-js_shared__';
 	var store = global[SHARED] || (global[SHARED] = {});
 	
@@ -24110,20 +24192,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return store[key] || (store[key] = value !== undefined ? value : {});
 	})('versions', []).push({
 	  version: core.version,
-	  mode: __webpack_require__(114) ? 'pure' : 'global',
+	  mode: __webpack_require__(116) ? 'pure' : 'global',
 	  copyright: '© 2018 Denis Pushkarev (zloirock.ru)'
 	});
 
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports) {
 
 	module.exports = true;
 
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports) {
 
 	var id = 0;
@@ -24134,7 +24216,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports) {
 
 	// IE 8- don't enum bug keys
@@ -24144,53 +24226,53 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports) {
 
 	exports.f = Object.getOwnPropertySymbols;
 
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports) {
 
 	exports.f = {}.propertyIsEnumerable;
 
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// 7.1.13 ToObject(argument)
-	var defined = __webpack_require__(107);
+	var defined = __webpack_require__(109);
 	module.exports = function (it) {
 	  return Object(defined(it));
 	};
 
 
 /***/ }),
-/* 120 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(121), __esModule: true };
-
-/***/ }),
-/* 121 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	__webpack_require__(122);
-	module.exports = __webpack_require__(87).Object.keys;
-
-
-/***/ }),
 /* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	module.exports = { "default": __webpack_require__(123), __esModule: true };
+
+/***/ }),
+/* 123 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	__webpack_require__(124);
+	module.exports = __webpack_require__(89).Object.keys;
+
+
+/***/ }),
+/* 124 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	// 19.1.2.14 Object.keys(O)
-	var toObject = __webpack_require__(119);
-	var $keys = __webpack_require__(102);
+	var toObject = __webpack_require__(121);
+	var $keys = __webpack_require__(104);
 	
-	__webpack_require__(123)('keys', function () {
+	__webpack_require__(125)('keys', function () {
 	  return function keys(it) {
 	    return $keys(toObject(it));
 	  };
@@ -24198,13 +24280,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// most Object methods by ES6 should accept primitives
-	var $export = __webpack_require__(85);
-	var core = __webpack_require__(87);
-	var fails = __webpack_require__(96);
+	var $export = __webpack_require__(87);
+	var core = __webpack_require__(89);
+	var fails = __webpack_require__(98);
 	module.exports = function (KEY, exec) {
 	  var fn = (core.Object || {})[KEY] || Object[KEY];
 	  var exp = {};
@@ -24214,7 +24296,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -24234,7 +24316,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -24248,14 +24330,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	exports.__esModule = true;
 	
-	var _typeof2 = __webpack_require__(127);
+	var _typeof2 = __webpack_require__(129);
 	
 	var _typeof3 = _interopRequireDefault(_typeof2);
 	
@@ -24270,18 +24352,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	exports.__esModule = true;
 	
-	var _iterator = __webpack_require__(128);
+	var _iterator = __webpack_require__(130);
 	
 	var _iterator2 = _interopRequireDefault(_iterator);
 	
-	var _symbol = __webpack_require__(147);
+	var _symbol = __webpack_require__(149);
 	
 	var _symbol2 = _interopRequireDefault(_symbol);
 	
@@ -24296,29 +24378,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ }),
-/* 128 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(129), __esModule: true };
-
-/***/ }),
-/* 129 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	__webpack_require__(130);
-	__webpack_require__(142);
-	module.exports = __webpack_require__(146).f('iterator');
-
-
-/***/ }),
 /* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	module.exports = { "default": __webpack_require__(131), __esModule: true };
+
+/***/ }),
+/* 131 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	__webpack_require__(132);
+	__webpack_require__(144);
+	module.exports = __webpack_require__(148).f('iterator');
+
+
+/***/ }),
+/* 132 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	'use strict';
-	var $at = __webpack_require__(131)(true);
+	var $at = __webpack_require__(133)(true);
 	
 	// 21.1.3.27 String.prototype[@@iterator]()
-	__webpack_require__(132)(String, 'String', function (iterated) {
+	__webpack_require__(134)(String, 'String', function (iterated) {
 	  this._t = String(iterated); // target
 	  this._i = 0;                // next index
 	// 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -24334,11 +24416,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var toInteger = __webpack_require__(110);
-	var defined = __webpack_require__(107);
+	var toInteger = __webpack_require__(112);
+	var defined = __webpack_require__(109);
 	// true  -> String#at
 	// false -> String#codePointAt
 	module.exports = function (TO_STRING) {
@@ -24357,19 +24439,19 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var LIBRARY = __webpack_require__(114);
-	var $export = __webpack_require__(85);
-	var redefine = __webpack_require__(133);
-	var hide = __webpack_require__(90);
-	var Iterators = __webpack_require__(134);
-	var $iterCreate = __webpack_require__(135);
-	var setToStringTag = __webpack_require__(139);
-	var getPrototypeOf = __webpack_require__(141);
-	var ITERATOR = __webpack_require__(140)('iterator');
+	var LIBRARY = __webpack_require__(116);
+	var $export = __webpack_require__(87);
+	var redefine = __webpack_require__(135);
+	var hide = __webpack_require__(92);
+	var Iterators = __webpack_require__(136);
+	var $iterCreate = __webpack_require__(137);
+	var setToStringTag = __webpack_require__(141);
+	var getPrototypeOf = __webpack_require__(143);
+	var ITERATOR = __webpack_require__(142)('iterator');
 	var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
 	var FF_ITERATOR = '@@iterator';
 	var KEYS = 'keys';
@@ -24432,31 +24514,31 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(90);
+	module.exports = __webpack_require__(92);
 
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, exports) {
 
 	module.exports = {};
 
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var create = __webpack_require__(136);
-	var descriptor = __webpack_require__(99);
-	var setToStringTag = __webpack_require__(139);
+	var create = __webpack_require__(138);
+	var descriptor = __webpack_require__(101);
+	var setToStringTag = __webpack_require__(141);
 	var IteratorPrototype = {};
 	
 	// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-	__webpack_require__(90)(IteratorPrototype, __webpack_require__(140)('iterator'), function () { return this; });
+	__webpack_require__(92)(IteratorPrototype, __webpack_require__(142)('iterator'), function () { return this; });
 	
 	module.exports = function (Constructor, NAME, next) {
 	  Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
@@ -24465,27 +24547,27 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-	var anObject = __webpack_require__(92);
-	var dPs = __webpack_require__(137);
-	var enumBugKeys = __webpack_require__(116);
-	var IE_PROTO = __webpack_require__(112)('IE_PROTO');
+	var anObject = __webpack_require__(94);
+	var dPs = __webpack_require__(139);
+	var enumBugKeys = __webpack_require__(118);
+	var IE_PROTO = __webpack_require__(114)('IE_PROTO');
 	var Empty = function () { /* empty */ };
 	var PROTOTYPE = 'prototype';
 	
 	// Create object with fake `null` prototype: use iframe Object with cleared prototype
 	var createDict = function () {
 	  // Thrash, waste and sodomy: IE GC bug
-	  var iframe = __webpack_require__(97)('iframe');
+	  var iframe = __webpack_require__(99)('iframe');
 	  var i = enumBugKeys.length;
 	  var lt = '<';
 	  var gt = '>';
 	  var iframeDocument;
 	  iframe.style.display = 'none';
-	  __webpack_require__(138).appendChild(iframe);
+	  __webpack_require__(140).appendChild(iframe);
 	  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
 	  // createDict = iframe.contentWindow.Object;
 	  // html.removeChild(iframe);
@@ -24512,14 +24594,14 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var dP = __webpack_require__(91);
-	var anObject = __webpack_require__(92);
-	var getKeys = __webpack_require__(102);
+	var dP = __webpack_require__(93);
+	var anObject = __webpack_require__(94);
+	var getKeys = __webpack_require__(104);
 	
-	module.exports = __webpack_require__(95) ? Object.defineProperties : function defineProperties(O, Properties) {
+	module.exports = __webpack_require__(97) ? Object.defineProperties : function defineProperties(O, Properties) {
 	  anObject(O);
 	  var keys = getKeys(Properties);
 	  var length = keys.length;
@@ -24531,20 +24613,20 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var document = __webpack_require__(86).document;
+	var document = __webpack_require__(88).document;
 	module.exports = document && document.documentElement;
 
 
 /***/ }),
-/* 139 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var def = __webpack_require__(91).f;
-	var has = __webpack_require__(100);
-	var TAG = __webpack_require__(140)('toStringTag');
+	var def = __webpack_require__(93).f;
+	var has = __webpack_require__(102);
+	var TAG = __webpack_require__(142)('toStringTag');
 	
 	module.exports = function (it, tag, stat) {
 	  if (it && !has(it = stat ? it : it.prototype, TAG)) def(it, TAG, { configurable: true, value: tag });
@@ -24552,12 +24634,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var store = __webpack_require__(113)('wks');
-	var uid = __webpack_require__(115);
-	var Symbol = __webpack_require__(86).Symbol;
+	var store = __webpack_require__(115)('wks');
+	var uid = __webpack_require__(117);
+	var Symbol = __webpack_require__(88).Symbol;
 	var USE_SYMBOL = typeof Symbol == 'function';
 	
 	var $exports = module.exports = function (name) {
@@ -24569,13 +24651,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-	var has = __webpack_require__(100);
-	var toObject = __webpack_require__(119);
-	var IE_PROTO = __webpack_require__(112)('IE_PROTO');
+	var has = __webpack_require__(102);
+	var toObject = __webpack_require__(121);
+	var IE_PROTO = __webpack_require__(114)('IE_PROTO');
 	var ObjectProto = Object.prototype;
 	
 	module.exports = Object.getPrototypeOf || function (O) {
@@ -24588,14 +24670,14 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	__webpack_require__(143);
-	var global = __webpack_require__(86);
-	var hide = __webpack_require__(90);
-	var Iterators = __webpack_require__(134);
-	var TO_STRING_TAG = __webpack_require__(140)('toStringTag');
+	__webpack_require__(145);
+	var global = __webpack_require__(88);
+	var hide = __webpack_require__(92);
+	var Iterators = __webpack_require__(136);
+	var TO_STRING_TAG = __webpack_require__(142)('toStringTag');
 	
 	var DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +
 	  'DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,' +
@@ -24613,20 +24695,20 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
-	var addToUnscopables = __webpack_require__(144);
-	var step = __webpack_require__(145);
-	var Iterators = __webpack_require__(134);
-	var toIObject = __webpack_require__(104);
+	var addToUnscopables = __webpack_require__(146);
+	var step = __webpack_require__(147);
+	var Iterators = __webpack_require__(136);
+	var toIObject = __webpack_require__(106);
 	
 	// 22.1.3.4 Array.prototype.entries()
 	// 22.1.3.13 Array.prototype.keys()
 	// 22.1.3.29 Array.prototype.values()
 	// 22.1.3.30 Array.prototype[@@iterator]()
-	module.exports = __webpack_require__(132)(Array, 'Array', function (iterated, kind) {
+	module.exports = __webpack_require__(134)(Array, 'Array', function (iterated, kind) {
 	  this._t = toIObject(iterated); // target
 	  this._i = 0;                   // next index
 	  this._k = kind;                // kind
@@ -24653,14 +24735,14 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 144 */
+/* 146 */
 /***/ (function(module, exports) {
 
 	module.exports = function () { /* empty */ };
 
 
 /***/ }),
-/* 145 */
+/* 147 */
 /***/ (function(module, exports) {
 
 	module.exports = function (done, value) {
@@ -24669,60 +24751,60 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 146 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports.f = __webpack_require__(140);
-
-
-/***/ }),
-/* 147 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(148), __esModule: true };
-
-/***/ }),
 /* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	__webpack_require__(149);
-	__webpack_require__(157);
-	__webpack_require__(158);
-	__webpack_require__(159);
-	module.exports = __webpack_require__(87).Symbol;
+	exports.f = __webpack_require__(142);
 
 
 /***/ }),
 /* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	module.exports = { "default": __webpack_require__(150), __esModule: true };
+
+/***/ }),
+/* 150 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	__webpack_require__(151);
+	__webpack_require__(159);
+	__webpack_require__(160);
+	__webpack_require__(161);
+	module.exports = __webpack_require__(89).Symbol;
+
+
+/***/ }),
+/* 151 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	'use strict';
 	// ECMAScript 6 symbols shim
-	var global = __webpack_require__(86);
-	var has = __webpack_require__(100);
-	var DESCRIPTORS = __webpack_require__(95);
-	var $export = __webpack_require__(85);
-	var redefine = __webpack_require__(133);
-	var META = __webpack_require__(150).KEY;
-	var $fails = __webpack_require__(96);
-	var shared = __webpack_require__(113);
-	var setToStringTag = __webpack_require__(139);
-	var uid = __webpack_require__(115);
-	var wks = __webpack_require__(140);
-	var wksExt = __webpack_require__(146);
-	var wksDefine = __webpack_require__(151);
-	var enumKeys = __webpack_require__(152);
-	var isArray = __webpack_require__(153);
-	var anObject = __webpack_require__(92);
-	var isObject = __webpack_require__(93);
-	var toIObject = __webpack_require__(104);
-	var toPrimitive = __webpack_require__(98);
-	var createDesc = __webpack_require__(99);
-	var _create = __webpack_require__(136);
-	var gOPNExt = __webpack_require__(154);
-	var $GOPD = __webpack_require__(156);
-	var $DP = __webpack_require__(91);
-	var $keys = __webpack_require__(102);
+	var global = __webpack_require__(88);
+	var has = __webpack_require__(102);
+	var DESCRIPTORS = __webpack_require__(97);
+	var $export = __webpack_require__(87);
+	var redefine = __webpack_require__(135);
+	var META = __webpack_require__(152).KEY;
+	var $fails = __webpack_require__(98);
+	var shared = __webpack_require__(115);
+	var setToStringTag = __webpack_require__(141);
+	var uid = __webpack_require__(117);
+	var wks = __webpack_require__(142);
+	var wksExt = __webpack_require__(148);
+	var wksDefine = __webpack_require__(153);
+	var enumKeys = __webpack_require__(154);
+	var isArray = __webpack_require__(155);
+	var anObject = __webpack_require__(94);
+	var isObject = __webpack_require__(95);
+	var toIObject = __webpack_require__(106);
+	var toPrimitive = __webpack_require__(100);
+	var createDesc = __webpack_require__(101);
+	var _create = __webpack_require__(138);
+	var gOPNExt = __webpack_require__(156);
+	var $GOPD = __webpack_require__(158);
+	var $DP = __webpack_require__(93);
+	var $keys = __webpack_require__(104);
 	var gOPD = $GOPD.f;
 	var dP = $DP.f;
 	var gOPN = gOPNExt.f;
@@ -24845,11 +24927,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  $GOPD.f = $getOwnPropertyDescriptor;
 	  $DP.f = $defineProperty;
-	  __webpack_require__(155).f = gOPNExt.f = $getOwnPropertyNames;
-	  __webpack_require__(118).f = $propertyIsEnumerable;
-	  __webpack_require__(117).f = $getOwnPropertySymbols;
+	  __webpack_require__(157).f = gOPNExt.f = $getOwnPropertyNames;
+	  __webpack_require__(120).f = $propertyIsEnumerable;
+	  __webpack_require__(119).f = $getOwnPropertySymbols;
 	
-	  if (DESCRIPTORS && !__webpack_require__(114)) {
+	  if (DESCRIPTORS && !__webpack_require__(116)) {
 	    redefine(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
 	  }
 	
@@ -24923,7 +25005,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 	
 	// 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
-	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(90)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+	$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(92)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
 	// 19.4.3.5 Symbol.prototype[@@toStringTag]
 	setToStringTag($Symbol, 'Symbol');
 	// 20.2.1.9 Math[@@toStringTag]
@@ -24933,18 +25015,18 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 150 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var META = __webpack_require__(115)('meta');
-	var isObject = __webpack_require__(93);
-	var has = __webpack_require__(100);
-	var setDesc = __webpack_require__(91).f;
+	var META = __webpack_require__(117)('meta');
+	var isObject = __webpack_require__(95);
+	var has = __webpack_require__(102);
+	var setDesc = __webpack_require__(93).f;
 	var id = 0;
 	var isExtensible = Object.isExtensible || function () {
 	  return true;
 	};
-	var FREEZE = !__webpack_require__(96)(function () {
+	var FREEZE = !__webpack_require__(98)(function () {
 	  return isExtensible(Object.preventExtensions({}));
 	});
 	var setMeta = function (it) {
@@ -24992,14 +25074,14 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 151 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var global = __webpack_require__(86);
-	var core = __webpack_require__(87);
-	var LIBRARY = __webpack_require__(114);
-	var wksExt = __webpack_require__(146);
-	var defineProperty = __webpack_require__(91).f;
+	var global = __webpack_require__(88);
+	var core = __webpack_require__(89);
+	var LIBRARY = __webpack_require__(116);
+	var wksExt = __webpack_require__(148);
+	var defineProperty = __webpack_require__(93).f;
 	module.exports = function (name) {
 	  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
 	  if (name.charAt(0) != '_' && !(name in $Symbol)) defineProperty($Symbol, name, { value: wksExt.f(name) });
@@ -25007,13 +25089,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 152 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// all enumerable object keys, includes symbols
-	var getKeys = __webpack_require__(102);
-	var gOPS = __webpack_require__(117);
-	var pIE = __webpack_require__(118);
+	var getKeys = __webpack_require__(104);
+	var gOPS = __webpack_require__(119);
+	var pIE = __webpack_require__(120);
 	module.exports = function (it) {
 	  var result = getKeys(it);
 	  var getSymbols = gOPS.f;
@@ -25028,23 +25110,23 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 153 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// 7.2.2 IsArray(argument)
-	var cof = __webpack_require__(106);
+	var cof = __webpack_require__(108);
 	module.exports = Array.isArray || function isArray(arg) {
 	  return cof(arg) == 'Array';
 	};
 
 
 /***/ }),
-/* 154 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
-	var toIObject = __webpack_require__(104);
-	var gOPN = __webpack_require__(155).f;
+	var toIObject = __webpack_require__(106);
+	var gOPN = __webpack_require__(157).f;
 	var toString = {}.toString;
 	
 	var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -25064,12 +25146,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 155 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-	var $keys = __webpack_require__(103);
-	var hiddenKeys = __webpack_require__(116).concat('length', 'prototype');
+	var $keys = __webpack_require__(105);
+	var hiddenKeys = __webpack_require__(118).concat('length', 'prototype');
 	
 	exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 	  return $keys(O, hiddenKeys);
@@ -25077,18 +25159,18 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 156 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var pIE = __webpack_require__(118);
-	var createDesc = __webpack_require__(99);
-	var toIObject = __webpack_require__(104);
-	var toPrimitive = __webpack_require__(98);
-	var has = __webpack_require__(100);
-	var IE8_DOM_DEFINE = __webpack_require__(94);
+	var pIE = __webpack_require__(120);
+	var createDesc = __webpack_require__(101);
+	var toIObject = __webpack_require__(106);
+	var toPrimitive = __webpack_require__(100);
+	var has = __webpack_require__(102);
+	var IE8_DOM_DEFINE = __webpack_require__(96);
 	var gOPD = Object.getOwnPropertyDescriptor;
 	
-	exports.f = __webpack_require__(95) ? gOPD : function getOwnPropertyDescriptor(O, P) {
+	exports.f = __webpack_require__(97) ? gOPD : function getOwnPropertyDescriptor(O, P) {
 	  O = toIObject(O);
 	  P = toPrimitive(P, true);
 	  if (IE8_DOM_DEFINE) try {
@@ -25099,42 +25181,42 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 157 */
+/* 159 */
 /***/ (function(module, exports) {
 
-
-
-/***/ }),
-/* 158 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	__webpack_require__(151)('asyncIterator');
-
-
-/***/ }),
-/* 159 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	__webpack_require__(151)('observable');
 
 
 /***/ }),
 /* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	__webpack_require__(153)('asyncIterator');
+
+
+/***/ }),
+/* 161 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	__webpack_require__(153)('observable');
+
+
+/***/ }),
+/* 162 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	"use strict";
 	
 	exports.__esModule = true;
 	
-	var _setPrototypeOf = __webpack_require__(161);
+	var _setPrototypeOf = __webpack_require__(163);
 	
 	var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
 	
-	var _create = __webpack_require__(165);
+	var _create = __webpack_require__(167);
 	
 	var _create2 = _interopRequireDefault(_create);
 	
-	var _typeof2 = __webpack_require__(127);
+	var _typeof2 = __webpack_require__(129);
 	
 	var _typeof3 = _interopRequireDefault(_typeof2);
 	
@@ -25157,36 +25239,36 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ }),
-/* 161 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(162), __esModule: true };
-
-/***/ }),
-/* 162 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	__webpack_require__(163);
-	module.exports = __webpack_require__(87).Object.setPrototypeOf;
-
-
-/***/ }),
 /* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	// 19.1.3.19 Object.setPrototypeOf(O, proto)
-	var $export = __webpack_require__(85);
-	$export($export.S, 'Object', { setPrototypeOf: __webpack_require__(164).set });
-
+	module.exports = { "default": __webpack_require__(164), __esModule: true };
 
 /***/ }),
 /* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	__webpack_require__(165);
+	module.exports = __webpack_require__(89).Object.setPrototypeOf;
+
+
+/***/ }),
+/* 165 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// 19.1.3.19 Object.setPrototypeOf(O, proto)
+	var $export = __webpack_require__(87);
+	$export($export.S, 'Object', { setPrototypeOf: __webpack_require__(166).set });
+
+
+/***/ }),
+/* 166 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	// Works with __proto__ only. Old v8 can't work with null proto objects.
 	/* eslint-disable no-proto */
-	var isObject = __webpack_require__(93);
-	var anObject = __webpack_require__(92);
+	var isObject = __webpack_require__(95);
+	var anObject = __webpack_require__(94);
 	var check = function (O, proto) {
 	  anObject(O);
 	  if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
@@ -25195,7 +25277,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
 	    function (test, buggy, set) {
 	      try {
-	        set = __webpack_require__(88)(Function.call, __webpack_require__(156).f(Object.prototype, '__proto__').set, 2);
+	        set = __webpack_require__(90)(Function.call, __webpack_require__(158).f(Object.prototype, '__proto__').set, 2);
 	        set(test, []);
 	        buggy = !(test instanceof Array);
 	      } catch (e) { buggy = true; }
@@ -25211,112 +25293,30 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 165 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(166), __esModule: true };
+	module.exports = { "default": __webpack_require__(168), __esModule: true };
 
 /***/ }),
-/* 166 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	__webpack_require__(167);
-	var $Object = __webpack_require__(87).Object;
+	__webpack_require__(169);
+	var $Object = __webpack_require__(89).Object;
 	module.exports = function create(P, D) {
 	  return $Object.create(P, D);
 	};
 
 
 /***/ }),
-/* 167 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	var $export = __webpack_require__(85);
-	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-	$export($export.S, 'Object', { create: __webpack_require__(136) });
-
-
-/***/ }),
-/* 168 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _gatsbyLink = __webpack_require__(80);
-	
-	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Navigation = function Navigation() {
-	  return _react2.default.createElement(
-	    'nav',
-	    { className: 'nav', 'aria-label': 'Site Navigation' },
-	    _react2.default.createElement(
-	      'ul',
-	      { className: 'nav__list', 'aria-label': 'Site Navigation' },
-	      _react2.default.createElement(
-	        'li',
-	        { className: 'nav__list__item' },
-	        _react2.default.createElement(
-	          _gatsbyLink2.default,
-	          {
-	            exact: true,
-	            activeClassName: 'is-active',
-	            className: 'nav__list__a',
-	            role: 'menuitem',
-	            to: '/'
-	          },
-	          'Projects'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        { className: 'nav__list__item' },
-	        _react2.default.createElement(
-	          _gatsbyLink2.default,
-	          {
-	            activeClassName: 'is-active',
-	            className: 'nav__list__a',
-	            role: 'menuitem',
-	            to: '/about/'
-	          },
-	          'About'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        { className: 'nav__list__item' },
-	        _react2.default.createElement(
-	          'a',
-	          {
-	            className: 'nav__list__a',
-	            title: 'External link to Medium',
-	            role: 'menuitem',
-	            href: 'https://blog.prototypr.io/@d_art_h_vader',
-	            target: '_blank'
-	          },
-	          'Blog'
-	        )
-	      )
-	    )
-	  );
-	};
-	
-	exports.default = Navigation;
-	module.exports = exports['default'];
-
-/***/ }),
 /* 169 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjVweCIgaGVpZ2h0PSIzMHB4IiB2aWV3Qm94PSIwIDAgNjUgMzAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUxLjMgKDU3NTQ0KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5Hcm91cCA0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkJsdWUtQ3VzdG9tZXItU2VydmljZS1QYWdlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjAuMDAwMDAwLCAtMzcuMDAwMDAwKSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2Utd2lkdGg9IjAuNyI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC00IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MS4wMDAwMDAsIDM4LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlRyaWFuZ2xlIiBzdHJva2U9IiM5MDEzRkUiIHBvaW50cz0iNDUuNSAyOCAyOCAwIDYzIDAiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJUcmlhbmdsZSIgc3Ryb2tlPSIjNEE5MEUyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNy41MDAwMDAsIDE0LjUwMDAwMCkgcm90YXRlKC0xODAuMDAwMDAwKSB0cmFuc2xhdGUoLTE3LjUwMDAwMCwgLTE0LjUwMDAwMCkgIiBwb2ludHM9IjE3LjUgMjguNSAwIDAuNSAzNSAwLjUiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+"
+	var $export = __webpack_require__(87);
+	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+	$export($export.S, 'Object', { create: __webpack_require__(138) });
+
 
 /***/ }),
 /* 170 */
@@ -25330,250 +25330,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _gatsbyLink = __webpack_require__(80);
-	
-	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Footer = function Footer() {
-	  return _react2.default.createElement(
-	    'footer',
-	    { className: 'footer', 'aria-label': 'Footer' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'container' },
-	      _react2.default.createElement(
-	        'h6',
-	        null,
-	        'GET IN TOUCH'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        { className: 'footer__content' },
-	        'Have any suggestion or interested in working together on a project?',
-	        _react2.default.createElement('br', null),
-	        'Go ahead, I\'d love to connect with you.'
-	      ),
-	      _react2.default.createElement(
-	        'a',
-	        { className: 'button', href: 'mailto:random@random.com' },
-	        'Send me an email'
-	      ),
-	      _react2.default.createElement(
-	        'ul',
-	        { className: 'links' },
-	        _react2.default.createElement(
-	          'li',
-	          null,
-	          _react2.default.createElement(
-	            _gatsbyLink2.default,
-	            { className: 'link__a', to: '/about/' },
-	            'About me'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { className: 'link__a', title: 'External link to Dribbble', target: '_blank', href: 'https://dribbble.com/annalisa_valente' },
-	            'Dribbble'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { className: 'link__a', title: 'External link to LinkedIn', target: '_blank', href: 'https://www.linkedin.com/in/annalisavalente/' },
-	            'LinkedIn'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'li',
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { className: 'link__a', title: 'External link to Medium', target: '_blank', href: 'https://blog.prototypr.io/@d_art_h_vader' },
-	            'Medium'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'span',
-	        { className: 'footer__content' },
-	        '\xA9 2018 Annalisa Valente'
-	      )
-	    )
-	  );
-	};
-	
-	exports.default = Footer;
-	module.exports = exports['default'];
-
-/***/ }),
-/* 171 */
-/***/ (function(module, exports) {
-
-	// empty (null-loader)
-
-/***/ }),
-/* 172 */
-/***/ (function(module, exports) {
-
-	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}}},"layoutContext":{}}
-
-/***/ }),
-/* 173 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.pageQuery = undefined;
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _gatsbyLink = __webpack_require__(80);
-	
-	var _Panels = __webpack_require__(174);
-	
-	var _Panels2 = _interopRequireDefault(_Panels);
-	
-	var _Paging = __webpack_require__(184);
-	
-	var _Paging2 = _interopRequireDefault(_Paging);
-	
-	var _SelectorPanel = __webpack_require__(183);
-	
-	var _SelectorPanel2 = _interopRequireDefault(_SelectorPanel);
-	
-	var _Triangles = __webpack_require__(185);
-	
-	var _Triangles2 = _interopRequireDefault(_Triangles);
-	
-	var _currentPageIndexOf = __webpack_require__(188);
-	
-	var _currentPageIndexOf2 = _interopRequireDefault(_currentPageIndexOf);
-	
-	var _getNextIndexObj = __webpack_require__(189);
-	
-	var _getNextIndexObj2 = _interopRequireDefault(_getNextIndexObj);
-	
-	var _getPrevIndexObj = __webpack_require__(190);
-	
-	var _getPrevIndexObj2 = _interopRequireDefault(_getPrevIndexObj);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var isClient = typeof window !== 'undefined';
-	
-	var PageTemplate = function (_React$Component) {
-	  _inherits(PageTemplate, _React$Component);
-	
-	  function PageTemplate() {
-	    _classCallCheck(this, PageTemplate);
-	
-	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
-	  }
-	
-	  PageTemplate.prototype.componentDidMount = function componentDidMount() {
-	    var data = this.props.data;
-	    var _data$contentfulPage = data.contentfulPage,
-	        name = _data$contentfulPage.name,
-	        slug = _data$contentfulPage.slug,
-	        panels = _data$contentfulPage.panels,
-	        password = _data$contentfulPage.password;
-	
-	
-	    var authPass = isClient ? localStorage.getItem('p__') : false;
-	
-	    if (password && !authPass && isClient) (0, _gatsbyLink.navigateTo)('/');
-	  };
-	
-	  PageTemplate.prototype.render = function render() {
-	    var data = this.props.data;
-	    var transition = this.props.transition;
-	    var _data$contentfulPage2 = data.contentfulPage,
-	        name = _data$contentfulPage2.name,
-	        slug = _data$contentfulPage2.slug,
-	        panels = _data$contentfulPage2.panels,
-	        password = _data$contentfulPage2.password;
-	    var pages = data.contentfulPageSelectorPanel.pages;
-	
-	    var currentIndex = (0, _currentPageIndexOf2.default)(pages, slug);
-	    var nextIndexObj = (0, _getNextIndexObj2.default)(pages, currentIndex);
-	    var prevIndexObj = (0, _getPrevIndexObj2.default)(pages, currentIndex);
-	
-	    return _react2.default.createElement(
-	      'div',
-	      { style: transition && transition.style },
-	      slug === '/' && _react2.default.createElement(_Triangles2.default, null),
-	      _react2.default.createElement(
-	        'main',
-	        null,
-	        _react2.default.createElement(
-	          'article',
-	          null,
-	          panels && panels.map(function (panel) {
-	            var __typename = panel.__typename;
-	
-	            return _react2.default.createElement(_Panels2.default, { key: __typename, type: __typename, data: panel });
-	          })
-	        ),
-	        slug.startsWith('/projects') && _react2.default.createElement(_Paging2.default, { prev: prevIndexObj, next: nextIndexObj })
-	      )
-	    );
-	  };
-	
-	  return PageTemplate;
-	}(_react2.default.Component);
-	
-	exports.default = PageTemplate;
-	var pageQuery = exports.pageQuery = '** extracted graphql fragment **';
-
-/***/ }),
-/* 174 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _HeroPanel = __webpack_require__(175);
+	var _HeroPanel = __webpack_require__(171);
 	
 	var _HeroPanel2 = _interopRequireDefault(_HeroPanel);
 	
-	var _PageSelectorPanel = __webpack_require__(176);
+	var _PageSelectorPanel = __webpack_require__(172);
 	
 	var _PageSelectorPanel2 = _interopRequireDefault(_PageSelectorPanel);
 	
-	var _HeaderPanel = __webpack_require__(180);
+	var _HeaderPanel = __webpack_require__(176);
 	
 	var _HeaderPanel2 = _interopRequireDefault(_HeaderPanel);
 	
-	var _ImagePanel = __webpack_require__(181);
+	var _ImagePanel = __webpack_require__(177);
 	
 	var _ImagePanel2 = _interopRequireDefault(_ImagePanel);
 	
-	var _ContentPanel = __webpack_require__(182);
+	var _ContentPanel = __webpack_require__(178);
 	
 	var _ContentPanel2 = _interopRequireDefault(_ContentPanel);
 	
-	var _SelectorPanel = __webpack_require__(183);
+	var _SelectorPanel = __webpack_require__(179);
 	
 	var _SelectorPanel2 = _interopRequireDefault(_SelectorPanel);
 	
@@ -25609,7 +25386,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 175 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25645,7 +25422,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ }),
-/* 176 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25656,15 +25433,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _gatsbyLink = __webpack_require__(80);
+	var _gatsbyLink = __webpack_require__(82);
 	
 	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
 	
-	var _AnimateIn = __webpack_require__(177);
+	var _AnimateIn = __webpack_require__(173);
 	
 	var _AnimateIn2 = _interopRequireDefault(_AnimateIn);
 	
-	var _truncateTextAt = __webpack_require__(179);
+	var _truncateTextAt = __webpack_require__(175);
 	
 	var _truncateTextAt2 = _interopRequireDefault(_truncateTextAt);
 	
@@ -25833,7 +25610,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 177 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25846,7 +25623,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactIntersectionObserver = __webpack_require__(178);
+	var _reactIntersectionObserver = __webpack_require__(174);
 	
 	var _reactIntersectionObserver2 = _interopRequireDefault(_reactIntersectionObserver);
 	
@@ -25897,7 +25674,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 178 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26230,7 +26007,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 /***/ }),
-/* 179 */
+/* 175 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -26247,7 +26024,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 180 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26289,7 +26066,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 181 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26320,7 +26097,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 182 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26346,7 +26123,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports["default"];
 
 /***/ }),
-/* 183 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26357,11 +26134,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _gatsbyLink = __webpack_require__(80);
+	var _gatsbyLink = __webpack_require__(82);
 	
 	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
 	
-	var _truncateTextAt = __webpack_require__(179);
+	var _truncateTextAt = __webpack_require__(175);
 	
 	var _truncateTextAt2 = _interopRequireDefault(_truncateTextAt);
 	
@@ -26424,7 +26201,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 184 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26435,11 +26212,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _gatsbyLink = __webpack_require__(80);
+	var _gatsbyLink = __webpack_require__(82);
 	
 	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
 	
-	var _truncateTextAt = __webpack_require__(179);
+	var _truncateTextAt = __webpack_require__(175);
 	
 	var _truncateTextAt2 = _interopRequireDefault(_truncateTextAt);
 	
@@ -26496,7 +26273,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 185 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26511,11 +26288,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	var _reactLoadScript = __webpack_require__(186);
+	var _reactLoadScript = __webpack_require__(182);
 	
 	var _reactLoadScript2 = _interopRequireDefault(_reactLoadScript);
 	
-	var _palette = __webpack_require__(187);
+	var _palette = __webpack_require__(183);
 	
 	var _palette2 = _interopRequireDefault(_palette);
 	
@@ -26694,7 +26471,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 186 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26876,7 +26653,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = exports['default'];
 
 /***/ }),
-/* 187 */
+/* 183 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -26885,6 +26662,229 @@ return /******/ (function(modules) { // webpackBootstrap
 	var palette = ['#009688', '#c51162', '#ff0266', '#ef5a09', '#0336ff', '#3601b0', '#9e60a9', '#1e88e5', '#016256', '#3e2723', '#e1002c', '#5c6bc0'];
 	
 	exports.default = palette;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 184 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _gatsbyLink = __webpack_require__(82);
+	
+	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
+	
+	var _Navigation = __webpack_require__(185);
+	
+	var _Navigation2 = _interopRequireDefault(_Navigation);
+	
+	var _annalisaValenteLogo = __webpack_require__(186);
+	
+	var _annalisaValenteLogo2 = _interopRequireDefault(_annalisaValenteLogo);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Header = function Header(_ref) {
+	  var siteTitle = _ref.siteTitle;
+	  return _react2.default.createElement(
+	    'header',
+	    { className: 'header' },
+	    _react2.default.createElement(
+	      'h1',
+	      { className: 'logo' },
+	      _react2.default.createElement(
+	        _gatsbyLink2.default,
+	        { className: 'logo__a', to: '/' },
+	        _react2.default.createElement('img', { className: 'logo__img', src: _annalisaValenteLogo2.default, alt: siteTitle })
+	      )
+	    ),
+	    _react2.default.createElement(_Navigation2.default, null)
+	  );
+	};
+	
+	exports.default = Header;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _gatsbyLink = __webpack_require__(82);
+	
+	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Navigation = function Navigation() {
+	  return _react2.default.createElement(
+	    'nav',
+	    { className: 'nav', 'aria-label': 'Site Navigation' },
+	    _react2.default.createElement(
+	      'ul',
+	      { className: 'nav__list', 'aria-label': 'Site Navigation' },
+	      _react2.default.createElement(
+	        'li',
+	        { className: 'nav__list__item' },
+	        _react2.default.createElement(
+	          _gatsbyLink2.default,
+	          {
+	            exact: true,
+	            activeClassName: 'is-active',
+	            className: 'nav__list__a',
+	            role: 'menuitem',
+	            to: '/'
+	          },
+	          'Projects'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        { className: 'nav__list__item' },
+	        _react2.default.createElement(
+	          _gatsbyLink2.default,
+	          {
+	            activeClassName: 'is-active',
+	            className: 'nav__list__a',
+	            role: 'menuitem',
+	            to: '/about/'
+	          },
+	          'About'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        { className: 'nav__list__item' },
+	        _react2.default.createElement(
+	          'a',
+	          {
+	            className: 'nav__list__a',
+	            title: 'External link to Medium',
+	            role: 'menuitem',
+	            href: 'https://blog.prototypr.io/@d_art_h_vader',
+	            target: '_blank'
+	          },
+	          'Blog'
+	        )
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = Navigation;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports) {
+
+	module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjVweCIgaGVpZ2h0PSIzMHB4IiB2aWV3Qm94PSIwIDAgNjUgMzAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUxLjMgKDU3NTQ0KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5Hcm91cCA0PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkJsdWUtQ3VzdG9tZXItU2VydmljZS1QYWdlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjAuMDAwMDAwLCAtMzcuMDAwMDAwKSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2Utd2lkdGg9IjAuNyI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cC00IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2MS4wMDAwMDAsIDM4LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlRyaWFuZ2xlIiBzdHJva2U9IiM5MDEzRkUiIHBvaW50cz0iNDUuNSAyOCAyOCAwIDYzIDAiPjwvcG9seWdvbj4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJUcmlhbmdsZSIgc3Ryb2tlPSIjNEE5MEUyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNy41MDAwMDAsIDE0LjUwMDAwMCkgcm90YXRlKC0xODAuMDAwMDAwKSB0cmFuc2xhdGUoLTE3LjUwMDAwMCwgLTE0LjUwMDAwMCkgIiBwb2ludHM9IjE3LjUgMjguNSAwIDAuNSAzNSAwLjUiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+"
+
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _gatsbyLink = __webpack_require__(82);
+	
+	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Footer = function Footer() {
+	  return _react2.default.createElement(
+	    'footer',
+	    { className: 'footer', 'aria-label': 'Footer' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'container' },
+	      _react2.default.createElement(
+	        'h6',
+	        null,
+	        'GET IN TOUCH'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        { className: 'footer__content' },
+	        'Have any suggestion or interested in working together on a project?',
+	        _react2.default.createElement('br', null),
+	        'Go ahead, I\'d love to connect with you.'
+	      ),
+	      _react2.default.createElement(
+	        'a',
+	        { className: 'button', href: 'mailto:random@random.com' },
+	        'Send me an email'
+	      ),
+	      _react2.default.createElement(
+	        'ul',
+	        { className: 'links' },
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            _gatsbyLink2.default,
+	            { className: 'link__a', to: '/about/' },
+	            'About me'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'link__a', title: 'External link to Dribbble', target: '_blank', href: 'https://dribbble.com/annalisa_valente' },
+	            'Dribbble'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'link__a', title: 'External link to LinkedIn', target: '_blank', href: 'https://www.linkedin.com/in/annalisavalente/' },
+	            'LinkedIn'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { className: 'link__a', title: 'External link to Medium', target: '_blank', href: 'https://blog.prototypr.io/@d_art_h_vader' },
+	            'Medium'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'footer__content' },
+	        '\xA9 2018 Annalisa Valente'
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = Footer;
 	module.exports = exports['default'];
 
 /***/ }),
@@ -26978,67 +26978,67 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 192 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/nectar/","password":null,"panels":null}},"pathContext":{"slug":"/projects/nectar/"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/nectar/","password":null,"panels":null}},"pathContext":{"slug":"/projects/nectar/"}}
 
 /***/ }),
 /* 193 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/mymail-and-nectar/","password":null,"panels":null}},"pathContext":{"slug":"/projects/mymail-and-nectar/"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/mymail-and-nectar/","password":null,"panels":null}},"pathContext":{"slug":"/projects/mymail-and-nectar/"}}
 
 /***/ }),
 /* 194 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/face-name/","password":null,"panels":[{"__typename":"ContentfulContentPanel","content":{"content":"## Names and Faces\n\nAt the beginning of each new semester or school year, teachers are faced with the challenge of remembering names for a large number of new students. Design an experience to help an educator match faces to names, with the goal of shortening the time needed to reach complete un-aided accuracy. Provide a high-fidelity mock for at least one step of this experience.\n\n## Research \n\nI started out with some brainstorming to explore the topic and opportunities for research of the design exercise and gather my initial thoughts.\n\nI decided to start with a research to receive creative inputs that allowed me to build possibilities for design, however it doesn't have any statistical value.\n\nFirst part of the research: Useful to getting to know the teachers in terms of building profiles, understand why they don't remember names of students, pain points and how they currently solve this problem. My aim was to collect info and to create teachers profile with their motivations, frustrations and interactions.\nSecond part of the research: Identify how they spend the first day/week at school with new students, learning activities they do and understanding the on boarding process.\nHow I did the first part of the research:\nMapping the set of teachers needs and create an empathy map (qualitative)\nMapping the set of teachers techniques that they use to solve the problem (quantitative)\n\n### Who I interviewed:\n\n[66 primary school teachers](https://docs.google.com/spreadsheets/d/1d22_Mcdg9Jba25Msoehojh81k4hZC6_rxN85EPp-io4/edit#gid=1464901925) took part in a survey online (From America to New Zealand, Europe, India..)\n\nI started to collected all the results, populated post its and I put on the wall everything that stood out from their responses to create some patterns: direct quotes, anecdotes etc.","childMarkdownRemark":{"html":"<h2>Names and Faces</h2>\n<p>At the beginning of each new semester or school year, teachers are faced with the challenge of remembering names for a large number of new students. Design an experience to help an educator match faces to names, with the goal of shortening the time needed to reach complete un-aided accuracy. Provide a high-fidelity mock for at least one step of this experience.</p>\n<h2>Research </h2>\n<p>I started out with some brainstorming to explore the topic and opportunities for research of the design exercise and gather my initial thoughts.</p>\n<p>I decided to start with a research to receive creative inputs that allowed me to build possibilities for design, however it doesn't have any statistical value.</p>\n<p>First part of the research: Useful to getting to know the teachers in terms of building profiles, understand why they don't remember names of students, pain points and how they currently solve this problem. My aim was to collect info and to create teachers profile with their motivations, frustrations and interactions.\nSecond part of the research: Identify how they spend the first day/week at school with new students, learning activities they do and understanding the on boarding process.\nHow I did the first part of the research:\nMapping the set of teachers needs and create an empathy map (qualitative)\nMapping the set of teachers techniques that they use to solve the problem (quantitative)</p>\n<h3>Who I interviewed:</h3>\n<p><a href=\"https://docs.google.com/spreadsheets/d/1d22_Mcdg9Jba25Msoehojh81k4hZC6_rxN85EPp-io4/edit#gid=1464901925\">66 primary school teachers</a> took part in a survey online (From America to New Zealand, Europe, India..)</p>\n<p>I started to collected all the results, populated post its and I put on the wall everything that stood out from their responses to create some patterns: direct quotes, anecdotes etc.</p>"}}},{"__typename":"ContentfulImagePanel","fullWidth":null,"media":null}]}},"pathContext":{"slug":"/projects/face-name/"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/face-name/","password":null,"panels":[{"__typename":"ContentfulContentPanel","content":{"content":"## Names and Faces\n\nAt the beginning of each new semester or school year, teachers are faced with the challenge of remembering names for a large number of new students. Design an experience to help an educator match faces to names, with the goal of shortening the time needed to reach complete un-aided accuracy. Provide a high-fidelity mock for at least one step of this experience.\n\n## Research \n\nI started out with some brainstorming to explore the topic and opportunities for research of the design exercise and gather my initial thoughts.\n\nI decided to start with a research to receive creative inputs that allowed me to build possibilities for design, however it doesn't have any statistical value.\n\nFirst part of the research: Useful to getting to know the teachers in terms of building profiles, understand why they don't remember names of students, pain points and how they currently solve this problem. My aim was to collect info and to create teachers profile with their motivations, frustrations and interactions.\nSecond part of the research: Identify how they spend the first day/week at school with new students, learning activities they do and understanding the on boarding process.\nHow I did the first part of the research:\nMapping the set of teachers needs and create an empathy map (qualitative)\nMapping the set of teachers techniques that they use to solve the problem (quantitative)\n\n### Who I interviewed:\n\n[66 primary school teachers](https://docs.google.com/spreadsheets/d/1d22_Mcdg9Jba25Msoehojh81k4hZC6_rxN85EPp-io4/edit#gid=1464901925) took part in a survey online (From America to New Zealand, Europe, India..)\n\nI started to collected all the results, populated post its and I put on the wall everything that stood out from their responses to create some patterns: direct quotes, anecdotes etc.","childMarkdownRemark":{"html":"<h2>Names and Faces</h2>\n<p>At the beginning of each new semester or school year, teachers are faced with the challenge of remembering names for a large number of new students. Design an experience to help an educator match faces to names, with the goal of shortening the time needed to reach complete un-aided accuracy. Provide a high-fidelity mock for at least one step of this experience.</p>\n<h2>Research </h2>\n<p>I started out with some brainstorming to explore the topic and opportunities for research of the design exercise and gather my initial thoughts.</p>\n<p>I decided to start with a research to receive creative inputs that allowed me to build possibilities for design, however it doesn't have any statistical value.</p>\n<p>First part of the research: Useful to getting to know the teachers in terms of building profiles, understand why they don't remember names of students, pain points and how they currently solve this problem. My aim was to collect info and to create teachers profile with their motivations, frustrations and interactions.\nSecond part of the research: Identify how they spend the first day/week at school with new students, learning activities they do and understanding the on boarding process.\nHow I did the first part of the research:\nMapping the set of teachers needs and create an empathy map (qualitative)\nMapping the set of teachers techniques that they use to solve the problem (quantitative)</p>\n<h3>Who I interviewed:</h3>\n<p><a href=\"https://docs.google.com/spreadsheets/d/1d22_Mcdg9Jba25Msoehojh81k4hZC6_rxN85EPp-io4/edit#gid=1464901925\">66 primary school teachers</a> took part in a survey online (From America to New Zealand, Europe, India..)</p>\n<p>I started to collected all the results, populated post its and I put on the wall everything that stood out from their responses to create some patterns: direct quotes, anecdotes etc.</p>"}}},{"__typename":"ContentfulImagePanel","fullWidth":null,"media":null}]}},"pathContext":{"slug":"/projects/face-name/"}}
 
 /***/ }),
 /* 195 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/the-telegraph-puzzle/","password":null,"panels":null}},"pathContext":{"slug":"/projects/the-telegraph-puzzle/"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/the-telegraph-puzzle/","password":null,"panels":null}},"pathContext":{"slug":"/projects/the-telegraph-puzzle/"}}
 
 /***/ }),
 /* 196 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/thetelegraph/","password":null,"panels":null}},"pathContext":{"slug":"/projects/thetelegraph/"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/thetelegraph/","password":null,"panels":null}},"pathContext":{"slug":"/projects/thetelegraph/"}}
 
 /***/ }),
 /* 197 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/macmillan","password":"password1","panels":[{"__typename":"ContentfulHeaderPanel","text":"Macmillan Cancer Support","media":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/1GYXCsye7iqu208SwyuQyA/270debbcd5a6bef2c2603bed5fe84565/Sleepy-kitty.jpg"}}},{"__typename":"ContentfulContentPanel","content":{"content":"# Costis voluptas struxisse\n\n## Crater ore cinctasque annum aeripedes lactantes nudaque\n\nLorem markdownum tamen, noctis amantis [mors putes\npositis](http://www.caesariesgeminis.net/) arbore hostem! Opposuitque vellem!\n\nModo nullasque ipsa potiatur! Meruit te dura terra precatur reperta flores\nvernum, crate simul frondibus, lintea hoc canis nuper, sol.\n\n## Videtur nimium et facies\n\nFundatis tamen, ab amare. Sint saxo terrae **Phaethontis alta** frugum tumidam\nad adest feruntque disparibus discidium *pascua vesica suco*.\n\n## Non illi peregrina inridens mari\n\nSequitur et membra, resimas vultus: amore quos vultum nec vultumque utile\nScylaceaque teque. Viros arma.\n\n## Dant replet flere certare per castos\n\nOrtae caeli Bistoniis habet incaluitque ex dum facibus Cycneia serpentem\nabstulit obiecit capientibus. Agimus iuvenemque Phaethusa velle capillis\nfaciebat memores **si aetas** Ixionis, et.\n\n## Amnicolaeque magno imagine\n\nDiro tori qua iunctisque illic. Dum unda simul hamis aequoreis demit modo\n**prior**, ut [tuos](http://sine-nitidaeque.net/tuta), spe? Ademit quid undis\npatrios visa non furta querno et templorum sitim, omnes. Senectae fluxerunt\nsculpsit postquam [orbem est\nvidentur](http://www.lacrimisquede.com/bovesdederint.html) et audiet decet!\n\n> Tenuavit siquidem gentis vix collumque rapit vos, pectora incurrere et. Meas\n> postquam et sacer haerens quod inritare et pompae non erat. Quondam sed\n> quamvis paternis. Atque digna, mihi Sigei frustra; sum nurus regia.\n\nTenetis fecit haurire poplite, si ipsa Iuppiter, nox aspergine pete tectae tua.\nSi Cereris illum monitusque quoque; scylla harenis. Ad sensi reflectitur membra\ningreditur lumine o lymphis dignus [studium](http://dixit.org/) roganti! Typhoea\nequis, loci remota vulnera verba. Felicisque vatis, retexitur, similis\npopulisque tempore adhibere alipedi.","childMarkdownRemark":{"html":"<h1>Costis voluptas struxisse</h1>\n<h2>Crater ore cinctasque annum aeripedes lactantes nudaque</h2>\n<p>Lorem markdownum tamen, noctis amantis <a href=\"http://www.caesariesgeminis.net/\">mors putes\npositis</a> arbore hostem! Opposuitque vellem!</p>\n<p>Modo nullasque ipsa potiatur! Meruit te dura terra precatur reperta flores\nvernum, crate simul frondibus, lintea hoc canis nuper, sol.</p>\n<h2>Videtur nimium et facies</h2>\n<p>Fundatis tamen, ab amare. Sint saxo terrae <strong>Phaethontis alta</strong> frugum tumidam\nad adest feruntque disparibus discidium <em>pascua vesica suco</em>.</p>\n<h2>Non illi peregrina inridens mari</h2>\n<p>Sequitur et membra, resimas vultus: amore quos vultum nec vultumque utile\nScylaceaque teque. Viros arma.</p>\n<h2>Dant replet flere certare per castos</h2>\n<p>Ortae caeli Bistoniis habet incaluitque ex dum facibus Cycneia serpentem\nabstulit obiecit capientibus. Agimus iuvenemque Phaethusa velle capillis\nfaciebat memores <strong>si aetas</strong> Ixionis, et.</p>\n<h2>Amnicolaeque magno imagine</h2>\n<p>Diro tori qua iunctisque illic. Dum unda simul hamis aequoreis demit modo\n<strong>prior</strong>, ut <a href=\"http://sine-nitidaeque.net/tuta\">tuos</a>, spe? Ademit quid undis\npatrios visa non furta querno et templorum sitim, omnes. Senectae fluxerunt\nsculpsit postquam <a href=\"http://www.lacrimisquede.com/bovesdederint.html\">orbem est\nvidentur</a> et audiet decet!</p>\n<blockquote>\n<p>Tenuavit siquidem gentis vix collumque rapit vos, pectora incurrere et. Meas\npostquam et sacer haerens quod inritare et pompae non erat. Quondam sed\nquamvis paternis. Atque digna, mihi Sigei frustra; sum nurus regia.</p>\n</blockquote>\n<p>Tenetis fecit haurire poplite, si ipsa Iuppiter, nox aspergine pete tectae tua.\nSi Cereris illum monitusque quoque; scylla harenis. Ad sensi reflectitur membra\ningreditur lumine o lymphis dignus <a href=\"http://dixit.org/\">studium</a> roganti! Typhoea\nequis, loci remota vulnera verba. Felicisque vatis, retexitur, similis\npopulisque tempore adhibere alipedi.</p>"}}}]}},"pathContext":{"slug":"/projects/macmillan"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/macmillan","password":"password1","panels":[{"__typename":"ContentfulHeaderPanel","text":"Macmillan Cancer Support","media":{"file":{"url":"//images.ctfassets.net/wk0hltq7eofw/1GYXCsye7iqu208SwyuQyA/270debbcd5a6bef2c2603bed5fe84565/Sleepy-kitty.jpg"}}},{"__typename":"ContentfulContentPanel","content":{"content":"# Costis voluptas struxisse\n\n## Crater ore cinctasque annum aeripedes lactantes nudaque\n\nLorem markdownum tamen, noctis amantis [mors putes\npositis](http://www.caesariesgeminis.net/) arbore hostem! Opposuitque vellem!\n\nModo nullasque ipsa potiatur! Meruit te dura terra precatur reperta flores\nvernum, crate simul frondibus, lintea hoc canis nuper, sol.\n\n## Videtur nimium et facies\n\nFundatis tamen, ab amare. Sint saxo terrae **Phaethontis alta** frugum tumidam\nad adest feruntque disparibus discidium *pascua vesica suco*.\n\n## Non illi peregrina inridens mari\n\nSequitur et membra, resimas vultus: amore quos vultum nec vultumque utile\nScylaceaque teque. Viros arma.\n\n## Dant replet flere certare per castos\n\nOrtae caeli Bistoniis habet incaluitque ex dum facibus Cycneia serpentem\nabstulit obiecit capientibus. Agimus iuvenemque Phaethusa velle capillis\nfaciebat memores **si aetas** Ixionis, et.\n\n## Amnicolaeque magno imagine\n\nDiro tori qua iunctisque illic. Dum unda simul hamis aequoreis demit modo\n**prior**, ut [tuos](http://sine-nitidaeque.net/tuta), spe? Ademit quid undis\npatrios visa non furta querno et templorum sitim, omnes. Senectae fluxerunt\nsculpsit postquam [orbem est\nvidentur](http://www.lacrimisquede.com/bovesdederint.html) et audiet decet!\n\n> Tenuavit siquidem gentis vix collumque rapit vos, pectora incurrere et. Meas\n> postquam et sacer haerens quod inritare et pompae non erat. Quondam sed\n> quamvis paternis. Atque digna, mihi Sigei frustra; sum nurus regia.\n\nTenetis fecit haurire poplite, si ipsa Iuppiter, nox aspergine pete tectae tua.\nSi Cereris illum monitusque quoque; scylla harenis. Ad sensi reflectitur membra\ningreditur lumine o lymphis dignus [studium](http://dixit.org/) roganti! Typhoea\nequis, loci remota vulnera verba. Felicisque vatis, retexitur, similis\npopulisque tempore adhibere alipedi.","childMarkdownRemark":{"html":"<h1>Costis voluptas struxisse</h1>\n<h2>Crater ore cinctasque annum aeripedes lactantes nudaque</h2>\n<p>Lorem markdownum tamen, noctis amantis <a href=\"http://www.caesariesgeminis.net/\">mors putes\npositis</a> arbore hostem! Opposuitque vellem!</p>\n<p>Modo nullasque ipsa potiatur! Meruit te dura terra precatur reperta flores\nvernum, crate simul frondibus, lintea hoc canis nuper, sol.</p>\n<h2>Videtur nimium et facies</h2>\n<p>Fundatis tamen, ab amare. Sint saxo terrae <strong>Phaethontis alta</strong> frugum tumidam\nad adest feruntque disparibus discidium <em>pascua vesica suco</em>.</p>\n<h2>Non illi peregrina inridens mari</h2>\n<p>Sequitur et membra, resimas vultus: amore quos vultum nec vultumque utile\nScylaceaque teque. Viros arma.</p>\n<h2>Dant replet flere certare per castos</h2>\n<p>Ortae caeli Bistoniis habet incaluitque ex dum facibus Cycneia serpentem\nabstulit obiecit capientibus. Agimus iuvenemque Phaethusa velle capillis\nfaciebat memores <strong>si aetas</strong> Ixionis, et.</p>\n<h2>Amnicolaeque magno imagine</h2>\n<p>Diro tori qua iunctisque illic. Dum unda simul hamis aequoreis demit modo\n<strong>prior</strong>, ut <a href=\"http://sine-nitidaeque.net/tuta\">tuos</a>, spe? Ademit quid undis\npatrios visa non furta querno et templorum sitim, omnes. Senectae fluxerunt\nsculpsit postquam <a href=\"http://www.lacrimisquede.com/bovesdederint.html\">orbem est\nvidentur</a> et audiet decet!</p>\n<blockquote>\n<p>Tenuavit siquidem gentis vix collumque rapit vos, pectora incurrere et. Meas\npostquam et sacer haerens quod inritare et pompae non erat. Quondam sed\nquamvis paternis. Atque digna, mihi Sigei frustra; sum nurus regia.</p>\n</blockquote>\n<p>Tenetis fecit haurire poplite, si ipsa Iuppiter, nox aspergine pete tectae tua.\nSi Cereris illum monitusque quoque; scylla harenis. Ad sensi reflectitur membra\ningreditur lumine o lymphis dignus <a href=\"http://dixit.org/\">studium</a> roganti! Typhoea\nequis, loci remota vulnera verba. Felicisque vatis, retexitur, similis\npopulisque tempore adhibere alipedi.</p>"}}}]}},"pathContext":{"slug":"/projects/macmillan"}}
 
 /***/ }),
 /* 198 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/google/","password":"password","panels":null}},"pathContext":{"slug":"/projects/google/"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/projects/google/","password":"password","panels":null}},"pathContext":{"slug":"/projects/google/"}}
 
 /***/ }),
 /* 199 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/blog/","password":null,"panels":[{"__typename":"ContentfulContentPanel","content":{"content":"# Costis voluptas struxisse\n\n## Crater ore cinctasque annum aeripedes lactantes nudaque\n\nLorem markdownum tamen, noctis amantis [mors putes\npositis](http://www.caesariesgeminis.net/) arbore hostem! Opposuitque vellem!\n\nModo nullasque ipsa potiatur! Meruit te dura terra precatur reperta flores\nvernum, crate simul frondibus, lintea hoc canis nuper, sol.\n\n## Videtur nimium et facies\n\nFundatis tamen, ab amare. Sint saxo terrae **Phaethontis alta** frugum tumidam\nad adest feruntque disparibus discidium *pascua vesica suco*.\n\n## Non illi peregrina inridens mari\n\nSequitur et membra, resimas vultus: amore quos vultum nec vultumque utile\nScylaceaque teque. Viros arma.\n\n## Dant replet flere certare per castos\n\nOrtae caeli Bistoniis habet incaluitque ex dum facibus Cycneia serpentem\nabstulit obiecit capientibus. Agimus iuvenemque Phaethusa velle capillis\nfaciebat memores **si aetas** Ixionis, et.\n\n## Amnicolaeque magno imagine\n\nDiro tori qua iunctisque illic. Dum unda simul hamis aequoreis demit modo\n**prior**, ut [tuos](http://sine-nitidaeque.net/tuta), spe? Ademit quid undis\npatrios visa non furta querno et templorum sitim, omnes. Senectae fluxerunt\nsculpsit postquam [orbem est\nvidentur](http://www.lacrimisquede.com/bovesdederint.html) et audiet decet!\n\n> Tenuavit siquidem gentis vix collumque rapit vos, pectora incurrere et. Meas\n> postquam et sacer haerens quod inritare et pompae non erat. Quondam sed\n> quamvis paternis. Atque digna, mihi Sigei frustra; sum nurus regia.\n\nTenetis fecit haurire poplite, si ipsa Iuppiter, nox aspergine pete tectae tua.\nSi Cereris illum monitusque quoque; scylla harenis. Ad sensi reflectitur membra\ningreditur lumine o lymphis dignus [studium](http://dixit.org/) roganti! Typhoea\nequis, loci remota vulnera verba. Felicisque vatis, retexitur, similis\npopulisque tempore adhibere alipedi.","childMarkdownRemark":{"html":"<h1>Costis voluptas struxisse</h1>\n<h2>Crater ore cinctasque annum aeripedes lactantes nudaque</h2>\n<p>Lorem markdownum tamen, noctis amantis <a href=\"http://www.caesariesgeminis.net/\">mors putes\npositis</a> arbore hostem! Opposuitque vellem!</p>\n<p>Modo nullasque ipsa potiatur! Meruit te dura terra precatur reperta flores\nvernum, crate simul frondibus, lintea hoc canis nuper, sol.</p>\n<h2>Videtur nimium et facies</h2>\n<p>Fundatis tamen, ab amare. Sint saxo terrae <strong>Phaethontis alta</strong> frugum tumidam\nad adest feruntque disparibus discidium <em>pascua vesica suco</em>.</p>\n<h2>Non illi peregrina inridens mari</h2>\n<p>Sequitur et membra, resimas vultus: amore quos vultum nec vultumque utile\nScylaceaque teque. Viros arma.</p>\n<h2>Dant replet flere certare per castos</h2>\n<p>Ortae caeli Bistoniis habet incaluitque ex dum facibus Cycneia serpentem\nabstulit obiecit capientibus. Agimus iuvenemque Phaethusa velle capillis\nfaciebat memores <strong>si aetas</strong> Ixionis, et.</p>\n<h2>Amnicolaeque magno imagine</h2>\n<p>Diro tori qua iunctisque illic. Dum unda simul hamis aequoreis demit modo\n<strong>prior</strong>, ut <a href=\"http://sine-nitidaeque.net/tuta\">tuos</a>, spe? Ademit quid undis\npatrios visa non furta querno et templorum sitim, omnes. Senectae fluxerunt\nsculpsit postquam <a href=\"http://www.lacrimisquede.com/bovesdederint.html\">orbem est\nvidentur</a> et audiet decet!</p>\n<blockquote>\n<p>Tenuavit siquidem gentis vix collumque rapit vos, pectora incurrere et. Meas\npostquam et sacer haerens quod inritare et pompae non erat. Quondam sed\nquamvis paternis. Atque digna, mihi Sigei frustra; sum nurus regia.</p>\n</blockquote>\n<p>Tenetis fecit haurire poplite, si ipsa Iuppiter, nox aspergine pete tectae tua.\nSi Cereris illum monitusque quoque; scylla harenis. Ad sensi reflectitur membra\ningreditur lumine o lymphis dignus <a href=\"http://dixit.org/\">studium</a> roganti! Typhoea\nequis, loci remota vulnera verba. Felicisque vatis, retexitur, similis\npopulisque tempore adhibere alipedi.</p>"}}}]}},"pathContext":{"slug":"/blog/"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/blog/","password":null,"panels":[{"__typename":"ContentfulContentPanel","content":{"content":"# Costis voluptas struxisse\n\n## Crater ore cinctasque annum aeripedes lactantes nudaque\n\nLorem markdownum tamen, noctis amantis [mors putes\npositis](http://www.caesariesgeminis.net/) arbore hostem! Opposuitque vellem!\n\nModo nullasque ipsa potiatur! Meruit te dura terra precatur reperta flores\nvernum, crate simul frondibus, lintea hoc canis nuper, sol.\n\n## Videtur nimium et facies\n\nFundatis tamen, ab amare. Sint saxo terrae **Phaethontis alta** frugum tumidam\nad adest feruntque disparibus discidium *pascua vesica suco*.\n\n## Non illi peregrina inridens mari\n\nSequitur et membra, resimas vultus: amore quos vultum nec vultumque utile\nScylaceaque teque. Viros arma.\n\n## Dant replet flere certare per castos\n\nOrtae caeli Bistoniis habet incaluitque ex dum facibus Cycneia serpentem\nabstulit obiecit capientibus. Agimus iuvenemque Phaethusa velle capillis\nfaciebat memores **si aetas** Ixionis, et.\n\n## Amnicolaeque magno imagine\n\nDiro tori qua iunctisque illic. Dum unda simul hamis aequoreis demit modo\n**prior**, ut [tuos](http://sine-nitidaeque.net/tuta), spe? Ademit quid undis\npatrios visa non furta querno et templorum sitim, omnes. Senectae fluxerunt\nsculpsit postquam [orbem est\nvidentur](http://www.lacrimisquede.com/bovesdederint.html) et audiet decet!\n\n> Tenuavit siquidem gentis vix collumque rapit vos, pectora incurrere et. Meas\n> postquam et sacer haerens quod inritare et pompae non erat. Quondam sed\n> quamvis paternis. Atque digna, mihi Sigei frustra; sum nurus regia.\n\nTenetis fecit haurire poplite, si ipsa Iuppiter, nox aspergine pete tectae tua.\nSi Cereris illum monitusque quoque; scylla harenis. Ad sensi reflectitur membra\ningreditur lumine o lymphis dignus [studium](http://dixit.org/) roganti! Typhoea\nequis, loci remota vulnera verba. Felicisque vatis, retexitur, similis\npopulisque tempore adhibere alipedi.","childMarkdownRemark":{"html":"<h1>Costis voluptas struxisse</h1>\n<h2>Crater ore cinctasque annum aeripedes lactantes nudaque</h2>\n<p>Lorem markdownum tamen, noctis amantis <a href=\"http://www.caesariesgeminis.net/\">mors putes\npositis</a> arbore hostem! Opposuitque vellem!</p>\n<p>Modo nullasque ipsa potiatur! Meruit te dura terra precatur reperta flores\nvernum, crate simul frondibus, lintea hoc canis nuper, sol.</p>\n<h2>Videtur nimium et facies</h2>\n<p>Fundatis tamen, ab amare. Sint saxo terrae <strong>Phaethontis alta</strong> frugum tumidam\nad adest feruntque disparibus discidium <em>pascua vesica suco</em>.</p>\n<h2>Non illi peregrina inridens mari</h2>\n<p>Sequitur et membra, resimas vultus: amore quos vultum nec vultumque utile\nScylaceaque teque. Viros arma.</p>\n<h2>Dant replet flere certare per castos</h2>\n<p>Ortae caeli Bistoniis habet incaluitque ex dum facibus Cycneia serpentem\nabstulit obiecit capientibus. Agimus iuvenemque Phaethusa velle capillis\nfaciebat memores <strong>si aetas</strong> Ixionis, et.</p>\n<h2>Amnicolaeque magno imagine</h2>\n<p>Diro tori qua iunctisque illic. Dum unda simul hamis aequoreis demit modo\n<strong>prior</strong>, ut <a href=\"http://sine-nitidaeque.net/tuta\">tuos</a>, spe? Ademit quid undis\npatrios visa non furta querno et templorum sitim, omnes. Senectae fluxerunt\nsculpsit postquam <a href=\"http://www.lacrimisquede.com/bovesdederint.html\">orbem est\nvidentur</a> et audiet decet!</p>\n<blockquote>\n<p>Tenuavit siquidem gentis vix collumque rapit vos, pectora incurrere et. Meas\npostquam et sacer haerens quod inritare et pompae non erat. Quondam sed\nquamvis paternis. Atque digna, mihi Sigei frustra; sum nurus regia.</p>\n</blockquote>\n<p>Tenetis fecit haurire poplite, si ipsa Iuppiter, nox aspergine pete tectae tua.\nSi Cereris illum monitusque quoque; scylla harenis. Ad sensi reflectitur membra\ningreditur lumine o lymphis dignus <a href=\"http://dixit.org/\">studium</a> roganti! Typhoea\nequis, loci remota vulnera verba. Felicisque vatis, retexitur, similis\npopulisque tempore adhibere alipedi.</p>"}}}]}},"pathContext":{"slug":"/blog/"}}
 
 /***/ }),
 /* 200 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/hackathon/","password":null,"panels":null}},"pathContext":{"slug":"/hackathon/"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/hackathon/","password":null,"panels":null}},"pathContext":{"slug":"/hackathon/"}}
 
 /***/ }),
 /* 201 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/about/","password":null,"panels":[{"__typename":"ContentfulImagePanel","fullWidth":false,"media":{"description":"Testing description","file":{"url":"//images.ctfassets.net/wk0hltq7eofw/6dUxyw49e8mOWoOQowguMs/bb1f85747295616bed8d84378915a2fc/g__1_.jpg"}}},{"__typename":"ContentfulContentPanel","content":{"content":"__Key points of my design experience:__\n\n- Design thinking approach, always user first.\n- Web and Mobile experience\n- Shipping large scale projects\n- Working closely and in a collaborative way with stakeholders, eng, PO, marketers, business foxes helping them to ship products and to prioritise features.\n- Fast mocking, prototyping and testing approach in order to collect feedback at the early stage of the process and iterate.\n- Believing that communication and decision making are the key to make great team and help team member to build great products.\n\nI love solving complex problems, I am able to plan and carry out strategies leading large scale projects, from scoping to production and my ultimate goal is to create and launch useful, beautiful and engaging experiences for the web, mobile and everything between. My UI and UX background allows me to work on the most complex design challenges helping companies to launch products delivering the best in class user experience. Working closely with stakeholders and developers I help the teams to identify constrains at the very beginning. I'm able to organise design sprints and to help stakeholders to identify design opportunities.\n\n__My interests:__\n\nOutside the office I am busy reading, studying and working on projects regarding design and development. I am very interested about the relationship between democracy, ethics, accessibility and design. \n\nIn my free time I'm currently doing a project to study the relationship between the usage of emojis and depression in young people. My aim is to learn if data could help to create a pattern and eventually to detect depression at early stage. Track progress of the project in my trello board.\n\nI am a member of the Jury at www.cssdesignawards.com and sometimes I like to write articles and to partecipate at hackathons.\n\nI'm also learning drums.","childMarkdownRemark":{"html":"<p><strong>Key points of my design experience:</strong></p>\n<ul>\n<li>Design thinking approach, always user first.</li>\n<li>Web and Mobile experience</li>\n<li>Shipping large scale projects</li>\n<li>Working closely and in a collaborative way with stakeholders, eng, PO, marketers, business foxes helping them to ship products and to prioritise features.</li>\n<li>Fast mocking, prototyping and testing approach in order to collect feedback at the early stage of the process and iterate.</li>\n<li>Believing that communication and decision making are the key to make great team and help team member to build great products.</li>\n</ul>\n<p>I love solving complex problems, I am able to plan and carry out strategies leading large scale projects, from scoping to production and my ultimate goal is to create and launch useful, beautiful and engaging experiences for the web, mobile and everything between. My UI and UX background allows me to work on the most complex design challenges helping companies to launch products delivering the best in class user experience. Working closely with stakeholders and developers I help the teams to identify constrains at the very beginning. I'm able to organise design sprints and to help stakeholders to identify design opportunities.</p>\n<p><strong>My interests:</strong></p>\n<p>Outside the office I am busy reading, studying and working on projects regarding design and development. I am very interested about the relationship between democracy, ethics, accessibility and design. </p>\n<p>In my free time I'm currently doing a project to study the relationship between the usage of emojis and depression in young people. My aim is to learn if data could help to create a pattern and eventually to detect depression at early stage. Track progress of the project in my trello board.</p>\n<p>I am a member of the Jury at www.cssdesignawards.com and sometimes I like to write articles and to partecipate at hackathons.</p>\n<p>I'm also learning drums.</p>"}}}]}},"pathContext":{"slug":"/about/"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/about/","password":null,"panels":[{"__typename":"ContentfulImagePanel","fullWidth":false,"media":{"description":"Testing description","file":{"url":"//images.ctfassets.net/wk0hltq7eofw/6dUxyw49e8mOWoOQowguMs/bb1f85747295616bed8d84378915a2fc/g__1_.jpg"}}},{"__typename":"ContentfulContentPanel","content":{"content":"__Key points of my design experience:__\n\n- Design thinking approach, always user first.\n- Web and Mobile experience\n- Shipping large scale projects\n- Working closely and in a collaborative way with stakeholders, eng, PO, marketers, business foxes helping them to ship products and to prioritise features.\n- Fast mocking, prototyping and testing approach in order to collect feedback at the early stage of the process and iterate.\n- Believing that communication and decision making are the key to make great team and help team member to build great products.\n\nI love solving complex problems, I am able to plan and carry out strategies leading large scale projects, from scoping to production and my ultimate goal is to create and launch useful, beautiful and engaging experiences for the web, mobile and everything between. My UI and UX background allows me to work on the most complex design challenges helping companies to launch products delivering the best in class user experience. Working closely with stakeholders and developers I help the teams to identify constrains at the very beginning. I'm able to organise design sprints and to help stakeholders to identify design opportunities.\n\n__My interests:__\n\nOutside the office I am busy reading, studying and working on projects regarding design and development. I am very interested about the relationship between democracy, ethics, accessibility and design. \n\nIn my free time I'm currently doing a project to study the relationship between the usage of emojis and depression in young people. My aim is to learn if data could help to create a pattern and eventually to detect depression at early stage. Track progress of the project in my trello board.\n\nI am a member of the Jury at www.cssdesignawards.com and sometimes I like to write articles and to partecipate at hackathons.\n\nI'm also learning drums.","childMarkdownRemark":{"html":"<p><strong>Key points of my design experience:</strong></p>\n<ul>\n<li>Design thinking approach, always user first.</li>\n<li>Web and Mobile experience</li>\n<li>Shipping large scale projects</li>\n<li>Working closely and in a collaborative way with stakeholders, eng, PO, marketers, business foxes helping them to ship products and to prioritise features.</li>\n<li>Fast mocking, prototyping and testing approach in order to collect feedback at the early stage of the process and iterate.</li>\n<li>Believing that communication and decision making are the key to make great team and help team member to build great products.</li>\n</ul>\n<p>I love solving complex problems, I am able to plan and carry out strategies leading large scale projects, from scoping to production and my ultimate goal is to create and launch useful, beautiful and engaging experiences for the web, mobile and everything between. My UI and UX background allows me to work on the most complex design challenges helping companies to launch products delivering the best in class user experience. Working closely with stakeholders and developers I help the teams to identify constrains at the very beginning. I'm able to organise design sprints and to help stakeholders to identify design opportunities.</p>\n<p><strong>My interests:</strong></p>\n<p>Outside the office I am busy reading, studying and working on projects regarding design and development. I am very interested about the relationship between democracy, ethics, accessibility and design. </p>\n<p>In my free time I'm currently doing a project to study the relationship between the usage of emojis and depression in young people. My aim is to learn if data could help to create a pattern and eventually to detect depression at early stage. Track progress of the project in my trello board.</p>\n<p>I am a member of the Jury at www.cssdesignawards.com and sometimes I like to write articles and to partecipate at hackathons.</p>\n<p>I'm also learning drums.</p>"}}}]}},"pathContext":{"slug":"/about/"}}
 
 /***/ }),
 /* 202 */
 /***/ (function(module, exports) {
 
-	module.exports = {"data":{"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/","password":null,"panels":[{"__typename":"ContentfulHeroPanel","text":"I’m Annalisa, digital product designer.  ","description":"I focus on delivering digital products, services and strategy to empower people. I love solving complex problems, I am able to plan and carry out strategies and my goal is to create and launch experiences for the web, mobile and everything between. "},{"__typename":"ContentfulPageSelectorPanel","text":"This is a page selector it displays selected pages with links to each","pagesToDisplay":6,"pages":[{"title":null,"name":"Macmillan Cancer Support","slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others.","tags":"UI/UX","password":"password1"},{"title":"Google","name":"Google","slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK.","tags":"UI/UX","password":"password"},{"title":null,"name":"The Telegraph","slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience.","tags":"UI/UX","password":null},{"title":null,"name":"MyMail & Nectar","slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail.","tags":"UI/UX","password":null},{"title":null,"name":"Nectar ","slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app.","tags":"UI/UX","password":null},{"title":null,"name":"Face and Name ","slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names.","tags":"UI/UX","password":null},{"title":null,"name":"The Telegraph puzzle ","slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website.","tags":"UI/UX","password":null}]},{"__typename":"ContentfulSelectorPanel","text":"Explorations and Side Projects","pages":[{"title":null,"name":"Blog","slug":"/blog/","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore","password":null},{"title":null,"name":"Hackathons","slug":"/hackathon/","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore","password":null}]}]}},"pathContext":{"slug":"/"}}
+	module.exports = {"data":{"site":{"siteMetadata":{"title":"Annalisa Valente"}},"contentfulPageSelectorPanel":{"pages":[{"slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others."},{"slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK."},{"slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience."},{"slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail."},{"slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app."},{"slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names."},{"slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website."}]},"contentfulPage":{"slug":"/","password":null,"panels":[{"__typename":"ContentfulHeroPanel","text":"I’m Annalisa, digital product designer.  ","description":"I focus on delivering digital products, services and strategy to empower people. I love solving complex problems, I am able to plan and carry out strategies and my goal is to create and launch experiences for the web, mobile and everything between. "},{"__typename":"ContentfulPageSelectorPanel","text":"This is a page selector it displays selected pages with links to each","pagesToDisplay":6,"pages":[{"title":null,"name":"Macmillan Cancer Support","slug":"/projects/macmillan","description":"Leading the UX of fundraising products like Brave the Shave, Mindfulness and others.","tags":"UI/UX","password":"password1"},{"title":"Google","name":"Google","slug":"/projects/google/","description":"Interaction designer contractor in the Google Play Console team at Google UK.","tags":"UI/UX","password":"password"},{"title":null,"name":"The Telegraph","slug":"/projects/thetelegraph/","description":"Working with PO and Developers to bring continuous improvements to the newspaper digital experience.","tags":"UI/UX","password":null},{"title":null,"name":"MyMail & Nectar","slug":"/projects/mymail-and-nectar/","description":"Launch of MyMail and Nectar proposition to collect Nectar points with the DailyMail.","tags":"UI/UX","password":null},{"title":null,"name":"Nectar ","slug":"/projects/nectar/","description":"Delivering a new personalised user experience on Nectar web and iOS-Android app.","tags":"UI/UX","password":null},{"title":null,"name":"Face and Name ","slug":"/projects/face-name/","description":"Concept of an android experience that helps educators match faces to names.","tags":"UI/UX","password":null},{"title":null,"name":"The Telegraph puzzle ","slug":"/projects/the-telegraph-puzzle/","description":"Redesign the experience of the Telegraph puzzle website.","tags":"UI/UX","password":null}]},{"__typename":"ContentfulSelectorPanel","text":"Explorations and Side Projects","pages":[{"title":null,"name":"Blog","slug":"/blog/","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore","password":null},{"title":null,"name":"Hackathons","slug":"/hackathon/","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore","password":null}]}]}},"pathContext":{"slug":"/"}}
 
 /***/ }),
 /* 203 */
@@ -27148,19 +27148,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 207 */
 /***/ (function(module, exports) {
 
-	module.exports = "body{letter-spacing:.05rem}a,body{color:#263238}.container{margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem;-ms-flex-preferred-size:100%;flex-basis:100%}@media only screen and (min-width:600px){.container{max-width:90%}.home-page .limit-width,.home-page .panel{max-width:1024px;width:90%}.limit-width,.panel{max-width:700px;width:90%}}.about-page{font-size:16px}.header{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;min-height:100px}.logo{font-size:24px;padding:0;margin:0;color:#263238}.logo__a{color:currentColor;text-decoration:none;display:inline-block;padding:.5rem;margin-left:-.5rem}.logo__img{padding:0;margin:0;vertical-align:middle}.nav__list{padding:0;margin:0;list-style:none;color:#263238}.nav__list__item{display:inline;margin-left:1rem}.nav__list__a{font-size:14px;text-decoration:none;color:currentColor;border-bottom:2px solid transparent;padding-bottom:2px;transition:border-color .25s linear}.nav__list__a.is-active,.nav__list__a:hover{border-bottom:2px solid #756cdf}.background-alt{background-color:#f5faff}.selectorPanel{padding-top:1.5rem;padding-bottom:2rem}.animate{transform:translateZ(50%);opacity:0;transition-property:opacity,transform;transform:translate3d(0,100px,0);transition-duration:.6s;transition-timing-function:ease-in-out}.animate.in{transform:translateZ(0);opacity:1}@media only screen and (min-width:600px){.animate:nth-child(3n+1){transition-delay:0s}.animate:nth-child(3n+2){transition-delay:.25s}.animate:nth-child(3n+3){transition-delay:.5s}.in:nth-child(3n+4){transition-delay:.75s}.in:nth-child(3n+5){transition-delay:1s}.in:nth-child(3n+6){transition-delay:1.25s}.in:nth-child(6)+.in{transition-delay:0s}}.selectorPanel__items{display:-ms-flexbox;display:flex;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap}.selectorPanel__item{background-color:#fff;border-radius:5px;-ms-flex-preferred-size:100%;flex-basis:100%;padding:1rem;min-height:40vh;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;box-shadow:8px 14px 38px rgba(39,44,49,.06),1px 3px 8px rgba(39,44,49,.03);margin-bottom:1rem}@media only screen and (min-width:600px){.selectorPanel__items{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.selectorPanel__item{-ms-flex-preferred-size:calc(50% - 1rem);flex-basis:calc(50% - 1rem);margin-bottom:0}}.selectorPanel__header{font-size:16px;text-transform:uppercase;margin-top:3rem;margin-bottom:2rem}.pageSelector{margin-bottom:3rem}.pageSelector__items{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-pack:justify;justify-content:space-between;margin-left:-1rem;margin-right:-1rem;padding-right:1rem;padding-left:1rem}.pageSelector__item{background-color:#fff;-ms-flex-preferred-size:100%;flex-basis:100%;border:.5px solid #263238;border-radius:5px;min-height:330px;margin-bottom:1.5rem;color:#263238;position:relative}.pageSelector__item:before{content:\"\";transition:transform .25s ease-in-out;position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;border-radius:5px;box-shadow:8px 14px 38px rgba(39,44,49,.06),1px 3px 8px rgba(39,44,49,.03)}.pageSelector__item:hover,.pageSelector__item:hover *{color:#fdf5f5}.pageSelector__item:first-child{border-color:#009688}.pageSelector__item:first-child:hover,.pageSelector__item:first-child:hover:before{background-color:#009688}.pageSelector__item:nth-child(2){border-color:#c51162}.pageSelector__item:nth-child(2):hover,.pageSelector__item:nth-child(2):hover:before{background-color:#c51162}.pageSelector__item:nth-child(3){border-color:#ff0266}.pageSelector__item:nth-child(3):hover,.pageSelector__item:nth-child(3):hover:before{background-color:#ff0266}.pageSelector__item:nth-child(4){border-color:#ef5a09}.pageSelector__item:nth-child(4):hover,.pageSelector__item:nth-child(4):hover:before{background-color:#ef5a09}.pageSelector__item:nth-child(5):hover{background-color:#0336ff}.pageSelector__item:nth-child(5){border-color:#0336ff}.pageSelector__item:nth-child(5):hover:before{background-color:#0336ff}.pageSelector__item:nth-child(6){border-color:#3601b0}.pageSelector__item:nth-child(6):hover,.pageSelector__item:nth-child(6):hover:before{background-color:#3601b0}.pageSelector__item:nth-child(7){border-color:#9e60a9}.pageSelector__item:nth-child(7):hover,.pageSelector__item:nth-child(7):hover:before{background-color:#9e60a9}.pageSelector__item:nth-child(8){border-color:#1e88e5}.pageSelector__item:nth-child(8):hover,.pageSelector__item:nth-child(8):hover:before{background-color:#1e88e5}.pageSelector__item:nth-child(9){border-color:#016256}.pageSelector__item:nth-child(9):hover,.pageSelector__item:nth-child(9):hover:before{background-color:#016256}.pageSelector__item:nth-child(10){border-color:#3e2723}.pageSelector__item:nth-child(10):hover,.pageSelector__item:nth-child(10):hover:before{background-color:#3e2723}.pageSelector__item:nth-child(11){border-color:#e1002c}.pageSelector__item:nth-child(11):hover,.pageSelector__item:nth-child(11):hover:before{background-color:#e1002c}.pageSelector__item:nth-child(12){border-color:#5c6bc0}.pageSelector__item:nth-child(12):hover,.pageSelector__item:nth-child(12):hover:before{background-color:#5c6bc0}.pageSelector__title{font-size:20px;color:currentColor}.pageSelector__tags{font-size:16px;font-weight:500;color:#b3afaf}.pageSelector__center :last-child{margin-bottom:0}.pageSelector__a{color:currentColor;text-decoration:none;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;height:100%;padding:1rem}.pageSelector__content{font-size:16px;color:#737272}@media only screen and (min-width:600px){.pageSelector__items{padding-left:0;padding-right:0}.pageSelector__item{-ms-flex-preferred-size:calc(50% - 1rem);flex-basis:calc(50% - 1rem)}}@media only screen and (min-width:900px){.pageSelector__item{-ms-flex-preferred-size:calc(33.333% - 1rem);flex-basis:calc(33.333% - 1rem)}}.footer{text-align:center;display:-ms-flexbox;display:flex;padding-top:5rem;padding-bottom:1rem}.footer__content,.links{font-size:16px}.links{list-style:none;margin-top:0;margin-right:0;margin-left:0;padding:0}.links li{display:inline}.links li:not(:last-child):after{content:\"/\";margin-right:16px;margin-right:1rem;margin-left:16px;margin-left:1rem}.link__a{color:#263238;text-decoration:none;transition:border-color .25s linear;border-bottom:2px solid transparent}.link__a:hover{border-bottom:2px solid #756cdf}.hero{margin-top:13vh;margin-bottom:12vh}.hero__title{font-size:45px;font-family:Montserrat,sans-serif;font-weight:700}.hero__content{font-size:16px}@media only screen and (min-width:600px){.hero{max-height:130px;margin-top:20vh;margin-bottom:18vh}}.button{outline:0;font-size:12px;color:#756cdf;display:inline-block;border:1px solid #756cdf;border-radius:3px;padding:.75rem 1.5rem;margin-bottom:1.5rem;text-decoration:none;transition:all .25s linear;line-height:1;position:relative;min-width:140px;text-align:center}.button:hover{color:#fff;background-color:#756cdf}.button--with-icon{text-align:left;padding:.75rem}.button--with-icon:after{content:\"\\2193\";position:absolute;right:12px;right:.75rem;font-size:150%;vertical-align:middle;-ms-transform:translateY(-50%);transform:translateY(-50%);top:50%}.paging{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.paging__list{margin:0;padding:0}.paging__item{color:currentColor;text-decoration:none}.paging__item+.paging__item{text-align:right}.headerPanel{padding-top:15vh;padding-bottom:calc(15vh - 1rem)}.content{letter-spacing:-.003em;padding-top:1rem;padding-bottom:1rem}.content a{text-decoration:none;border-bottom:2px solid #756cdf}.content h1,.content h2,.content h3,.content h4,.content h5,.content h6{font-weight:600}.imagePanel__img{margin-left:auto;margin-right:auto;display:block;max-width:100%;height:auto}.password{position:fixed;top:50%;left:50%;-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);outline:0}.passwordPanel{content:\"\";position:fixed;top:0;left:0;right:0;bottom:0;width:100vw;height:100vh;background-color:#f5faff}blockquote{position:relative;font-style:italic}.float-right{float:right}.is-hidden{display:none}"
+	module.exports = "body{letter-spacing:.05rem}a,body{color:#263238}.container{margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem;-ms-flex-preferred-size:100%;flex-basis:100%}@media only screen and (min-width:600px){.container{max-width:90%}.home-page .limit-width,.home-page .panel{max-width:1024px;width:90%}.limit-width,.panel{max-width:700px;width:90%}}.header{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;min-height:100px}.logo{font-size:24px;padding:0;margin:0;color:#263238}.logo__a{color:currentColor;text-decoration:none;display:inline-block;padding:.5rem;margin-left:-.5rem}.logo__img{padding:0;margin:0;vertical-align:middle}.nav__list{padding:0;margin:0;list-style:none;color:#263238}.nav__list__item{display:inline;margin-left:1rem}.nav__list__a{font-size:14px;text-decoration:none;color:currentColor;border-bottom:2px solid transparent;padding-bottom:2px;transition:border-color .25s linear}.nav__list__a.is-active,.nav__list__a:hover{border-bottom:2px solid #756cdf}.background-alt{background-color:#f5faff}.selectorPanel{padding-top:1.5rem;padding-bottom:2rem}.animate{transform:translateZ(50%);opacity:0;transition-property:opacity,transform;transform:translate3d(0,100px,0);transition-duration:.6s;transition-timing-function:ease-in-out}.animate.in{transform:translateZ(0);opacity:1}@media only screen and (min-width:600px){.animate:nth-child(3n+1){transition-delay:0s}.animate:nth-child(3n+2){transition-delay:.25s}.animate:nth-child(3n+3){transition-delay:.5s}.in:nth-child(3n+4){transition-delay:.75s}.in:nth-child(3n+5){transition-delay:1s}.in:nth-child(3n+6){transition-delay:1.25s}.in:nth-child(6)+.in{transition-delay:0s}}.selectorPanel__items{display:-ms-flexbox;display:flex;margin-left:-1rem;margin-right:-1rem;padding-left:1rem;padding-right:1rem;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap}.selectorPanel__item{background-color:#fff;border-radius:5px;-ms-flex-preferred-size:100%;flex-basis:100%;padding:1rem;min-height:40vh;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;box-shadow:8px 14px 38px rgba(39,44,49,.06),1px 3px 8px rgba(39,44,49,.03);margin-bottom:1rem}@media only screen and (min-width:600px){.selectorPanel__items{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.selectorPanel__item{-ms-flex-preferred-size:calc(50% - 1rem);flex-basis:calc(50% - 1rem);margin-bottom:0}}.selectorPanel__header{font-size:16px;text-transform:uppercase;margin-top:3rem;margin-bottom:2rem}.pageSelector{margin-bottom:3rem}.pageSelector__items{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-pack:justify;justify-content:space-between;margin-left:-1rem;margin-right:-1rem;padding-right:1rem;padding-left:1rem}.pageSelector__item{background-color:#fff;-ms-flex-preferred-size:100%;flex-basis:100%;border:.5px solid #263238;border-radius:5px;min-height:330px;margin-bottom:1.5rem;color:#263238;position:relative}.pageSelector__item:before{content:\"\";transition:transform .25s ease-in-out;position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;border-radius:5px;box-shadow:8px 14px 38px rgba(39,44,49,.06),1px 3px 8px rgba(39,44,49,.03)}.pageSelector__item:hover,.pageSelector__item:hover *{color:#fdf5f5}.pageSelector__item:first-child{border-color:#009688}.pageSelector__item:first-child:hover,.pageSelector__item:first-child:hover:before{background-color:#009688}.pageSelector__item:nth-child(2){border-color:#c51162}.pageSelector__item:nth-child(2):hover,.pageSelector__item:nth-child(2):hover:before{background-color:#c51162}.pageSelector__item:nth-child(3){border-color:#ff0266}.pageSelector__item:nth-child(3):hover,.pageSelector__item:nth-child(3):hover:before{background-color:#ff0266}.pageSelector__item:nth-child(4){border-color:#ef5a09}.pageSelector__item:nth-child(4):hover,.pageSelector__item:nth-child(4):hover:before{background-color:#ef5a09}.pageSelector__item:nth-child(5):hover{background-color:#0336ff}.pageSelector__item:nth-child(5){border-color:#0336ff}.pageSelector__item:nth-child(5):hover:before{background-color:#0336ff}.pageSelector__item:nth-child(6){border-color:#3601b0}.pageSelector__item:nth-child(6):hover,.pageSelector__item:nth-child(6):hover:before{background-color:#3601b0}.pageSelector__item:nth-child(7){border-color:#9e60a9}.pageSelector__item:nth-child(7):hover,.pageSelector__item:nth-child(7):hover:before{background-color:#9e60a9}.pageSelector__item:nth-child(8){border-color:#1e88e5}.pageSelector__item:nth-child(8):hover,.pageSelector__item:nth-child(8):hover:before{background-color:#1e88e5}.pageSelector__item:nth-child(9){border-color:#016256}.pageSelector__item:nth-child(9):hover,.pageSelector__item:nth-child(9):hover:before{background-color:#016256}.pageSelector__item:nth-child(10){border-color:#3e2723}.pageSelector__item:nth-child(10):hover,.pageSelector__item:nth-child(10):hover:before{background-color:#3e2723}.pageSelector__item:nth-child(11){border-color:#e1002c}.pageSelector__item:nth-child(11):hover,.pageSelector__item:nth-child(11):hover:before{background-color:#e1002c}.pageSelector__item:nth-child(12){border-color:#5c6bc0}.pageSelector__item:nth-child(12):hover,.pageSelector__item:nth-child(12):hover:before{background-color:#5c6bc0}.pageSelector__title{font-size:20px;font-weight:400;color:currentColor}.pageSelector__tags{font-size:16px;font-weight:500;color:#b3afaf}.pageSelector__center :last-child{margin-bottom:0}.pageSelector__a{color:currentColor;text-decoration:none;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;height:100%;padding:1rem}.pageSelector__content{font-size:16px;color:#737272}@media only screen and (min-width:600px){.pageSelector__items{padding-left:0;padding-right:0}.pageSelector__item{-ms-flex-preferred-size:calc(50% - 1rem);flex-basis:calc(50% - 1rem)}}@media only screen and (min-width:900px){.pageSelector__item{-ms-flex-preferred-size:calc(33.333% - 1rem);flex-basis:calc(33.333% - 1rem)}}.loader{width:100vw;background-color:#756cdf;position:fixed;bottom:0;z-index:100}.footer{background-color:#fff;text-align:center;display:-ms-flexbox;display:flex;padding-top:5rem;padding-bottom:1rem}.footer__content,.links{font-size:16px}.links{list-style:none;margin-top:0;margin-right:0;margin-left:0;padding:0}.links li{display:inline}.links li:not(:last-child):after{content:\"/\";margin-right:16px;margin-right:1rem;margin-left:16px;margin-left:1rem}.link__a{color:#263238;text-decoration:none;transition:border-color .25s linear;border-bottom:2px solid transparent}.link__a:hover{border-bottom:2px solid #756cdf}.hero{margin-top:13vh;margin-bottom:12vh}.hero__title{font-size:45px;font-family:Montserrat,sans-serif;font-weight:700}.hero__content{font-size:16px}@media only screen and (min-width:600px){.hero{max-height:130px;margin-top:20vh;margin-bottom:18vh}}.button{outline:0;font-size:12px;color:#756cdf;display:inline-block;border:1px solid #756cdf;border-radius:3px;padding:.75rem 1.5rem;margin-bottom:1.5rem;text-decoration:none;transition:all .25s linear;line-height:1;position:relative;min-width:140px;text-align:center}.button:hover{color:#fff;background-color:#756cdf}.button--with-icon{text-align:left;padding:.75rem}.button--with-icon:after{content:\"\\2193\";position:absolute;right:12px;right:.75rem;font-size:150%;vertical-align:middle;-ms-transform:translateY(-50%);transform:translateY(-50%);top:50%}.paging{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.paging__list{margin:0;padding:0}.paging__item{color:currentColor;text-decoration:none}.paging__item+.paging__item{text-align:right}.headerPanel{padding-top:15vh;padding-bottom:calc(15vh - 1rem)}.about-page .content{font-size:16px}.content{padding-top:1rem;padding-bottom:1rem}.content a{text-decoration:none;border-bottom:2px solid #756cdf}.content h1,.content h2,.content h3,.content h4,.content h5,.content h6{font-weight:600}.imagePanel__img{margin-left:auto;margin-right:auto;display:block;max-width:100%;height:auto}.password{position:fixed;top:50%;left:50%;-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);outline:0}.passwordPanel{content:\"\";position:fixed;top:0;left:0;right:0;bottom:0;width:100vw;height:100vh;background-color:#f5faff}blockquote{position:relative;font-style:italic}.float-right{float:right}.is-hidden{display:none}"
 
 /***/ }),
 /* 208 */
 /***/ (function(module, exports) {
 
-	module.exports = {"assetsByChunkName":{"path---projects-nectar":["path---projects-nectar-611cf2ffe509149c8870.js","path---projects-nectar-611cf2ffe509149c8870.js.map"],"path---projects-macmillan":["path---projects-macmillan-b3869a7e6507c013b561.js","path---projects-macmillan-b3869a7e6507c013b561.js.map"],"path---projects-the-telegraph-puzzle":["path---projects-the-telegraph-puzzle-371340132712c3c3f200.js","path---projects-the-telegraph-puzzle-371340132712c3c3f200.js.map"],"path---hackathon":["path---hackathon-beb7d2e69ae70a387235.js","path---hackathon-beb7d2e69ae70a387235.js.map"],"path---projects-mymail-and-nectar":["path---projects-mymail-and-nectar-38409164a29e7b278b2f.js","path---projects-mymail-and-nectar-38409164a29e7b278b2f.js.map"],"path---blog":["path---blog-4fef61d1a6ec48213652.js","path---blog-4fef61d1a6ec48213652.js.map"],"path---":["path----8614db882db442986586.js","path----8614db882db442986586.js.map"],"component---src-layouts-index-js":["component---src-layouts-index-js-a62d69a0ae6ef6765ad8.js","component---src-layouts-index-js-a62d69a0ae6ef6765ad8.js.map"],"path---index":["path---index-bda33319592576e8c4d2.js","path---index-bda33319592576e8c4d2.js.map"],"component---src-pages-404-js":["component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js","component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js.map"],"path---projects-google":["path---projects-google-b29c5afa4d7086c81e5f.js","path---projects-google-b29c5afa4d7086c81e5f.js.map"],"commons":["commons-e2def8fd138f4a490c35.js","commons-e2def8fd138f4a490c35.js.map"],"path---404-html":["path---404-html-a0e39f21c11f6a62c5ab.js","path---404-html-a0e39f21c11f6a62c5ab.js.map"],"path---projects-face-name":["path---projects-face-name-adab56958a6a4ec391bf.js","path---projects-face-name-adab56958a6a4ec391bf.js.map"],"path---projects-thetelegraph":["path---projects-thetelegraph-8cbf153100371772f092.js","path---projects-thetelegraph-8cbf153100371772f092.js.map"],"app":["app-791bf79a98c78607eed2.js","build-js-styles.css","app-791bf79a98c78607eed2.js.map","build-js-styles.css.map"],"component---src-templates-page-template-js":["component---src-templates-page-template-js-e76079f859482905d0ae.js","component---src-templates-page-template-js-e76079f859482905d0ae.js.map"],"path---404":["path---404-a0e39f21c11f6a62c5ab.js","path---404-a0e39f21c11f6a62c5ab.js.map"],"path---about":["path---about-d6e1646efc353c4609b8.js","path---about-d6e1646efc353c4609b8.js.map"]}}
+	module.exports = {"assetsByChunkName":{"path---projects-nectar":["path---projects-nectar-7367575783f9a8b10f6d.js","path---projects-nectar-7367575783f9a8b10f6d.js.map"],"path---projects-macmillan":["path---projects-macmillan-1c311048bb2c35459211.js","path---projects-macmillan-1c311048bb2c35459211.js.map"],"path---projects-the-telegraph-puzzle":["path---projects-the-telegraph-puzzle-d1a25567a23797779f1c.js","path---projects-the-telegraph-puzzle-d1a25567a23797779f1c.js.map"],"path---hackathon":["path---hackathon-9e92c4de385c4eecc5dc.js","path---hackathon-9e92c4de385c4eecc5dc.js.map"],"path---projects-mymail-and-nectar":["path---projects-mymail-and-nectar-86c2a9b77199ad0f9a60.js","path---projects-mymail-and-nectar-86c2a9b77199ad0f9a60.js.map"],"path---blog":["path---blog-b80a231b1919920e169d.js","path---blog-b80a231b1919920e169d.js.map"],"path---":["path----8614db882db442986586.js","path----8614db882db442986586.js.map"],"component---src-layouts-index-js":["component---src-layouts-index-js-b27dd38f1378db0bbfeb.js","component---src-layouts-index-js-b27dd38f1378db0bbfeb.js.map"],"path---index":["path---index-b8dc308e08ed6622c951.js","path---index-b8dc308e08ed6622c951.js.map"],"component---src-pages-404-js":["component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js","component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js.map"],"path---projects-google":["path---projects-google-816c341f2e162cb51e5d.js","path---projects-google-816c341f2e162cb51e5d.js.map"],"commons":["commons-e2def8fd138f4a490c35.js","commons-e2def8fd138f4a490c35.js.map"],"path---404-html":["path---404-html-a0e39f21c11f6a62c5ab.js","path---404-html-a0e39f21c11f6a62c5ab.js.map"],"path---projects-face-name":["path---projects-face-name-ae092509a1619a53d2a2.js","path---projects-face-name-ae092509a1619a53d2a2.js.map"],"path---projects-thetelegraph":["path---projects-thetelegraph-81d0255031af79d39209.js","path---projects-thetelegraph-81d0255031af79d39209.js.map"],"app":["app-0d48e0143631114441fe.js","build-js-styles.css","app-0d48e0143631114441fe.js.map","build-js-styles.css.map"],"component---src-templates-page-template-js":["component---src-templates-page-template-js-ac48aadba3d9b1f036ea.js","component---src-templates-page-template-js-ac48aadba3d9b1f036ea.js.map"],"path---404":["path---404-a0e39f21c11f6a62c5ab.js","path---404-a0e39f21c11f6a62c5ab.js.map"],"path---about":["path---about-f6ca275812a41e2b9bdd.js","path---about-f6ca275812a41e2b9bdd.js.map"]}}
 
 /***/ }),
 /* 209 */
 /***/ (function(module, exports) {
 
-	module.exports = "{\"231608221292675\":\"app-791bf79a98c78607eed2.js\",\"235131596041995\":\"component---src-templates-page-template-js-e76079f859482905d0ae.js\",\"162898551421021\":\"component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js\",\"60335399758886\":\"path----8614db882db442986586.js\",\"8365570093102\":\"path---projects-nectar-611cf2ffe509149c8870.js\",\"42533299559841\":\"path---projects-mymail-and-nectar-38409164a29e7b278b2f.js\",\"179539337254502\":\"path---projects-face-name-adab56958a6a4ec391bf.js\",\"32811220016249\":\"path---projects-the-telegraph-puzzle-371340132712c3c3f200.js\",\"187183475805630\":\"path---projects-thetelegraph-8cbf153100371772f092.js\",\"26547451046972\":\"path---projects-macmillan-b3869a7e6507c013b561.js\",\"167882855878725\":\"path---projects-google-b29c5afa4d7086c81e5f.js\",\"49683490770531\":\"path---blog-4fef61d1a6ec48213652.js\",\"35195203042619\":\"path---hackathon-beb7d2e69ae70a387235.js\",\"273950069227526\":\"path---about-d6e1646efc353c4609b8.js\",\"142629428675168\":\"path---index-bda33319592576e8c4d2.js\",\"254022195166212\":\"path---404-a0e39f21c11f6a62c5ab.js\",\"178698757827068\":\"path---404-html-a0e39f21c11f6a62c5ab.js\",\"114276838955818\":\"component---src-layouts-index-js-a62d69a0ae6ef6765ad8.js\"}"
+	module.exports = "{\"231608221292675\":\"app-0d48e0143631114441fe.js\",\"235131596041995\":\"component---src-templates-page-template-js-ac48aadba3d9b1f036ea.js\",\"162898551421021\":\"component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js\",\"60335399758886\":\"path----8614db882db442986586.js\",\"8365570093102\":\"path---projects-nectar-7367575783f9a8b10f6d.js\",\"42533299559841\":\"path---projects-mymail-and-nectar-86c2a9b77199ad0f9a60.js\",\"179539337254502\":\"path---projects-face-name-ae092509a1619a53d2a2.js\",\"32811220016249\":\"path---projects-the-telegraph-puzzle-d1a25567a23797779f1c.js\",\"187183475805630\":\"path---projects-thetelegraph-81d0255031af79d39209.js\",\"26547451046972\":\"path---projects-macmillan-1c311048bb2c35459211.js\",\"167882855878725\":\"path---projects-google-816c341f2e162cb51e5d.js\",\"49683490770531\":\"path---blog-b80a231b1919920e169d.js\",\"35195203042619\":\"path---hackathon-9e92c4de385c4eecc5dc.js\",\"273950069227526\":\"path---about-f6ca275812a41e2b9bdd.js\",\"142629428675168\":\"path---index-b8dc308e08ed6622c951.js\",\"254022195166212\":\"path---404-a0e39f21c11f6a62c5ab.js\",\"178698757827068\":\"path---404-html-a0e39f21c11f6a62c5ab.js\",\"114276838955818\":\"component---src-layouts-index-js-b27dd38f1378db0bbfeb.js\"}"
 
 /***/ })
 /******/ ])
