@@ -28,6 +28,10 @@
       "path----8614db882db442986586.js",
       "path----8614db882db442986586.js.map"
     ],
+    "path---new-page": [
+      "path---new-page-aad7d2f47f778821efc1.js",
+      "path---new-page-aad7d2f47f778821efc1.js.map"
+    ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-b27dd38f1378db0bbfeb.js",
       "component---src-layouts-index-js-b27dd38f1378db0bbfeb.js.map"
@@ -61,9 +65,9 @@
       "path---projects-thetelegraph-81d0255031af79d39209.js.map"
     ],
     "app": [
-      "app-0d48e0143631114441fe.js",
+      "app-ddc5e5822b8145005b0b.js",
       "build-js-styles.css",
-      "app-0d48e0143631114441fe.js.map",
+      "app-ddc5e5822b8145005b0b.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
