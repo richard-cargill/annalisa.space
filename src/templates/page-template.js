@@ -70,6 +70,8 @@ export const pageQuery = graphql`
     }
     contentfulPageSelectorPanel {
       pages {
+        name
+        title
         slug
         description
       }

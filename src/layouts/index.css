@@ -540,10 +540,51 @@ a {
 .paging__item {
   color: currentColor;
   text-decoration: none;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 600px) {
+  .paging__item {
+    flex-basis: 40%;
+    flex-wrap: nowrap;
+  }
 }
 
 .paging__item + .paging__item {
   text-align: right;
+}
+
+.paging__description {
+  color: #737272;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.prev-arrow,
+.next-arrow {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: inline-block;
+
+  &:after,
+  &:before {
+    color: #756cdf;
+  }
+
+  & + * {
+    margin-bottom: 1rem;
+  }
+}
+
+.prev-arrow:before {
+  content: '\2190';
+  margin-right: 0.5rem;
+}
+
+.next-arrow:after {
+  content: '\2192';
+  margin-left: 0.5rem;
 }
 
 .headerPanel {
