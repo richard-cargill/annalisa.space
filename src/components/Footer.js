@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const Footer = () => (
   <footer className="footer" aria-label="Footer">
     <div className="container">
-      <h6>GET IN TOUCH</h6>
+      <h6>Say hi!</h6>
       <p className="footer__content">
         Have any suggestion or interested in working together on a project?
         <br />

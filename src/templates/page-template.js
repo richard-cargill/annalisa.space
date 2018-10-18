@@ -40,7 +40,7 @@ export default class PageTemplate extends React.Component {
         <div className="container">
           <Header siteTitle={title} />
         </div>
-        {slug === '/' && <Triangles />}
+        {(slug === '/' || slug === '/about/') && <Triangles />}
         <main>
           <article>
             {panels &&
