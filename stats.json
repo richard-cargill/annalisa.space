@@ -1,52 +1,52 @@
 {
   "assetsByChunkName": {
     "path---projects-nectar": [
-      "path---projects-nectar-7367575783f9a8b10f6d.js",
-      "path---projects-nectar-7367575783f9a8b10f6d.js.map"
+      "path---projects-nectar-10b4d06caba3e3c6f574.js",
+      "path---projects-nectar-10b4d06caba3e3c6f574.js.map"
     ],
     "path---projects-macmillan": [
-      "path---projects-macmillan-1c311048bb2c35459211.js",
-      "path---projects-macmillan-1c311048bb2c35459211.js.map"
+      "path---projects-macmillan-862b832f8aee48d2b4f4.js",
+      "path---projects-macmillan-862b832f8aee48d2b4f4.js.map"
     ],
     "path---projects-the-telegraph-puzzle": [
-      "path---projects-the-telegraph-puzzle-d1a25567a23797779f1c.js",
-      "path---projects-the-telegraph-puzzle-d1a25567a23797779f1c.js.map"
+      "path---projects-the-telegraph-puzzle-5d0ad62fc2be198c5ab5.js",
+      "path---projects-the-telegraph-puzzle-5d0ad62fc2be198c5ab5.js.map"
     ],
     "path---hackathon": [
-      "path---hackathon-9e92c4de385c4eecc5dc.js",
-      "path---hackathon-9e92c4de385c4eecc5dc.js.map"
+      "path---hackathon-6aa4e733838a724cd7a1.js",
+      "path---hackathon-6aa4e733838a724cd7a1.js.map"
     ],
     "path---projects-mymail-and-nectar": [
-      "path---projects-mymail-and-nectar-86c2a9b77199ad0f9a60.js",
-      "path---projects-mymail-and-nectar-86c2a9b77199ad0f9a60.js.map"
+      "path---projects-mymail-and-nectar-00f8afb3684b7ca94d5c.js",
+      "path---projects-mymail-and-nectar-00f8afb3684b7ca94d5c.js.map"
     ],
     "path---blog": [
-      "path---blog-b80a231b1919920e169d.js",
-      "path---blog-b80a231b1919920e169d.js.map"
+      "path---blog-fd6d7a01b6f42a98a192.js",
+      "path---blog-fd6d7a01b6f42a98a192.js.map"
     ],
     "path---": [
       "path----8614db882db442986586.js",
       "path----8614db882db442986586.js.map"
     ],
     "path---new-page": [
-      "path---new-page-aad7d2f47f778821efc1.js",
-      "path---new-page-aad7d2f47f778821efc1.js.map"
+      "path---new-page-a30d86ac058fc5d53d94.js",
+      "path---new-page-a30d86ac058fc5d53d94.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-b27dd38f1378db0bbfeb.js",
       "component---src-layouts-index-js-b27dd38f1378db0bbfeb.js.map"
     ],
     "path---index": [
-      "path---index-b8dc308e08ed6622c951.js",
-      "path---index-b8dc308e08ed6622c951.js.map"
+      "path---index-7e767762b927312f05f2.js",
+      "path---index-7e767762b927312f05f2.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js",
       "component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js.map"
     ],
     "path---projects-google": [
-      "path---projects-google-816c341f2e162cb51e5d.js",
-      "path---projects-google-816c341f2e162cb51e5d.js.map"
+      "path---projects-google-00ed3ddd07cdba1f13ef.js",
+      "path---projects-google-00ed3ddd07cdba1f13ef.js.map"
     ],
     "commons": [
       "commons-e2def8fd138f4a490c35.js",
@@ -57,12 +57,12 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---projects-face-name": [
-      "path---projects-face-name-ae092509a1619a53d2a2.js",
-      "path---projects-face-name-ae092509a1619a53d2a2.js.map"
+      "path---projects-face-name-b32ac665035908191350.js",
+      "path---projects-face-name-b32ac665035908191350.js.map"
     ],
     "path---projects-thetelegraph": [
-      "path---projects-thetelegraph-81d0255031af79d39209.js",
-      "path---projects-thetelegraph-81d0255031af79d39209.js.map"
+      "path---projects-thetelegraph-9eb0c5568f39b273d0a2.js",
+      "path---projects-thetelegraph-9eb0c5568f39b273d0a2.js.map"
     ],
     "app": [
       "app-ddc5e5822b8145005b0b.js",
@@ -71,16 +71,16 @@
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
-      "component---src-templates-page-template-js-5ef9fed1ecc719ee3ed1.js",
-      "component---src-templates-page-template-js-5ef9fed1ecc719ee3ed1.js.map"
+      "component---src-templates-page-template-js-a188a8db34fea643391c.js",
+      "component---src-templates-page-template-js-a188a8db34fea643391c.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---about": [
-      "path---about-f6ca275812a41e2b9bdd.js",
-      "path---about-f6ca275812a41e2b9bdd.js.map"
+      "path---about-0b0b923db27a98e81f82.js",
+      "path---about-0b0b923db27a98e81f82.js.map"
     ]
   }
 }
