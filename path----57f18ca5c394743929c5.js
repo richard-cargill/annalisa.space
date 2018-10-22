@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{104:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Gatsby Default Starter"}},allContentfulPage:{edges:[{node:{name:"Home Page"}},{node:{name:"Awesome Project 2"}},{node:{name:"Aweseome Project 1"}}]}},layoutContext:{}}}});
-//# sourceMappingURL=path----57f18ca5c394743929c5.js.map
