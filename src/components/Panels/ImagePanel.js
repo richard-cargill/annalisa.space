@@ -1,13 +1,19 @@
 import React from 'react'
 
-const ImagePanel = ({ src, alt, fullWidth }) => {
+const ImagePanel = ({ media, fullWidth }) => {
   const imageClass = `container imagePanel ${fullWidth !== 'true' ? 'panel' : ''}`;
 
-  return (
-    <section className={imageClass}>
-      <img src={src} alt={alt} className="imagePanel__img" />
-    </section>
-  )
+  if (media && media.file) {
+    const {file, description} = media
+
+    return (
+      <section className={imageClass}>
+        <img src={file.url} alt={description} className="imagePanel__img" />
+      </section>
+    )
+  } else {
+    return null
+  }
 }
 
 export default ImagePanel

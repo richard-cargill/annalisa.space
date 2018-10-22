@@ -22,7 +22,7 @@ function Panels({ type, data }) {
     case 'ContentfulHeaderPanel':
       return <HeaderPanel text={data.text} media={data.media} />
     case 'ContentfulImagePanel':
-      return <ImagePanel src={data.media.file.url} alt={data.media.description} fullWidth={data.fullWidth}/>
+      return <ImagePanel media={data.media} fullWidth={data.fullWidth}/>
     case 'ContentfulContentPanel':
       return <ContentPanel html={data.content.childMarkdownRemark.html} />
     case 'ContentfulSelectorPanel':
