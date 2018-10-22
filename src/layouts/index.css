@@ -135,23 +135,8 @@ a {
   .animate:nth-child(3n + 3) {
     transition-delay: .5s;
   }
-
-  .in:nth-child(3n + 4) {
-    transition-delay: .75s;
-  }
-
-  .in:nth-child(3n + 5) {
-    transition-delay: 1s;
-  }
-
-  .in:nth-child(3n + 6) {
-    transition-delay: 1.25s;
-  }
-
-  .in:nth-child(6) + .in {
-    transition-delay: 0s;
-  }
 }
+
 .selectorPanel__items {
   display: flex;
   margin-left: -1rem;
