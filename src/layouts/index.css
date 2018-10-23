@@ -577,8 +577,13 @@ a {
 }
 
 .content {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.content div *:last-child {
+  margin-bottom: 0;
 }
 
 .content a {
@@ -595,12 +600,17 @@ a {
   font-weight: 600;
 }
 
+.imagePanel + .imagePanel {
+  margin-top: 2.8rem;
+}
+
 .imagePanel__img {
   margin-left: auto;
   margin-right: auto;
   display: block;
   max-width: 100%;
   height: auto;
+  margin-bottom: 1.4rem;
 }
 
 .password {
