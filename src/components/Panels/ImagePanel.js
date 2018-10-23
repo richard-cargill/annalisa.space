@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ImagePanel = ({ media, fullWidth }) => {
-  const imageClass = `container imagePanel ${fullWidth !== 'true' ? '' : 'panel'}`;
+  const imageClass = `container imagePanel ${fullWidth !== true ? 'panel' : ''}`;
 
   if (media && media.file) {
     const {file, description} = media
