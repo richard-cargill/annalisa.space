@@ -101,7 +101,7 @@ a {
 }
 
 .background-alt {
-  background-color: #f5faff;
+  background-color: #f4f6f9;
 }
 
 .selectorPanel {
@@ -408,7 +408,7 @@ a {
 }
 
 .footer {
-  background-color: #f5faff;
+  background-color: #fdfdfd;
   text-align: center;
   display: flex;
   padding-top: 5rem;
