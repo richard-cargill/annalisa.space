@@ -572,10 +572,6 @@ a {
   margin-left: 0.5rem;
 }
 
-.headerPanel {
-  padding-bottom: calc(15vh - 1rem);
-}
-
 .about-page .content {
   font-size: 16px;
 }
