@@ -14,6 +14,7 @@ module.exports = {
   pathPrefix: `/annalisa.space`,
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-favicon',
     'gatsby-plugin-react-next',
     {
       resolve: 'gatsby-plugin-typography',
