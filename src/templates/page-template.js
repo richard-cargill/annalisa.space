@@ -26,6 +26,7 @@ export default class PageTemplate extends React.Component {
     const title = data.site.siteMetadata.title
     const {transition} = this.props
     const { name, slug, panels, password } = data.contentfulPage
+    const {p} = this.props.pathContext
 
     const { pages } = data.contentfulPageSelectorPanel
     const currentIndex = currentPageIndexOf(pages, slug)
@@ -38,10 +39,10 @@ export default class PageTemplate extends React.Component {
         <main>
           <article>
             {panels &&
-              panels.map(panel => {
+              panels.map((panel, i) => {
                 const { __typename } = panel
                 return (
-                  <Panels key={__typename} type={__typename} data={panel} />
+                  <Panels key={__typename + i} type={__typename} data={panel} p={p} />
                 )
               })}
           </article>

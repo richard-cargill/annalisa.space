@@ -7,7 +7,7 @@ import ImagePanel from './ImagePanel.js'
 import ContentPanel from './ContentPanel.js'
 import SelectorPanel from './SelectorPanel.js'
 
-function Panels({ type, data }) {
+function Panels({ type, data, p }) {
   switch (type) {
     case 'ContentfulHeroPanel':
       return <HeroPanel text={data.text} description={data.description} />
@@ -17,6 +17,7 @@ function Panels({ type, data }) {
           pagesToDisplay={data.pagesToDisplay}
           text={data.text}
           pages={data.pages}
+          p={p}
         />
       )
     case 'ContentfulHeaderPanel':
