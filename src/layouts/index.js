@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import logo from '../images/annalisa-valente-logo.svg'
 import Header from '../components/header'
 import Footer from '../components/Footer'
+import Triangles from '../components/Triangles'
 
 const isClient = typeof window !== 'undefined'
 
@@ -45,6 +46,7 @@ const Layout = ({ children, data, location }) => {
           <Header siteTitle={title} />
         </div>
 
+        <Triangles />
         {children()}
 
         <Footer />
