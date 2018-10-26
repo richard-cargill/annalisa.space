@@ -116,6 +116,7 @@ class TwoRotation extends React.Component {
             height: 100 + '%',
             position: 'absolute',
             zIndex: '-1',
+            backgroundColor: '#fbfbfb'
           }}
         />
       </React.Fragment>
