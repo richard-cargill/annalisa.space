@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Favicon from 'react-favicon'
 import logo from '../images/annalisa-valente-logo.svg'
-import favicon from '../images/favicon.ico/favicon-96x96.png'
 import Header from '../components/header'
 import Footer from '../components/Footer'
 
@@ -36,7 +34,6 @@ const Layout = ({ children, data, location }) => {
           { name: 'keywords', content: 'sample, something' },
         ]}
       />
-      <Favicon url={favicon} />
       <div
         style={{
           position: 'relative',

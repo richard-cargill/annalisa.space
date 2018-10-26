@@ -93,11 +93,6 @@ export const pageQuery = graphql`
         }
         ... on ContentfulHeaderPanel {
           text
-          media {
-            file {
-              url
-            }
-          }
         }
         ... on ContentfulImagePanel {
           fullWidth
