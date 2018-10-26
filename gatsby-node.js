@@ -1,7 +1,6 @@
 const _ = require(`lodash`)
 const Promise = require(`bluebird`)
 const path = require(`path`)
-const slash = require(`slash`)
 const sha1 = require(`sha1`)
 
 // Implement the Gatsby API “createPages”. This is
@@ -49,6 +48,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             component: path.resolve(`./src/templates/page-template.js`),
             context: {
               slug: edge.node.slug,
+              p: sha1(process.env.PASSWORD)
             },
           })
           resolve()

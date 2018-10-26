@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link, {navigateTo} from 'gatsby-link'
 import AnimateIn from '../AnimateIn.js'
+import sha1 from 'sha1'
 
 import truncateTextAt from '../../utils/truncateTextAt.js'
 const isClient = typeof window !== 'undefined'
@@ -32,7 +33,6 @@ export default class PageSelectorPanel extends Component {
   }
 
   onChange = (e) => {
-    const password = this.state.password
     const value = e.target.value
     this.setState({input: value})
   }
@@ -40,9 +40,10 @@ export default class PageSelectorPanel extends Component {
   onKeyPress = (e) => {
     const {password, href} = this.state
     const value = e.target.value
+    const hashValue = sha1(value)
 
     if(e.key === 'Enter') {
-      const truthey = !!(value === password)
+      const truthey = !!(hashValue === password)
       if(truthey) {
         navigateTo(href)
         this.setState({incorrectPassword: false})
@@ -62,7 +63,7 @@ export default class PageSelectorPanel extends Component {
   }
 
   render() {
-    const { text, pages, pagesToDisplay } = this.props
+    const { text, pages, pagesToDisplay, p } = this.props
     const showLoadMoreButton = pagesToDisplay < pages.length
     const {showLogin, input, incorrectPassword} = this.state
 
@@ -81,7 +82,7 @@ export default class PageSelectorPanel extends Component {
 
             return (
               <AnimateIn tag="article" className={selectorClassName} key={name}>
-                <Link onClick={e => this.onClick(e, password, slug)} className="pageSelector__a" to={slug}>
+                <Link onClick={e => this.onClick(e, p, slug)} className="pageSelector__a" to={slug}>
                   <div className="pageSelector__center">
                     <h3 className="pageSelector__title">{pageTitle}</h3>
                     {description && (

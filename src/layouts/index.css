@@ -101,7 +101,7 @@ a {
 }
 
 .background-alt {
-  background-color: #f5faff;
+  background-color: #f4f6f9;
 }
 
 .selectorPanel {
@@ -399,16 +399,8 @@ a {
   }
 }
 
-.loader {
-  width: 100vw;
-  background-color: #756cdf;
-  position: fixed;
-  bottom: 0;
-  z-index: 100;
-}
-
 .footer {
-  background-color: #f5faff;
+  background-color: #fdfdfd;
   text-align: center;
   display: flex;
   padding-top: 5rem;
@@ -513,7 +505,6 @@ a {
 
 .paging {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -527,6 +518,12 @@ a {
   text-decoration: none;
   flex-basis: 100%;
   flex-wrap: wrap;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+
+  & *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 600px) {

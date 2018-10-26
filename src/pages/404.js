@@ -1,9 +1,9 @@
 import React from 'react'
+import svg404 from '../images/404.svg'
 
 const NotFoundPage = () => (
   <div className="container">
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <img src={svg404} alt="Not found image" />
   </div>
 )
 

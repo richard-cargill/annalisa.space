@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import logo from '../images/annalisa-valente-logo.svg'
+import Header from '../components/header'
+import Footer from '../components/Footer'
 
 const isClient = typeof window !== 'undefined'
 
@@ -38,7 +41,13 @@ const Layout = ({ children, data, location }) => {
         }}
         className={pageNameFromPathname(location.pathname)}
       >
+        <div className="container">
+          <Header siteTitle={title} />
+        </div>
+
         {children()}
+
+        <Footer />
       </div>
     </React.Fragment>
   )

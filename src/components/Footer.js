@@ -11,7 +11,7 @@ const Footer = () => (
         Go ahead, I'd love to connect with you.
       </p>
 
-      <a className="button" href="mailto:random@random.com">
+      <a className="button" href="mailto:annalisavalente@pm.me">
         Send me an email
       </a>
 

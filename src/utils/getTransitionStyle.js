@@ -1,15 +1,15 @@
 const getTransitionStyles = timeout => {
   return {
     entering: {
-      height: '100vh'
+      opactiy: 0
     },
     entered: {
-      transition: `height ${timeout}ms ease-in-out`,
-      height: 0,
+      transition: `opacity ${timeout}ms ease-in-out`,
+      opacity: 1,
     },
     exiting: {
-      transition: `height ${timeout}ms ease-out-in`,
-      height: '100vh',
+      transition: `opacity ${timeout}ms ease-in-out`,
+      opacity: 0,
     },
   }
 }
