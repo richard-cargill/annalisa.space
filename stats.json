@@ -1,28 +1,28 @@
 {
   "assetsByChunkName": {
     "path---projects-nectar": [
-      "path---projects-nectar-4ead926b2e9a3ed75af8.js",
-      "path---projects-nectar-4ead926b2e9a3ed75af8.js.map"
+      "path---projects-nectar-eb83b93d177921856f81.js",
+      "path---projects-nectar-eb83b93d177921856f81.js.map"
     ],
     "path---projects-macmillan": [
-      "path---projects-macmillan-1a73deb22eaf88970237.js",
-      "path---projects-macmillan-1a73deb22eaf88970237.js.map"
+      "path---projects-macmillan-82cf834c5fb7e5eed334.js",
+      "path---projects-macmillan-82cf834c5fb7e5eed334.js.map"
     ],
     "path---projects-the-telegraph-puzzle": [
-      "path---projects-the-telegraph-puzzle-2d37a3176b55e584176b.js",
-      "path---projects-the-telegraph-puzzle-2d37a3176b55e584176b.js.map"
+      "path---projects-the-telegraph-puzzle-3fa71e6206497d0d0914.js",
+      "path---projects-the-telegraph-puzzle-3fa71e6206497d0d0914.js.map"
     ],
     "path---hackathon": [
-      "path---hackathon-8673242e43f5b1c2ef73.js",
-      "path---hackathon-8673242e43f5b1c2ef73.js.map"
+      "path---hackathon-ce48df408d5dfefeddfb.js",
+      "path---hackathon-ce48df408d5dfefeddfb.js.map"
     ],
     "path---projects-mymail-and-nectar": [
-      "path---projects-mymail-and-nectar-67862948449c2df97fc7.js",
-      "path---projects-mymail-and-nectar-67862948449c2df97fc7.js.map"
+      "path---projects-mymail-and-nectar-217b4e4df5a8d800e2e3.js",
+      "path---projects-mymail-and-nectar-217b4e4df5a8d800e2e3.js.map"
     ],
     "path---blog": [
-      "path---blog-ceec8ec7809da96a4496.js",
-      "path---blog-ceec8ec7809da96a4496.js.map"
+      "path---blog-f6c3cbd005bc3b5ddd63.js",
+      "path---blog-f6c3cbd005bc3b5ddd63.js.map"
     ],
     "path---": [
       "path----8614db882db442986586.js",
@@ -33,20 +33,20 @@
       "component---src-layouts-index-js-0e2e13dae9d9467d22e6.js.map"
     ],
     "path---index": [
-      "path---index-338597b20c9d3cc93aa4.js",
-      "path---index-338597b20c9d3cc93aa4.js.map"
+      "path---index-15d344aae43c1678b6cc.js",
+      "path---index-15d344aae43c1678b6cc.js.map"
     ],
     "path---projects-mindfulness-moments": [
-      "path---projects-mindfulness-moments-98a2936b06e2309919d4.js",
-      "path---projects-mindfulness-moments-98a2936b06e2309919d4.js.map"
+      "path---projects-mindfulness-moments-3c697adb85a8c0e42de1.js",
+      "path---projects-mindfulness-moments-3c697adb85a8c0e42de1.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-547bba915f3912d70b95.js",
       "component---src-pages-404-js-547bba915f3912d70b95.js.map"
     ],
     "path---projects-google": [
-      "path---projects-google-ac70156b57be4b539756.js",
-      "path---projects-google-ac70156b57be4b539756.js.map"
+      "path---projects-google-e70ba4a9a26395a6fe2d.js",
+      "path---projects-google-e70ba4a9a26395a6fe2d.js.map"
     ],
     "commons": [
       "commons-9d3f16f581e6ff774ad5.js",
@@ -57,21 +57,21 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---projects-face-name": [
-      "path---projects-face-name-938a4de6aa69436b0edc.js",
-      "path---projects-face-name-938a4de6aa69436b0edc.js.map"
+      "path---projects-face-name-f868ccf6c1eab3cc4d86.js",
+      "path---projects-face-name-f868ccf6c1eab3cc4d86.js.map"
     ],
     "path---projects-thetelegraph": [
-      "path---projects-thetelegraph-3b46f3d8478d063d9c6f.js",
-      "path---projects-thetelegraph-3b46f3d8478d063d9c6f.js.map"
+      "path---projects-thetelegraph-7873ddf4aad5cd85a4ac.js",
+      "path---projects-thetelegraph-7873ddf4aad5cd85a4ac.js.map"
     ],
     "path---projects-new-page": [
-      "path---projects-new-page-9980369ce8375ae117b0.js",
-      "path---projects-new-page-9980369ce8375ae117b0.js.map"
+      "path---projects-new-page-1140d25847f234d08008.js",
+      "path---projects-new-page-1140d25847f234d08008.js.map"
     ],
     "app": [
-      "app-be24f20dd4990df7c675.js",
+      "app-16101db653364d826d43.js",
       "build-js-styles.css",
-      "app-be24f20dd4990df7c675.js.map",
+      "app-16101db653364d826d43.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
@@ -83,8 +83,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---about": [
-      "path---about-12b20877248e39dba7e5.js",
-      "path---about-12b20877248e39dba7e5.js.map"
+      "path---about-8148e6aca724b1ff84b6.js",
+      "path---about-8148e6aca724b1ff84b6.js.map"
     ]
   }
 }
