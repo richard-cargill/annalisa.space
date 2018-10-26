@@ -15,11 +15,12 @@ export default class PageSelectorPanel extends Component {
     incorrectPassword: false
   }
 
-  handleClick = () => {
+  handleClick = e => {
     const hiddenElems = this.elems.querySelectorAll('.is-hidden')
     if (hiddenElems) {
       hiddenElems.forEach(elem => elem.classList.remove('is-hidden'))
     }
+    e.target.classList.add('is-hidden')
   }
 
   onClick = (e, password, href) => {
