@@ -3,7 +3,6 @@ import {navigateTo} from 'gatsby-link'
 import Panels from '../components/Panels/'
 import Paging from '../components/Paging'
 import SelectorPanel from '../components/Panels/SelectorPanel'
-import Triangles from '../components/Triangles'
 
 import currentPageIndexOf from '../utils/currentPageIndexOf'
 import getNextIndexObj from '../utils/getNextIndexObj'
@@ -34,23 +33,20 @@ export default class PageTemplate extends React.Component {
     const prevIndexObj = getPrevIndexObj(pages, currentIndex)
 
     return (
-      <div style={transition && transition.style}>
-        {(slug === '/' || slug === '/about/') && <Triangles />}
-        <main>
-          <article>
-            {panels &&
-              panels.map((panel, i) => {
-                const { __typename } = panel
-                return (
-                  <Panels key={__typename + i} type={__typename} data={panel} p={p} />
-                )
-              })}
-          </article>
-          {slug.startsWith('/projects') && (
-            <Paging prev={prevIndexObj} next={nextIndexObj} />
-          )}
-        </main>
-      </div>
+      <main style={transition && transition.style}>
+        <article>
+          {panels &&
+            panels.map((panel, i) => {
+              const { __typename } = panel
+              return (
+                <Panels key={__typename + i} type={__typename} data={panel} p={p} />
+              )
+            })}
+        </article>
+        {slug.startsWith('/projects') && (
+          <Paging prev={prevIndexObj} next={nextIndexObj} />
+        )}
+      </main>
     )
   }
 }

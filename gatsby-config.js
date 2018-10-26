@@ -45,7 +45,6 @@ module.exports = {
         }
       }
     },
-
     'gatsby-plugin-react-next',
     {
       resolve: 'gatsby-plugin-typography',
