@@ -4,8 +4,6 @@ import Panels from '../components/Panels/'
 import Paging from '../components/Paging'
 import SelectorPanel from '../components/Panels/SelectorPanel'
 import Triangles from '../components/Triangles'
-import Header from '../components/header'
-import Footer from '../components/Footer'
 
 import currentPageIndexOf from '../utils/currentPageIndexOf'
 import getNextIndexObj from '../utils/getNextIndexObj'
@@ -35,11 +33,7 @@ export default class PageTemplate extends React.Component {
     const prevIndexObj = getPrevIndexObj(pages, currentIndex)
 
     return (
-      <React.Fragment>
-      <div className="loader" style={transition && transition.style}></div>
-        <div className="container">
-          <Header siteTitle={title} />
-        </div>
+      <div style={transition && transition.style}>
         {(slug === '/' || slug === '/about/') && <Triangles />}
         <main>
           <article>
@@ -55,8 +49,7 @@ export default class PageTemplate extends React.Component {
             <Paging prev={prevIndexObj} next={nextIndexObj} />
           )}
         </main>
-        <Footer />
-      </React.Fragment>
+      </div>
     )
   }
 }

@@ -399,14 +399,6 @@ a {
   }
 }
 
-.loader {
-  width: 100vw;
-  background-color: #756cdf;
-  position: fixed;
-  bottom: 0;
-  z-index: 100;
-}
-
 .footer {
   background-color: #fdfdfd;
   text-align: center;

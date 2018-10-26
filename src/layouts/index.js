@@ -4,6 +4,8 @@ import Helmet from 'react-helmet'
 import Favicon from 'react-favicon'
 import logo from '../images/annalisa-valente-logo.svg'
 import favicon from '../images/annalisa-valente-logo.ico'
+import Header from '../components/header'
+import Footer from '../components/Footer'
 
 const isClient = typeof window !== 'undefined'
 
@@ -42,7 +44,13 @@ const Layout = ({ children, data, location }) => {
         }}
         className={pageNameFromPathname(location.pathname)}
       >
+        <div className="container">
+          <Header siteTitle={title} />
+        </div>
+
         {children()}
+
+        <Footer />
       </div>
     </React.Fragment>
   )
