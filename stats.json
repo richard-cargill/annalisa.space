@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "path---projects-nectar": [
-      "path---projects-nectar-d0589994d79ea78eadc2.js",
-      "path---projects-nectar-d0589994d79ea78eadc2.js.map"
+      "path---projects-nectar-9341b69ebb33b41e468a.js",
+      "path---projects-nectar-9341b69ebb33b41e468a.js.map"
     ],
     "path---projects-macmillan": [
       "path---projects-macmillan-6f8bee75125c51ae52c6.js",
@@ -37,8 +37,8 @@
       "path---index-8c59aad53e9035477a41.js.map"
     ],
     "path---projects-mindfulness-moments": [
-      "path---projects-mindfulness-moments-eb944706d2f2f10f3104.js",
-      "path---projects-mindfulness-moments-eb944706d2f2f10f3104.js.map"
+      "path---projects-mindfulness-moments-c96f0d1f538d9f9c0073.js",
+      "path---projects-mindfulness-moments-c96f0d1f538d9f9c0073.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-a3a7cded9ae9e37fdfc1.js",
@@ -69,9 +69,9 @@
       "path---projects-new-page-5e2f5e73a3d413495c63.js.map"
     ],
     "app": [
-      "app-bf7d35e04ee8015f17ab.js",
+      "app-54f3ee5f58700ddcee0e.js",
       "build-js-styles.css",
-      "app-bf7d35e04ee8015f17ab.js.map",
+      "app-54f3ee5f58700ddcee0e.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
