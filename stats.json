@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "path---projects-nectar": [
-      "path---projects-nectar-eb83b93d177921856f81.js",
-      "path---projects-nectar-eb83b93d177921856f81.js.map"
+      "path---projects-nectar-8bb978352f5c56fd0b9a.js",
+      "path---projects-nectar-8bb978352f5c56fd0b9a.js.map"
     ],
     "path---projects-macmillan": [
       "path---projects-macmillan-82cf834c5fb7e5eed334.js",
@@ -69,9 +69,9 @@
       "path---projects-new-page-f588265412615bd9da69.js.map"
     ],
     "app": [
-      "app-8c5be4d0ae9460f403cc.js",
+      "app-a5bb728357d2c08e40e3.js",
       "build-js-styles.css",
-      "app-8c5be4d0ae9460f403cc.js.map",
+      "app-a5bb728357d2c08e40e3.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
