@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "path---projects-nectar": [
-      "path---projects-nectar-3cba88d76e3633e9d690.js",
-      "path---projects-nectar-3cba88d76e3633e9d690.js.map"
+      "path---projects-nectar-20782e088a5692bff65d.js",
+      "path---projects-nectar-20782e088a5692bff65d.js.map"
     ],
     "path---projects-macmillan": [
       "path---projects-macmillan-93c52eb1eadd41b9de04.js",
@@ -23,10 +23,6 @@
     "path---blog": [
       "path---blog-46ccc34c495c40bd83e3.js",
       "path---blog-46ccc34c495c40bd83e3.js.map"
-    ],
-    "path---aboutme": [
-      "path---aboutme-7081fa1ec5f8d7f0080b.js",
-      "path---aboutme-7081fa1ec5f8d7f0080b.js.map"
     ],
     "path---": [
       "path----8614db882db442986586.js",
@@ -73,9 +69,9 @@
       "path---projects-new-page-6bdff538b1497ad67254.js.map"
     ],
     "app": [
-      "app-706482adcc91be02619b.js",
+      "app-e3440ccdebcbc79a49bb.js",
       "build-js-styles.css",
-      "app-706482adcc91be02619b.js.map",
+      "app-e3440ccdebcbc79a49bb.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
@@ -85,6 +81,10 @@
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---about": [
+      "path---about-232d732a394670f14291.js",
+      "path---about-232d732a394670f14291.js.map"
     ]
   }
 }
