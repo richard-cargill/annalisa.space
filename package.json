@@ -38,7 +38,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "predeploy": "gatsby build",
+    "predeploy": "gatsby build && cp ./src/assets/CNAME ./public",
     "deploy": "gh-pages -d public",
     "test": "exit 0",
     "format": "prettier --write 'src/**/*.js'"
