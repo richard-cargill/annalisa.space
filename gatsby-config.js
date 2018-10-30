@@ -11,7 +11,6 @@ module.exports = {
   siteMetadata: {
     title: 'Annalisa Valente',
   },
-  pathPrefix: `/annalisa.space`,
   plugins: [
     'gatsby-plugin-react-helmet',
     {
