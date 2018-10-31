@@ -71,8 +71,8 @@ export default class PageSelectorPanel extends Component {
     return (
       <section
         ref={el => (this.elems = el)}
-        className="panel pageSelector container"
-      >
+        className="panel pageSelector container limit-width"
+       >
         <div className="pageSelector__items">
           {pages.map((page, i) => {
             const { title, name, slug, description, tags, password } = page
