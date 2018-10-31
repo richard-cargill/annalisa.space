@@ -5,7 +5,7 @@ import truncateTextAt from '../../utils/truncateTextAt.js'
 const SelectorPanel = ({ text, pages }) => {
   return (
     <div className="background-alt">
-      <section className="container panel selectorPanel">
+      <section className="container panel selectorPanel limit-width">
         <h4 className="selectorPanel__header">{text}</h4>
 
         <div className="selectorPanel__items">
