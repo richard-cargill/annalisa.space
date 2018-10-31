@@ -55,8 +55,8 @@ const Layout = ({ children, data, location }) => {
       <Helmet
         title={pageTitle}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'description', content: 'Annalisa Valente\'s portfolio website'},
+          { name: 'keywords', content: 'Annalisa Valente, UX/UI, Product Designer' },
         ]}
       />
       <div
