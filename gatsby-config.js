@@ -10,6 +10,7 @@ const { SPACE_ID, ACCESS_TOKEN } = process.env;
 module.exports = {
   siteMetadata: {
     title: 'Annalisa Valente',
+    desc: 'Digital Product Designer'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

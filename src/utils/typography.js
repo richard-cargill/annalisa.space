@@ -1,6 +1,16 @@
 import Typography from 'typography'
 
-const systemFontStack = ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue','sans-serif'];
+const systemFontStack = [
+  '-apple-system',
+  'BlinkMacSystemFont',
+  'Segoe UI',
+  'Roboto',
+  'Oxygen-Sans',
+  'Ubuntu',
+  'Cantarell',
+  'Helvetica Neue',
+  'sans-serif',
+]
 
 const typography = new Typography({
   baseFontSize: '21px',
@@ -14,7 +24,7 @@ const typography = new Typography({
     {
       name: 'Montserrat',
       styles: ['700'],
-    }
+    },
   ],
 })
 

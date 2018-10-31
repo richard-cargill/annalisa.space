@@ -1,5 +1,5 @@
 import React from 'react'
-import {navigateTo} from 'gatsby-link'
+import { navigateTo } from 'gatsby-link'
 import Panels from '../components/Panels/'
 import Paging from '../components/Paging'
 import SelectorPanel from '../components/Panels/SelectorPanel'
@@ -15,17 +15,17 @@ export default class PageTemplate extends React.Component {
     const data = this.props.data
     const { name, slug, panels, password } = data.contentfulPage
 
-    const authPass = (isClient) ? localStorage.getItem('p__') : false
+    const authPass = isClient ? localStorage.getItem('p__') : false
 
     if (password && !authPass && isClient) navigateTo('/')
   }
 
-  render()  {
+  render() {
     const data = this.props.data
     const title = data.site.siteMetadata.title
-    const {transition} = this.props
+    const { transition } = this.props
     const { name, slug, panels, password } = data.contentfulPage
-    const {p} = this.props.pathContext
+    const { p } = this.props.pathContext
 
     const { pages } = data.contentfulPageSelectorPanel
     const currentIndex = currentPageIndexOf(pages, slug)
@@ -39,7 +39,12 @@ export default class PageTemplate extends React.Component {
             panels.map((panel, i) => {
               const { __typename } = panel
               return (
-                <Panels key={__typename + i} type={__typename} data={panel} p={p} />
+                <Panels
+                  key={__typename + i}
+                  type={__typename}
+                  data={panel}
+                  p={p}
+                />
               )
             })}
         </article>
