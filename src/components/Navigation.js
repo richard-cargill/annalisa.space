@@ -22,7 +22,7 @@ const Navigation = () => (
           role="menuitem"
           to="/about/"
         >
-          About
+          About me
         </Link>
       </li>
       <li className="nav__list__item">
