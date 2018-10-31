@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link, {navigateTo} from 'gatsby-link'
+import Link, { navigateTo } from 'gatsby-link'
 import AnimateIn from '../AnimateIn.js'
 import sha1 from 'sha1'
 
@@ -12,7 +12,7 @@ export default class PageSelectorPanel extends Component {
     password: false,
     input: '',
     href: '',
-    incorrectPassword: false
+    incorrectPassword: false,
   }
 
   handleClick = e => {
@@ -24,55 +24,55 @@ export default class PageSelectorPanel extends Component {
   }
 
   onClick = (e, password, href) => {
-    const authPass = (isClient) ? localStorage.getItem('p__') : false
+    const authPass = isClient ? localStorage.getItem('p__') : false
     if (password && !authPass) {
       e.preventDefault()
-      this.setState({showLogin: true, password, href: href})
+      this.setState({ showLogin: true, password, href: href })
     } else {
-      this.setState({showLogin: false, password: false, href: ''})
+      this.setState({ showLogin: false, password: false, href: '' })
     }
   }
 
-  onChange = (e) => {
+  onChange = e => {
     const value = e.target.value
-    this.setState({input: value})
+    this.setState({ input: value })
   }
 
-  onKeyPress = (e) => {
-    const {password, href} = this.state
+  onKeyPress = e => {
+    const { password, href } = this.state
     const value = e.target.value
     const hashValue = sha1(value)
 
-    if(e.key === 'Enter') {
+    if (e.key === 'Enter') {
       const truthey = !!(hashValue === password)
-      if(truthey) {
+      if (truthey) {
         navigateTo(href)
-        this.setState({incorrectPassword: false})
-        if(isClient) localStorage.setItem('p__', true);
+        this.setState({ incorrectPassword: false })
+        if (isClient) localStorage.setItem('p__', true)
       } else {
-        this.setState({incorrectPassword: true})
+        this.setState({ incorrectPassword: true })
       }
     }
   }
 
-  close = (e) => {
-    this.setState({showLogin: false, password: false, href: ''})
+  close = e => {
+    this.setState({ showLogin: false, password: false, href: '' })
   }
 
-  stopProp = (e) => {
+  stopProp = e => {
     e.stopPropagation()
   }
 
   render() {
     const { text, pages, pagesToDisplay, p } = this.props
     const showLoadMoreButton = pagesToDisplay < pages.length
-    const {showLogin, input, incorrectPassword} = this.state
+    const { showLogin, input, incorrectPassword } = this.state
 
     return (
       <section
         ref={el => (this.elems = el)}
         className="panel pageSelector container limit-width"
-       >
+      >
         <div className="pageSelector__items">
           {pages.map((page, i) => {
             const { title, name, slug, description, tags, password } = page
@@ -83,7 +83,11 @@ export default class PageSelectorPanel extends Component {
 
             return (
               <AnimateIn tag="article" className={selectorClassName} key={name}>
-                <Link onClick={e => this.onClick(e, p, slug)} className="pageSelector__a" to={slug}>
+                <Link
+                  onClick={e => this.onClick(e, p, slug)}
+                  className="pageSelector__a"
+                  to={slug}
+                >
                   <div className="pageSelector__center">
                     <h3 className="pageSelector__title">{pageTitle}</h3>
                     {description && (
@@ -98,15 +102,29 @@ export default class PageSelectorPanel extends Component {
             )
           })}
           {showLoadMoreButton && (
-            <div style={{ width: '100%'}}>
-              <button onClick={this.handleClick} className="button float-right button--with-icon">
+            <div style={{ width: '100%' }}>
+              <button
+                onClick={this.handleClick}
+                className="button float-right button--with-icon"
+              >
                 Load more
               </button>
             </div>
           )}
-          {showLogin && (<div onClick={this.close} className="passwordPanel">
-            <input style={{border: incorrectPassword ? '1px solid red' : 0 }} onKeyPress={this.onKeyPress} onClick={this.stopProp} onChange={this.onChange} className="password" type="password" value={input} placeholder="Enter password" />
-            </div>)}
+          {showLogin && (
+            <div onClick={this.close} className="passwordPanel">
+              <input
+                style={{ border: incorrectPassword ? '1px solid red' : 0 }}
+                onKeyPress={this.onKeyPress}
+                onClick={this.stopProp}
+                onChange={this.onChange}
+                className="password"
+                type="password"
+                value={input}
+                placeholder="Enter password"
+              />
+            </div>
+          )}
         </div>
       </section>
     )

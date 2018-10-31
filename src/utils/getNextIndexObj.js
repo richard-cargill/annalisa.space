@@ -7,4 +7,3 @@ export default function getNextIndexObj(pagesArray, index) {
     return pagesArray[nextIndex]
   }
 }
-

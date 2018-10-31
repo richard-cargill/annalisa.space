@@ -1,10 +1,12 @@
 import React from 'react'
 
 const ImagePanel = ({ media, fullWidth }) => {
-  const imageClass = `container imagePanel panel ${fullWidth !== true ? 'limit-width' : ''}`;
+  const imageClass = `container imagePanel panel ${
+    fullWidth !== true ? 'limit-width' : ''
+  }`
 
   if (media && media.file) {
-    const {file, description} = media
+    const { file, description } = media
 
     return (
       <section className={imageClass}>

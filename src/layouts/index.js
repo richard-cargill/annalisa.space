@@ -10,12 +10,15 @@ const isClient = typeof window !== 'undefined'
 
 import './index.css'
 
-function normaliseSlug (slug) {
-  return slug.slice(1).replace(/\//gi, '-')
+function normaliseSlug(slug, sep = '-') {
+  return slug.slice(1).replace(/\//gi, sep)
 }
 
-function pageNameFromPathname (pathname) {
-  pathname = pathname.replace('/annalisa.space/', '/')
+function normaliseString(string) {
+  return string && string.replace(/-/gi, ' ')
+}
+
+function pageNameFromPathname(pathname) {
   if (pathname !== '/') {
     return normaliseSlug(pathname) + 'page'
   } else {
@@ -23,16 +26,29 @@ function pageNameFromPathname (pathname) {
   }
 }
 
+function capitaliseString(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
+function lastPart(pathname) {
+  const pathnameParts = pathname.split('/').filter(x => x)
+  return pathnameParts[pathnameParts.length - 1]
+}
+
 const Layout = ({ children, data, location }) => {
-  const title = data.site.siteMetadata.title
+  const { title, desc } = data.site.siteMetadata
+  const pageName = normaliseString(lastPart(location.pathname))
+  var pageTitle = `${title} | ${desc}`
+
+  if (pageName) pageTitle = `${capitaliseString(pageName)} | ${desc} | ${title}`
 
   return (
     <React.Fragment>
       <Helmet
-        title={title}
+        title={pageTitle}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'description', content: 'Annalisa Valente\'s portfolio website'},
+          { name: 'keywords', content: 'Annalisa Valente, UX/UI, Product Designer' },
         ]}
       />
       <div
@@ -66,6 +82,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        desc
       }
     }
   }

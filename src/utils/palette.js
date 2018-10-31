@@ -10,7 +10,7 @@ const palette = [
   '#016256',
   '#3e2723',
   '#e1002c',
-  '#5c6bc0'
+  '#5c6bc0',
 ]
 
 export default palette
