@@ -5,7 +5,6 @@ import logo from '../images/annalisa-valente-logo.svg'
 import Header from '../components/header'
 import Footer from '../components/Footer'
 import Triangles from '../components/Triangles'
-import ReactGA from 'react-ga'
 
 const isClient = typeof window !== 'undefined'
 
@@ -36,19 +35,12 @@ function lastPart(pathname) {
   return pathnameParts[pathnameParts.length - 1]
 }
 
-function initializeReactGA(pageName) {
-  ReactGA.initialize('UA-128494925-1')
-  ReactGA.pageview(pageName)
-}
-
 const Layout = ({ children, data, location }) => {
   const { title, desc } = data.site.siteMetadata
   const pageName = normaliseString(lastPart(location.pathname))
   var pageTitle = `${title} | ${desc}`
 
   if (pageName) pageTitle = `${capitaliseString(pageName)} | ${desc} | ${title}`
-
-  initializeReactGA(pageName)
 
   return (
     <React.Fragment>
