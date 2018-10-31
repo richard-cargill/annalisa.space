@@ -520,6 +520,7 @@ main {
 .paging {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .paging__list {
@@ -540,15 +541,24 @@ main {
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .paging__item {
-    flex-basis: 40%;
-    flex-wrap: nowrap;
-  }
+.paging__item {
+  order: 1;
 }
 
 .paging__item + .paging__item {
   text-align: right;
+  order: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .paging__item {
+    order: 0;
+    flex-basis: 40%;
+  }
+
+  .paging__item + .paging__item {
+    order: 1;
+  }
 }
 
 .paging__description {
