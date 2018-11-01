@@ -166,7 +166,7 @@ a {
   }
 
   .selectorPanel__item {
-    flex-basis: calc(50% - 1rem);
+    flex-basis: calc(50% - .75rem);
     margin-bottom: 0;
   }
 }
@@ -390,7 +390,7 @@ a {
     padding-right: 0;
   }
   .pageSelector__item {
-    flex-basis: calc(50% - 1rem);
+    flex-basis: calc(50% - .75rem);
   }
 }
 
@@ -641,6 +641,8 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   outline: 0;
+  font-size: 20px;
+  padding: .5rem;
 }
 
 .passwordPanel {
@@ -652,7 +654,19 @@ main {
   bottom: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #f5faff;
+  background-color: #f4f6f9;
+}
+
+.password__close {
+  border: 0;
+  background: transparent;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  font-size: 30px;
+  height: 4ex;
+  width: 4ex;
 }
 
 blockquote {
