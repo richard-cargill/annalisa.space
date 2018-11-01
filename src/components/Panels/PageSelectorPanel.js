@@ -112,7 +112,8 @@ export default class PageSelectorPanel extends Component {
             </div>
           )}
           {showLogin && (
-            <div onClick={this.close} className="passwordPanel">
+            <div className="passwordPanel">
+              <button type="button" onClick={this.close} className="password__close">&times;</button>
               <input
                 style={{ border: incorrectPassword ? '1px solid red' : 0 }}
                 onKeyPress={this.onKeyPress}
