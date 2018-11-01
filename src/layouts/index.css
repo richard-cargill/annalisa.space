@@ -166,7 +166,7 @@ a {
   }
 
   .selectorPanel__item {
-    flex-basis: calc(50% - 1rem);
+    flex-basis: calc(50% - .75rem);
     margin-bottom: 0;
   }
 }
@@ -390,7 +390,7 @@ a {
     padding-right: 0;
   }
   .pageSelector__item {
-    flex-basis: calc(50% - 1rem);
+    flex-basis: calc(50% - .75rem);
   }
 }
 
