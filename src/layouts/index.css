@@ -681,3 +681,9 @@ blockquote {
 .is-hidden {
   display: none;
 }
+
+.triangles {
+  position: absolute;
+  top: -100px;
+  z-index: -1;
+}

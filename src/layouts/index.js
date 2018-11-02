@@ -53,8 +53,7 @@ const Layout = ({ children, data, location }) => {
       />
       <div
         style={{
-          position: 'relative',
-          overflow: 'hidden',
+          position: 'relative'
         }}
         className={pageNameFromPathname(location.pathname)}
       >
