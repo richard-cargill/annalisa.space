@@ -15,6 +15,31 @@ function coinFlip(head, tails) {
   return Math.random() > 0.5 ? head : tails
 }
 
+function createTriangle(xPos, yPos, i)
+{
+  var triangle = new PIXI.Graphics();
+  var randomNum = Math.floor(randomBetween(0, 12))
+  var colour = COLORS[randomNum].replace('#', '0x')
+
+  triangle.x = xPos;
+  triangle.y = yPos;
+
+  var triangleWidth = 100,
+      triangleHeight = triangleWidth,
+      triangleHalfway = triangleWidth/2;
+
+  triangle.lineStyle(1, colour, 1);
+
+  triangle.moveTo(50, 50);
+  triangle.lineTo(100, 75);
+  triangle.lineTo(75, 100);
+  triangle.lineTo(50, 50);
+
+  triangle.endFill();
+
+  return triangle;
+}
+
 export default class PixiLoader extends React.Component {
   state = {
     scriptLoaded: false
@@ -56,17 +81,21 @@ class Triangles extends React.Component {
 
   setupTriangles = () => {
     const {numberOfTriangles} = this.state
-    const {app} = this
+    const {app, stage} = this
     const triangles = []
+    const width = isClient ? window.innerWidth - 15 : 0
+    const height = isClient ? stage.offsetHeight : 0
 
     for(let i = 0; i < numberOfTriangles; i++) {
-      const triangle = PIXI.Sprite.fromImage(logo)
+      var randomX = randomBetween(0, width)
+      var randomY = randomBetween(0, height)
+      var triangle = createTriangle(randomX, randomY, i)
       const scale = randomBetween(1, 3)
       // const scale = 1
-      triangle.anchor.set(0.51)
-      triangle.scale.set(0.8 + Math.random() * 0.3)
-      triangle.x = Math.random() * app.screen.width
-      triangle.y = Math.random() * app.screen.height
+      // triangle.anchor.set(0.51)
+      // triangle.scale.set(0.8 + Math.random() * 0.3)
+      // triangle.x = Math.random() * app.screen.width
+      // triangle.y = Math.random() * app.screen.height
       triangle.direction = coinFlip(-1, 1)
       triangle.turningSpeed = Math.random() - 0.8
       triangle.movementSpeed = randomBetween(0.5, 1)
@@ -93,7 +122,7 @@ class Triangles extends React.Component {
 
         triangle.x += (triangle.direction) * triangle.movementSpeed * 1.5
 
-        triangle.rotation += triangle.rotationSpeed * 0.025 * delta
+        triangle.rotation += triangle.rotationSpeed * 0.01 * delta
 
         if(triangle.x < bounds.x) {
           triangle.x += bounds.width
@@ -127,6 +156,8 @@ class Triangles extends React.Component {
 
     stage.appendChild(app.view)
     app.renderer.resize(width, height)
+
+    this.setState({width, height})
 
     this.setupTriangles()
   }
