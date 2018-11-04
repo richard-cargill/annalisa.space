@@ -1,52 +1,56 @@
 {
   "assetsByChunkName": {
     "path---projects-nectar": [
-      "path---projects-nectar-1ccec26e4b136c05d9f4.js",
-      "path---projects-nectar-1ccec26e4b136c05d9f4.js.map"
+      "path---projects-nectar-aefafb11e819cc83afd5.js",
+      "path---projects-nectar-aefafb11e819cc83afd5.js.map"
     ],
     "path---projects-the-telegraph-puzzle": [
-      "path---projects-the-telegraph-puzzle-7ff6655f1a1b9ee9f379.js",
-      "path---projects-the-telegraph-puzzle-7ff6655f1a1b9ee9f379.js.map"
+      "path---projects-the-telegraph-puzzle-4dd317f6da72f93e0f47.js",
+      "path---projects-the-telegraph-puzzle-4dd317f6da72f93e0f47.js.map"
     ],
     "path---hackathon": [
-      "path---hackathon-58fdb243649deb3e0dc2.js",
-      "path---hackathon-58fdb243649deb3e0dc2.js.map"
+      "path---hackathon-09f7481710f2e887a85a.js",
+      "path---hackathon-09f7481710f2e887a85a.js.map"
     ],
     "path---projects-mymail-and-nectar": [
-      "path---projects-mymail-and-nectar-b3345e9275bdfe28581b.js",
-      "path---projects-mymail-and-nectar-b3345e9275bdfe28581b.js.map"
+      "path---projects-mymail-and-nectar-6dd041f860609b99e69b.js",
+      "path---projects-mymail-and-nectar-6dd041f860609b99e69b.js.map"
     ],
     "path---": [
       "path----29d0a563b90bd4bc48e5.js",
       "path----29d0a563b90bd4bc48e5.js.map"
     ],
     "path---design-exploration": [
-      "path---design-exploration-b545c1c3f1b4c081214c.js",
-      "path---design-exploration-b545c1c3f1b4c081214c.js.map"
+      "path---design-exploration-9440160704353a81f6f8.js",
+      "path---design-exploration-9440160704353a81f6f8.js.map"
+    ],
+    "path---projects-the-telegraph": [
+      "path---projects-the-telegraph-bb3d94e0355a3bc33445.js",
+      "path---projects-the-telegraph-bb3d94e0355a3bc33445.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-af18bff7a3ed44f1c5e8.js",
       "component---src-layouts-index-js-af18bff7a3ed44f1c5e8.js.map"
     ],
     "path---projects-brave-the-shave": [
-      "path---projects-brave-the-shave-5b9b39740eada3fb92b6.js",
-      "path---projects-brave-the-shave-5b9b39740eada3fb92b6.js.map"
+      "path---projects-brave-the-shave-a3b6b6fc7fda9ca53652.js",
+      "path---projects-brave-the-shave-a3b6b6fc7fda9ca53652.js.map"
     ],
     "path---index": [
-      "path---index-6e496f1a92b6cc80be1f.js",
-      "path---index-6e496f1a92b6cc80be1f.js.map"
+      "path---index-d2be75338ee9c0c4f208.js",
+      "path---index-d2be75338ee9c0c4f208.js.map"
     ],
     "path---projects-mindfulness-moments": [
-      "path---projects-mindfulness-moments-c88a6a5412dcd834c576.js",
-      "path---projects-mindfulness-moments-c88a6a5412dcd834c576.js.map"
+      "path---projects-mindfulness-moments-e355c8bfbd5ce476e3db.js",
+      "path---projects-mindfulness-moments-e355c8bfbd5ce476e3db.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-547bba915f3912d70b95.js",
       "component---src-pages-404-js-547bba915f3912d70b95.js.map"
     ],
     "path---projects-google": [
-      "path---projects-google-43ce1005855e6ffd34ef.js",
-      "path---projects-google-43ce1005855e6ffd34ef.js.map"
+      "path---projects-google-2cf6874ae5d43afc2cd3.js",
+      "path---projects-google-2cf6874ae5d43afc2cd3.js.map"
     ],
     "commons": [
       "commons-9d3f16f581e6ff774ad5.js",
@@ -57,21 +61,17 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---projects-face-name": [
-      "path---projects-face-name-a3c54ad2b5eb2c3675b6.js",
-      "path---projects-face-name-a3c54ad2b5eb2c3675b6.js.map"
-    ],
-    "path---projects-thetelegraph": [
-      "path---projects-thetelegraph-10ccc68d472515d21605.js",
-      "path---projects-thetelegraph-10ccc68d472515d21605.js.map"
+      "path---projects-face-name-906e65fcffbbd8b13f05.js",
+      "path---projects-face-name-906e65fcffbbd8b13f05.js.map"
     ],
     "path---projects-local-cancer-intelligence": [
-      "path---projects-local-cancer-intelligence-67030f869c65c62e6067.js",
-      "path---projects-local-cancer-intelligence-67030f869c65c62e6067.js.map"
+      "path---projects-local-cancer-intelligence-bc58d31868d03093e5c6.js",
+      "path---projects-local-cancer-intelligence-bc58d31868d03093e5c6.js.map"
     ],
     "app": [
-      "app-8f0b458d3121c8eedad9.js",
+      "app-53d86274c2a0c5d74abf.js",
       "build-js-styles.css",
-      "app-8f0b458d3121c8eedad9.js.map",
+      "app-53d86274c2a0c5d74abf.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
@@ -83,8 +83,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---about": [
-      "path---about-d3a633e45422208ce647.js",
-      "path---about-d3a633e45422208ce647.js.map"
+      "path---about-b2abae4d8165f01bfd91.js",
+      "path---about-b2abae4d8165f01bfd91.js.map"
     ]
   }
 }
