@@ -110,6 +110,11 @@ a {
   padding-bottom: 2rem;
 }
 
+.headerPanel h1 {
+  color: #756CDF;
+  font-size: 25px;
+}
+
 .animate {
   transform: translateZ(50%);
   opacity: 0;
