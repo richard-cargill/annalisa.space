@@ -1,20 +1,17 @@
 import React from 'react'
-import Observer from 'react-intersection-observer'
 
 export default class AnimateIn extends React.Component {
   render() {
     const { children, tag, className, ...props } = this.props
-    const classList = className + ' animate'
+    const classList = className + ' animate in'
     return (
-      <Observer
+      <React.Fragment
         {...props}
         className={classList}
         tag={tag}
-        ref={el => (this.elem = el)}
-        onChange={inView => inView && this.elem.node.classList.add('in')}
       >
         {children}
-      </Observer>
+      </React.Fragment>
     )
   }
 }
