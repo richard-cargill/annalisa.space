@@ -5,13 +5,13 @@ export default class AnimateIn extends React.Component {
     const { children, tag, className, ...props } = this.props
     const classList = className + ' animate in'
     return (
-      <React.Fragment
+      <article
         {...props}
         className={classList}
         tag={tag}
       >
         {children}
-      </React.Fragment>
+      </article>
     )
   }
 }
