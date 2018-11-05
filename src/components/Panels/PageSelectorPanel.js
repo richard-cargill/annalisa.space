@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Link, { navigateTo } from 'gatsby-link'
 import AnimateIn from '../AnimateIn.js'
 import sha1 from 'sha1'
+import closeIcon from '../../images/cross.svg'
 
 import truncateTextAt from '../../utils/truncateTextAt.js'
 const isClient = typeof window !== 'undefined'
@@ -113,7 +114,10 @@ export default class PageSelectorPanel extends Component {
           )}
           {showLogin && (
             <div className="passwordPanel">
-              <button type="button" onClick={this.close} className="password__close">&times;</button>
+              <button type="button" onClick={this.close} className="password__close">
+
+                <img src={closeIcon} alt="Close" />
+              </button>
               <input
                 style={{ border: incorrectPassword ? '1px solid red' : 0 }}
                 onKeyPress={this.onKeyPress}
