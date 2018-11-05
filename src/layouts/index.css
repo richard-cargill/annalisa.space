@@ -496,6 +496,7 @@ main {
   position: relative;
   min-width: 140px;
   text-align: center;
+  background-color: white;
 }
 
 .button:hover {
