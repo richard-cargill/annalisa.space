@@ -427,6 +427,7 @@ main {
 }
 
 .footer__content {
+  float: left;
   font-size: 16px;
 }
 
@@ -441,6 +442,7 @@ main {
 
 .links li {
   display: inline;
+  float: left;
 }
 
 .links li:not(:last-child):after {
@@ -458,6 +460,13 @@ main {
 
 .link__a:hover {
   border-bottom: 2px solid #756cdf;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer__content,
+  .links li {
+    float: none;
+  }
 }
 
 .hero {
