@@ -38,20 +38,29 @@ export default class PageSelectorPanel extends Component {
     this.setState({ input: value })
   }
 
-  onKeyPress = e => {
+  passwordTest = value => {
     const { password, href } = this.state
-    const value = e.target.value
     const hashValue = sha1(value)
 
+    const truthey = !!(hashValue === password)
+    if (truthey) {
+      navigateTo(href)
+      this.setState({ incorrectPassword: false })
+      if (isClient) localStorage.setItem('p__', true)
+    } else {
+      this.setState({ incorrectPassword: true })
+    }
+  }
+
+  onFocusOut = e => {
+    const value = e.target.value
+    this.passwordTest(value)
+  }
+
+  onKeyPress = e => {
+    const value = e.target.value
     if (e.key === 'Enter') {
-      const truthey = !!(hashValue === password)
-      if (truthey) {
-        navigateTo(href)
-        this.setState({ incorrectPassword: false })
-        if (isClient) localStorage.setItem('p__', true)
-      } else {
-        this.setState({ incorrectPassword: true })
-      }
+      this.passwordTest(value)
     }
   }
 
@@ -117,6 +126,7 @@ export default class PageSelectorPanel extends Component {
               <input
                 style={{ border: incorrectPassword ? '1px solid red' : 0 }}
                 onKeyPress={this.onKeyPress}
+                onBlur={this.onFocusOut}
                 onClick={this.stopProp}
                 onChange={this.onChange}
                 className="password"
