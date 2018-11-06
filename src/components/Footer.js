@@ -54,7 +54,7 @@ const Footer = () => (
       </ul>
 
       <span className="footer__content">
-        {new Date().getFullYear()} Made with ❤ by A.Valente & R.Cargill
+        &copy;{new Date().getFullYear()} Made with ❤ by A.Valente & R.Cargill
       </span>
     </div>
   </footer>
