@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "path---projects-nectar": [
-      "path---projects-nectar-7a42843e7decfb381128.js",
-      "path---projects-nectar-7a42843e7decfb381128.js.map"
+      "path---projects-nectar-2f725edf26d425ad4420.js",
+      "path---projects-nectar-2f725edf26d425ad4420.js.map"
     ],
     "path---projects-the-telegraph-puzzle": [
       "path---projects-the-telegraph-puzzle-819a31b4b88c4a114983.js",
@@ -69,9 +69,9 @@
       "path---projects-local-cancer-intelligence-40da5ba5926199e8d5b9.js.map"
     ],
     "app": [
-      "app-c667919752d71686117a.js",
+      "app-75fb56d07e2a8c352a59.js",
       "build-js-styles.css",
-      "app-c667919752d71686117a.js.map",
+      "app-75fb56d07e2a8c352a59.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
