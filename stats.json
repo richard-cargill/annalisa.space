@@ -32,6 +32,10 @@
       "component---src-layouts-index-js-d5e8fdffa5a49d6cdd24.js",
       "component---src-layouts-index-js-d5e8fdffa5a49d6cdd24.js.map"
     ],
+    "path---projects-ckkk": [
+      "path---projects-ckkk-6321844bec916b51f1e6.js",
+      "path---projects-ckkk-6321844bec916b51f1e6.js.map"
+    ],
     "path---projects-brave-the-shave": [
       "path---projects-brave-the-shave-0bb51acd9496a1d0b737.js",
       "path---projects-brave-the-shave-0bb51acd9496a1d0b737.js.map"
@@ -68,18 +72,14 @@
       "path---projects-face-name-a257ee76a0ec2365d3ee.js",
       "path---projects-face-name-a257ee76a0ec2365d3ee.js.map"
     ],
-    "path---ckkk": [
-      "path---ckkk-0e941b653e833217efe9.js",
-      "path---ckkk-0e941b653e833217efe9.js.map"
-    ],
     "path---projects-local-cancer-intelligence": [
       "path---projects-local-cancer-intelligence-9d392d3d6145632502a0.js",
       "path---projects-local-cancer-intelligence-9d392d3d6145632502a0.js.map"
     ],
     "app": [
-      "app-916b35df601b09953722.js",
+      "app-d2b1db5cc37f213be59f.js",
       "build-js-styles.css",
-      "app-916b35df601b09953722.js.map",
+      "app-d2b1db5cc37f213be59f.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
