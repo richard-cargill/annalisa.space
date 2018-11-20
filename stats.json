@@ -32,10 +32,6 @@
       "component---src-layouts-index-js-d5e8fdffa5a49d6cdd24.js",
       "component---src-layouts-index-js-d5e8fdffa5a49d6cdd24.js.map"
     ],
-    "path---projects-ckkk": [
-      "path---projects-ckkk-6321844bec916b51f1e6.js",
-      "path---projects-ckkk-6321844bec916b51f1e6.js.map"
-    ],
     "path---projects-brave-the-shave": [
       "path---projects-brave-the-shave-0bb51acd9496a1d0b737.js",
       "path---projects-brave-the-shave-0bb51acd9496a1d0b737.js.map"
@@ -77,9 +73,9 @@
       "path---projects-local-cancer-intelligence-9d392d3d6145632502a0.js.map"
     ],
     "app": [
-      "app-d2b1db5cc37f213be59f.js",
+      "app-edcca68520e533bab78e.js",
       "build-js-styles.css",
-      "app-d2b1db5cc37f213be59f.js.map",
+      "app-edcca68520e533bab78e.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
