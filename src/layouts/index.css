@@ -81,6 +81,9 @@ a {
 
 .nav__list__item {
   display: inline;
+}
+
+.nav__list__item:not(:first-child)  {
   margin-left: 1rem;
 }
 
@@ -428,10 +431,13 @@ main {
 
 .footer__content {
   float: left;
+  width: 100%;
   font-size: 16px;
+  text-align: center;
 }
 
 .links {
+  overflow: hidden;
   font-size: 16px;
   list-style: none;
   margin-top: 0;
@@ -443,6 +449,7 @@ main {
 .links li {
   display: inline;
   float: left;
+  width: 50%;
 }
 
 .links li:not(:last-child):after {
@@ -467,10 +474,14 @@ main {
   .links li {
     float: none;
   }
+  .links li {
+    width: inherit;
+
+  }
 }
 
 .hero {
-  height: 525px;
+  height: 400px;
   position: relative;
 }
 
@@ -492,7 +503,7 @@ main {
 
 @media only screen and (min-width: 600px) {
   .hero {
-    height: 375px;
+    height: 250px;
   }
 }
 
