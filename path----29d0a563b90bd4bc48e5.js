@@ -1,2 +1,2 @@
-webpackJsonp([60335399758886],{78:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Annalisa Valente",desc:"Digital Product Designer"}}},layoutContext:{}}}});
+webpackJsonp([60335399758886],{80:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Annalisa Valente",desc:"Digital Product Designer"}}},layoutContext:{}}}});
 //# sourceMappingURL=path----29d0a563b90bd4bc48e5.js.map
