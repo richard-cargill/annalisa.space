@@ -122,6 +122,17 @@ export const pageQuery = graphql`
             password
           }
         }
+        ... on ContentfulSliderPanel {
+          fullWidth
+          slides {
+            description
+            file {
+              url
+              fileName
+              contentType
+            }
+          }
+        }
       }
     }
   }

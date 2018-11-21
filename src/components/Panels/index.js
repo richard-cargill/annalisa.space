@@ -6,6 +6,7 @@ import HeaderPanel from './HeaderPanel.js'
 import ImagePanel from './ImagePanel.js'
 import ContentPanel from './ContentPanel.js'
 import SelectorPanel from './SelectorPanel.js'
+import SliderPanel from './SliderPanel.js'
 
 function Panels({ type, data, p }) {
   switch (type) {
@@ -28,6 +29,8 @@ function Panels({ type, data, p }) {
       return <ContentPanel html={data.content.childMarkdownRemark.html} />
     case 'ContentfulSelectorPanel':
       return <SelectorPanel text={data.text} pages={data.pages} />
+    case 'ContentfulSliderPanel':
+      return <SliderPanel slides={data.slides} fullWidth={data.fullWidth} />
     default:
       return null
   }
