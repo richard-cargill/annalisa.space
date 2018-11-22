@@ -8,7 +8,14 @@ const SliderPanel = ({ slides, fullWidth }) => {
   return (
     <section className={imageClass}>
       {slides && (
-        <Carousel wrapAround={true}>
+        <Carousel 
+          renderCenterLeftControls={({ previousSlide }) => (
+            <button onClick={previousSlide}>&larr;</button>
+          )}
+          renderCenterRightControls={({ nextSlide }) => (
+            <button onClick={nextSlide}>&rarr;</button>
+          )}
+          wrapAround={true}>
           {slides.map((slide, i) => {
             if (slide && slide.file) {
               return (

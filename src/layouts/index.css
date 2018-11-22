@@ -648,6 +648,24 @@ main {
   font-weight: 600;
 }
 
+.imagePanel * {
+  outline: 0;
+}
+
+.imagePanel button {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .imagePanel button {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    padding: 1rem;
+    cursor: pointer;
+  }
+}
+
 .imagePanel + .imagePanel {
   margin-top: 2.8rem;
 }
