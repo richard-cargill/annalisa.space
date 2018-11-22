@@ -28,9 +28,13 @@
       "path---projects-the-telegraph-70769840f0a254d78f77.js",
       "path---projects-the-telegraph-70769840f0a254d78f77.js.map"
     ],
+    "path---projects-calvin-klein": [
+      "path---projects-calvin-klein-42851ac19f2766adf27b.js",
+      "path---projects-calvin-klein-42851ac19f2766adf27b.js.map"
+    ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-8e7007181a65d7dd4297.js",
-      "component---src-layouts-index-js-8e7007181a65d7dd4297.js.map"
+      "component---src-layouts-index-js-7ef8df4969239aab45f9.js",
+      "component---src-layouts-index-js-7ef8df4969239aab45f9.js.map"
     ],
     "path---projects-brave-the-shave": [
       "path---projects-brave-the-shave-0bb51acd9496a1d0b737.js",
@@ -56,10 +60,6 @@
       "path---projects-google-64f5245709ac3064164d.js",
       "path---projects-google-64f5245709ac3064164d.js.map"
     ],
-    "path---calvin-klein": [
-      "path---calvin-klein-8ba9417fad29f7e5d4b0.js",
-      "path---calvin-klein-8ba9417fad29f7e5d4b0.js.map"
-    ],
     "commons": [
       "commons-9d3f16f581e6ff774ad5.js",
       "commons-9d3f16f581e6ff774ad5.js.map"
@@ -77,9 +77,9 @@
       "path---projects-local-cancer-intelligence-9d392d3d6145632502a0.js.map"
     ],
     "app": [
-      "app-887e52cf6e12387bbb7a.js",
+      "app-400d7967b5d5dfb3ba55.js",
       "build-js-styles.css",
-      "app-887e52cf6e12387bbb7a.js.map",
+      "app-400d7967b5d5dfb3ba55.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
