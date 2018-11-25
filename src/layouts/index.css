@@ -666,8 +666,26 @@ main {
   }
 }
 
+.slider-control-centerleft button,
+.slider-control-centerright button {
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.slider-control-centerleft button {
+  left: -50px;
+}
+
+.slider-control-centerright button {
+  right: -50px;
+}
+
 .imagePanel + .imagePanel {
   margin-top: 2.8rem;
+}
+
+.imagePanel:last-child {
+  padding-bottom: 2.8rem;
 }
 
 .imagePanel__img {
