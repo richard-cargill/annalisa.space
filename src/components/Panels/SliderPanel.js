@@ -15,7 +15,9 @@ const SliderPanel = ({ slides, fullWidth }) => {
           renderCenterRightControls={({ nextSlide }) => (
             <button onClick={nextSlide}>&rarr;</button>
           )}
-          wrapAround={true}>
+          wrapAround={true}
+          heightMode="max"
+          >
           {slides.map((slide, i) => {
             if (slide && slide.file) {
               return (

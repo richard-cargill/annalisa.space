@@ -666,6 +666,10 @@ main {
   }
 }
 
+.slider-slide > img {
+  height: auto;
+}
+
 .slider-control-centerleft button,
 .slider-control-centerright button {
   position: absolute;
@@ -678,6 +682,10 @@ main {
 
 .slider-control-centerright button {
   right: -50px;
+}
+
+.slider-control-bottomcenter {
+  bottom: -70px !important;
 }
 
 .imagePanel + .imagePanel {
