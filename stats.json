@@ -4,6 +4,10 @@
       "path---projects-nectar-31052dc366c63a8036f4.js",
       "path---projects-nectar-31052dc366c63a8036f4.js.map"
     ],
+    "path---projects-emoji-and-depression": [
+      "path---projects-emoji-and-depression-0873ed85fe6829e02a12.js",
+      "path---projects-emoji-and-depression-0873ed85fe6829e02a12.js.map"
+    ],
     "path---projects-the-telegraph-puzzle": [
       "path---projects-the-telegraph-puzzle-d8a24869c54288576423.js",
       "path---projects-the-telegraph-puzzle-d8a24869c54288576423.js.map"
@@ -77,9 +81,9 @@
       "path---projects-local-cancer-intelligence-77dd49eae5cf524fca85.js.map"
     ],
     "app": [
-      "app-a4325aae1cbe943cf57c.js",
+      "app-04aeb23461c9689dd4c7.js",
       "build-js-styles.css",
-      "app-a4325aae1cbe943cf57c.js.map",
+      "app-04aeb23461c9689dd4c7.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
