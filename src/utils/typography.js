@@ -14,7 +14,7 @@ const systemFontStack = [
 
 const typography = new Typography({
   baseFontSize: '18px',
-  baseLineHeight: 1.4,
+  baseLineHeight: 1.8,
   headerFontFamily: systemFontStack,
   headerWeight: '600',
   scaleRatio: 1.3,
