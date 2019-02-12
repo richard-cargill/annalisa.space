@@ -438,7 +438,7 @@ main {
 
 .links {
   overflow: hidden;
-  font-size: 16px;
+  font-size: 13px;
   list-style: none;
   margin-top: 0;
   margin-right: 0;
@@ -447,15 +447,25 @@ main {
 }
 
 .links li {
-  display: inline;
-  float: left;
-  width: 50%;
+  display: inline-block;
+  margin-bottom: 0;
 }
 
 .links li:not(:last-child):after {
   content: '/';
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .links {
+    font-size: 16px;
+  }
+
+ .links li:not(:last-child):after {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }
 
 .link__a {
@@ -476,7 +486,6 @@ main {
   }
   .links li {
     width: inherit;
-
   }
 }
 

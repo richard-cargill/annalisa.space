@@ -17,9 +17,14 @@ const Footer = () => (
 
       <ul className="links">
         <li>
-          <Link className="link__a" to="/about/">
-            About me
-          </Link>
+           <a
+            className="link__a"
+            title="External link to Trello"
+            target="_blank"
+            href="https://trello.com/annalisa_valente"
+          >
+            Trello
+          </a>
         </li>
         <li>
           <a
@@ -44,11 +49,11 @@ const Footer = () => (
         <li>
           <a
             className="link__a"
-            title="External link to Medium"
+            title="External link to Twitter"
             target="_blank"
-            href="https://blog.prototypr.io/@d_art_h_vader"
+            href="https://twitter.com/d_art_h_vader"
           >
-            Medium
+            Twitter
           </a>
         </li>
       </ul>
