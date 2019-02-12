@@ -519,7 +519,7 @@ main {
 .button {
   outline: 0;
   font-size: 12px;
-  color: #756cdf;
+  color: white;
   display: inline-block;
   border: 1px solid #756cdf;
   border-radius: 3px;
@@ -530,12 +530,12 @@ main {
   position: relative;
   min-width: 140px;
   text-align: center;
-  background-color: white;
+  background-color: #756cdf;
 }
 
 .button:hover {
-  color: white;
-  background-color: #756cdf;
+  color: #756cdf;
+  background-color: white;
 }
 
 .button--with-icon {
@@ -551,6 +551,16 @@ main {
     transform: translateY(-50%);
     top: 50%;
   }
+}
+
+.button--ghost {
+  background-color: white;
+  color: #756cdf;
+}
+
+.button--ghost:hover {
+  background-color: #756cdf;
+  color: white;
 }
 
 .paging {
