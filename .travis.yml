@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+    - "stable"
+cache: yarn
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+  - master
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: public
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+after_success:
+  - "npm run predeploy"
